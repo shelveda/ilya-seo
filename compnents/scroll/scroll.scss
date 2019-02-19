@@ -3,42 +3,36 @@
   padding: 0;
 }
 
-::-webkit-scrollbar
- {
-   height: 0.3rem;
-   background-color: #F5F5F5;
- }
+.scroll::-webkit-scrollbar
+{
+  height: 0.3rem;
+  background-color: #F5F5F5;
+}
 
-::-webkit-scrollbar-thumb:horizontal {
+.scroll::-webkit-scrollbar-thumb:horizontal {
 
   background-color: #555;
 }
 
 .scroll {
+
   display: grid;
   grid-template-rows:  1fr ;
   grid-template-columns: 1fr ;
+  padding: 10px;
+  top:0;
+  left:0;
+  right:0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
 
   &__child{
     border: 1px solid blue;
     border-radius: 5px;
-    grid-column:1;
-    grid-row: 1;
-    position:relative;
     min-height:4rem;
-
-    div{
-      padding: 10px;
-      position:absolute;
-      top:0;
-      left:0;
-      right:0;
-      max-height:100%;
-      max-width: 20%;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      white-space: nowrap;
-    }
   }
+
 }
 
