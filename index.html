@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Roboto:100,300,300i,400" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
         <link rel="stylesheet" href="css/font-awesome-all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style2.css">
 
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
         <title>Ilya Cms &mdash; Front </title>
     </head>
 
@@ -83,10 +85,42 @@
 
 
 <section class="section-price">
+    <div class="price">
+        <table class="price__child">
+                <thead>
+                <tr >
+                    <th>Title</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>fr</td>
+                    <td>34700</td>
 
-    <div class="price">price</div>
+                </tr>
+                <tr>
+                    <td>pl</td>
+                    <td>670</td>
 
+                </tr>
+                <tr>
+                    <td>asl</td>
+                    <td>34900</td>
+                </tr>
+                </tbody>
+            </table>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.price__child').DataTable({
+                dom:"<ft>"
+            });
+        } );
+    </script>
 </section>
+
+
 
 <section class="section-news">
 
@@ -133,5 +167,6 @@
 <footer class="footer">footer</footer>
 
 </body>
+
 
 </html>
