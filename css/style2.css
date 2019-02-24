@@ -1,0 +1,105 @@
+.section-slider{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: gray;
+    overflow: hidden;
+}
+.slide,
+.slide img {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+          }
+.slide h1 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 10%;
+    color: white;
+}
+.slide {
+    transform: translateY(100%);
+    -webkit-animation: slide 20s infinite linear;
+}
+.slide:nth-child(2) {
+    -webkit-animation-delay: 5s;
+}
+.slide:nth-child(3) {
+    -webkit-animation-delay: 10s;
+}
+.slide:nth-child(4) {
+    -webkit-animation-delay: 15s;
+}
+@-webkit-keyframes slide {
+    5% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/*scroll */
+
+.section-news::-webkit-scrollbar {
+    height: 0.5rem;
+    background-color: #F5F5F5; }
+
+.section-news::-webkit-scrollbar-thumb:horizontal {
+    background-color: #555; }
+
+.section-news {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-color: #2b2b2b grey;
+    scrollbar-width: thin;
+}
+
+/*table-price*/
+.section-price{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.price,price__child {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+.price__child th {
+    background-color: white;
+    font-weight: bold; }
+.price__child th, .price__child td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #b0bed9; }
+.price__child tr.odd {
+    background-color: #cbd3cd; }
+.price__child tr.odd:hover {
+    background-color: #b0bed9; }
+.price__child tr.even {
+    background-color: white; }
+.price__child tr.even:hover {
+    background-color: #b0bed9; }
+
+.price .dataTables_filter {
+    float: left;
+    text-align: left; }
+.price .dataTables_filter input {
+    position: absolute;
+    width:100px;
+}
