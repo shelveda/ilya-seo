@@ -95,10 +95,13 @@
 				var $item = $(this),
 					$submenu = $item.children( 'ul.dl-submenu' );
 
+<<<<<<< HEAD
                  // var $p = $item.find('a').css('background-color','red');;
 					// alert($p);
 				// $('.dl-trigger').attr('value',$p);
 
+=======
+>>>>>>> master
 				if( $submenu.length > 0 ) {
 
 					var $flyin = $submenu.clone().css( 'opacity', 0 ).insertAfter( self.$menu ),
