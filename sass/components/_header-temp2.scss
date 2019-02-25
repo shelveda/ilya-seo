@@ -1,0 +1,51 @@
+.section-header-tmp2 {
+    padding: 0;
+    background-color: $color-grey-dark-4;
+    grid-column: center-start /8 ;
+    
+
+    &__right-part {
+        grid-column: 8 /full-end ;
+        background-color: $color-secondary;
+    }
+ 
+}
+.relators{
+    
+}
+
+.header-tmp2{
+    height: 100%;
+   ;
+   display:grid;
+    background-image: linear-gradient(rgba($color-secondary,.93),
+    rgba($color-secondary,.93)),
+    url(../img/hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+    grid-template-rows: 1fr;
+   
+    
+
+    &__logo{
+        height: 3rem;
+
+    }
+    
+    &__seenon-logos{
+
+        img{
+            height: 2.5rem;
+        }
+
+    }
+
+    &__seenon-text{
+
+    }
+
+
+   
+
+}

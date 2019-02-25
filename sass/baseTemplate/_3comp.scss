@@ -1,0 +1,26 @@
+
+.sidebar-left{
+    background-color: brown;    
+    display:none;
+}
+
+.sidebar-right{
+    background-color: orange; 
+    display:none;
+}
+
+.main {
+    background-color: grey;    
+    grid-column: 1/ -1;
+}
+
+
+.footer {
+    background-color: blueviolet;  
+    grid-column: 1/ -1 
+}
+
+.header {
+    background-color: $color-primary;    
+    grid-column: 1/ -1;
+}

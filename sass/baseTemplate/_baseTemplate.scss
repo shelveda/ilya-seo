@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1 rem equals 10 px
+}
+
+body{
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+}
+
+.container {
+    width: 90%;
+    display: grid;
+    margin: 30px auto;
+    background-color: #ddd;
+    justify-content: center;
+    align-content: center;
+
+
+    grid-template-columns: repeat(3,minmax(6rem,1fr));
+
+    grid-template-rows: repeat(3,minmax(25vh,1fr));
+
+    & > * {
+        padding: 40px;
+        font-size: 3rem;
+        margin: 1px;
+        border-radius: 5px;
+        color: white;
+
+    }
+
+}

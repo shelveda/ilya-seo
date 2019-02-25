@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //1 rem equals 10 px
+}
+
+body{
+    margin-top: 5px;
+    direction: rtl;
+    font-family: $font-primary;
+    // font-family: yekan;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    background-color: $color-grey-light-3;
+}
+
+
+

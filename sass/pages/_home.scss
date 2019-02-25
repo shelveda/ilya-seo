@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-rows: min-content 80vh auto  min-content ;
+    grid-template-columns:[full-start] minmax(6rem,1fr) [center-start] repeat(8,[col-start] minmax(min-content, 14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end];
+    grid-row-gap: 5px;
+    // grid-column-gap: 5px;
+    
+    & > * {
+        // margin:20px;
+        padding: 1.2rem;
+        font-size: 3rem;
+        
+    }
+
+}
+
+
+.section-slider{
+    background-color: brown;    
+    grid-column: center-start / 7;
+}
+
+.section-price{
+    background-color: orange; 
+    grid-column: 7 / center-end;   
+}
+
+.section-news {
+
+    overflow-x: auto;
+    // background-color: grey;    
+    grid-column: center-start / center-end;
+
+    display:flex;
+    
+    scrollbar-color: #2b3b2b grey;
+    scrollbar-width: thin;
+
+
+    // grid-template-rows: 1fr;
+    // grid-template-columns: repeat(auto-fit , 25rem);
+    // grid-template-columns: repeat(auto-fit , minmax(25rem,1fr));
+    // grid-gap: 6rem;
+}
+
+
+
+

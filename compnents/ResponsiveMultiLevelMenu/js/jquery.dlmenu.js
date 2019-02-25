@@ -95,7 +95,7 @@
 				var $item = $(this),
 					$submenu = $item.children( 'ul.dl-submenu' );
 
-                 // var $p = $item.find('a').css('background-color','red');;
+                 var $p = $item.find('a').css('background-color','red');;
 					// alert($p);
 				// $('.dl-trigger').attr('value',$p);
 

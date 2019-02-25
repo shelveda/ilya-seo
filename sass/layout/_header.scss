@@ -1,0 +1,14 @@
+.header {
+    
+    // background-color: $color-primary;
+    grid-column: center-start / center-end;
+    background-color: $color-grey-light-1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(2,min-content);
+    justify-content: center;
+    align-content: start;
+    grid-row-gap: 8px;
+
+}

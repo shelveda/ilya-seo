@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="node_modules/jquery/dist/jquery.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Roboto:100,300,300i,400" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
-        <link rel="stylesheet" href="css/font-awesome-all.min.css">
+
+        <!-- <link rel="stylesheet" href="css/font-awesome-all.min.css"> -->
+        <link rel="stylesheet" href="css/all.min.css">
+
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style2.css">
 
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+        
         <title>Ilya Cms &mdash; Front </title>
+
+
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+              
+        <script src="js/index.js"></script>
+
     </head>
 
 <body class="container">
@@ -25,9 +33,9 @@
         <img src="img/logo.png" alt="logo" class="logo-bar__img">
         <div class="logo-bar__search">
             <input type="text" class="logo-bar__search-input"
-            placeholder="search...">
+            placeholder="جستجو...">
             <a href="#" class="btn-search">
-                <i class="fas fa-search logo-bar__search-icon"></i>
+                <i class="fal fa-search logo-bar__search-icon"></i>
             </a>
            
         </div>
@@ -36,137 +44,99 @@
         
     </div>
 
-    <ul class="navbar">
-            <li class="navbar__item">
-                <a href="">تجهیزات آزمایشگاهی</a>
-            </li>
-            
-            <li class="navbar__item">
-                    <a href="">مواد شیمیایی</a>
-                </li>
-            <li class="navbar__item">
-                <a href="">مطالب و اخبار</a>    
-            </li>
-            
-            <li class="navbar__item">
-                <a href="">تأمین کنندگان</a>
-            </li>
-            <li class="navbar__item">
-                <a href="">تعرفه ها</a>
-            </li>
-            <li class="navbar__item">
-                <a href="">درباره ما</a>
-            </li>
-            <li class="navbar__item">
-                <a href="">تماس با ما</a>
-            </li>
-    </ul>
+    <div class="navbar-base">
+        <div class="navbar-1row-t1__main">
+            <ul class="navbar-1row-t1">
+                    <li class="navbar-1row-t1__item-main">
+                        <a href="#">تجهیزات آزمایشگاهی</a>
+                    </li>
+                    
+                    <li class="navbar-1row-t1__item-main">
+                            <a href="#">مواد شیمیایی</a>
+                        </li>
+                    <li class="navbar-1row-t1__item-main">
+                        <a href="#">مطالب و اخبار</a>    
+                    </li>
+                    
+                    <li class="navbar-1row-t1__item-main">
+                        <a href="#">تأمین کنندگان</a>
+                    </li>
+                    <li class="navbar-1row-t1__item-main">
+                        <a href="#">تعرفه ها</a>
+                    </li>
+            </ul>
+
+        </div>
+            <div class="navbar-1row-t1__sub">
+                <ul class="navbar-1row-t1">
+                    <li class="navbar-1row-t1__item-sub">
+                        <a href="#">درباره ما</a>
+                    </li>
+                    <li class="navbar-1row-t1__item-sub">
+                        <a href="#">تماس با ما</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
 
 </header>
 
 <section class="section-slider">
-        <div class="slide">
-            <img src="http://lorempixel.com/300/200" />
-            <h1>Slide 1</h1>
-        </div>
-        <div class="slide">
-            <img src="http://lorempixel.com/600/400" />
-            <h1>Slide 2</h1>
-        </div>
-        <div class="slide">
-            <img src="http://lorempixel.com/1200/800" />
-            <h1>Slide 3</h1>
-        </div>
-        <div class="slide">
-            <img src="http://lorempixel.com/1800/1200" />
-            <h1>Slide 4</h1>
-        </div>
+
 </section>
 
 
-<section class="section-price">
-    <div class="price">
-        <table class="price__child">
-                <thead>
-                <tr >
-                    <th>Title</th>
-                    <th>Price</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>fr</td>
-                    <td>34700</td>
+<section class="section-price" id="testing2">
 
-                </tr>
-                <tr>
-                    <td>pl</td>
-                    <td>670</td>
 
-                </tr>
-                <tr>
-                    <td>asl</td>
-                    <td>34900</td>
-                </tr>
-                </tbody>
-            </table>
-    </div>
-    <script>
-        $(document).ready(function() {
-            $('.price__child').DataTable({
-                dom:"<ft>"
-            });
-        } );
-    </script>
 </section>
-
-
 
 <section class="section-news">
 
     <div class="news-card">
         <img src="img/house-1.jpeg" alt="news 1" class="news-card__img">
-        <i class="far fa-heart news-card__like" ></i>
-        <h5 class="news-card__title">hello news</h5>
+        <i class="fas fa-heart news-card__like" ></i>
+        <h5 class="news-card__title">خبر اول </h5>
         <div class="news-card__box">
-            <i class="far fa-heart news-card__box-icon" ></i>
+            <!-- <i class="far fa-heart news-card__box-icon" ></i> -->
             <div class="news-card__box-text">
-                <p>hgefasfli afsa</p>
+                <p>متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر</p>
             </div>
         </div>
-        <button class="btn-nohover btn--primary news-card__btn "> contact us</button>
+        <button class="btn-nohover btn--primary news-card__btn "> مشاهده خبر</button>
     </div>
 
     <div class="news-card">
         <img src="img/house-1.jpeg" alt="news 1" class="news-card__img">
-        <i class="far fa-heart news-card__like"></i>
-        <h5 class="news-card__title">hello news</h5>
+        <i class="fas fa-heart news-card__like"></i>
+        <h5 class="news-card__title">خبر دوم </h5>
         <div class="news-card__box">
-            <i class="far fa-heart news-card__box-icon" ></i>
+            <!-- <i class="far fa-heart news-card__box-icon" ></i> -->
             <div class="news-card__box-text">
-                <p>hgefasfli afsa</p>
-            </div>
+                    <p>متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر</p>
+                </div>
         </div>
-        <button class="btn-nohover btn--primary news-card__btn "> contact us</button>
+        <button class="btn-nohover btn--primary news-card__btn "> مشاهده خبر</button>
     </div>
     <div class="news-card">
         <img src="img/house-1.jpeg" alt="news 1" class="news-card__img">
-        <i class="far fa-heart news-card__like" ></i>
-        <h5 class="news-card__title">hello news</h5>
+        <i class="fas fa-heart news-card__like" ></i>
+        <h5 class="news-card__title">خبر سوم</h5>
         <div class="news-card__box">
-            <i class="far fa-heart news-card__box-icon" ></i>
+            <!-- <i class="far fa-heart news-card__box-icon" ></i> -->
             <div class="news-card__box-text">
-                <p>hgefasfli afsa</p>
-            </div>
+                    <p>متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر متن خبر</p>
+                </div>
         </div>
-        <button class="btn-nohover btn--primary news-card__btn "> contact us</button>
+        <button class="btn-nohover btn--primary news-card__btn "> مشاهده خبر</button>
     </div>
 
 </section>
 
 <footer class="footer">footer</footer>
 
-</body>
 
+
+</body>
 
 </html>
