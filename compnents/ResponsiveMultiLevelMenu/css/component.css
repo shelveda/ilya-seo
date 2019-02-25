@@ -12,10 +12,7 @@
 /* Common styles of menus */
 
 .dl-menuwrapper {
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 	width: 100%;
 	max-width: 300px;
 	float: left;
@@ -30,38 +27,19 @@
 	margin-right: 100px;
 }
 
-<<<<<<< HEAD
-.dl-menuwrapper select {
+.dl-menuwrapper input {
 	width: 90%;
 	overflow: hidden;
 	position: relative;
 }
 
-.dl-menuwrapper select:hover,
-.dl-menuwrapper select.dl-active,
-=======
-.dl-menuwrapper button {
-	background: #ccc;
-	border: none;
-	width: 48px;
-	height: 45px;
-	text-indent: -900em;
-	overflow: hidden;
-	position: relative;
-	cursor: pointer;
-	outline: none;
-}
-
-.dl-menuwrapper button:hover,
-.dl-menuwrapper button.dl-active,
->>>>>>> master
+.dl-menuwrapper input:hover,
+.dl-menuwrapper input.dl-active,
 .dl-menuwrapper ul {
-	background: #aaa;
+	background: #080102;
 }
 
-<<<<<<< HEAD
-.dl-menuwrapper select:after {
-	content: '';
+.dl-menuwrapper input:after {
 	position: absolute;
 	width: 100%;
 	height: 5px;
@@ -71,22 +49,6 @@
 
 .dl-menuwrapper ul {
 
-=======
-.dl-menuwrapper button:after {
-	content: '';
-	position: absolute;
-	width: 68%;
-	height: 5px;
-	background: #fff;
-	top: 10px;
-	left: 16%;
-	box-shadow: 
-		0 10px 0 #fff, 
-		0 20px 0 #fff;
-}
-
-.dl-menuwrapper ul {
->>>>>>> master
 	padding: 0;
 	list-style: none;
 	-webkit-transform-style: preserve-3d;
@@ -98,10 +60,7 @@
 }
 
 .dl-menuwrapper li a {
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 	display: block;
 	position: relative;
 	padding: 15px 20px;
@@ -120,10 +79,6 @@
 	padding-left: 30px;
 	background: rgba(0,0,0,0.1);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 .dl-menuwrapper li.dl-back:after,
 .dl-menuwrapper li > a:not(:only-child):after {
 	position: absolute;
@@ -136,7 +91,6 @@
 }
 
 .dl-menuwrapper li.dl-back:after {
-<<<<<<< HEAD
 	right: 5px;
 	color: rgba(212,204,198,0.3);
 }
@@ -145,17 +99,6 @@
 	left: 10px;
 	color: rgba(0,0,0,0.15);
 	transform: rotate(180deg);
-=======
-	left: 10px;
-	color: rgba(212,204,198,0.3);
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-
-.dl-menuwrapper li > a:after {
-	right: 10px;
-	color: rgba(0,0,0,0.15);
->>>>>>> master
 }
 
 .dl-menuwrapper .dl-menu {
@@ -209,10 +152,7 @@ All this is done for any sub-level being entered.
 
 /* Dynamically added submenu outside of the menu context */
 .dl-menuwrapper > .dl-submenu {
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 	position: absolute;
 	width: 100%;
 	top: 50px;
@@ -314,75 +254,18 @@ All this is done for any sub-level being entered.
 
 /* Colors for demos */
 
-<<<<<<< HEAD
-.demo-1 .dl-menuwrapper select {
-	background: #979ea0;
+.demo-1 .dl-menuwrapper input {
+	background: #eef9fc;
 
 }
 
-.demo-1 .dl-menuwrapper select:hover,
-.demo-1 .dl-menuwrapper select.dl-active,
+.demo-1 .dl-menuwrapper input:hover,
+.demo-1 .dl-menuwrapper input.dl-active,
 .demo-1 .dl-menuwrapper ul {
-	background: #979ea0;
+	background: #cbd3cd;
 }
 
 
 
 
 
-=======
-/* Demo 1 */
-.demo-1 .dl-menuwrapper button {
-	background: #c62860;
-}
-
-.demo-1 .dl-menuwrapper button:hover,
-.demo-1 .dl-menuwrapper button.dl-active,
-.demo-1 .dl-menuwrapper ul {
-	background: #9e1847;
-}
-
-/* Demo 2 */
-.demo-2 .dl-menuwrapper button {
-	background: #e86814;
-}
-
-.demo-2 .dl-menuwrapper button:hover,
-.demo-2 .dl-menuwrapper button.dl-active,
-.demo-2 .dl-menuwrapper ul {
-	background: #D35400;
-}
-
-/* Demo 3 */
-.demo-3 .dl-menuwrapper button {
-	background: #08cbc4;
-}
-
-.demo-3 .dl-menuwrapper button:hover,
-.demo-3 .dl-menuwrapper button.dl-active,
-.demo-3 .dl-menuwrapper ul {
-	background: #00b4ae;
-}
-
-/* Demo 4 */
-.demo-4 .dl-menuwrapper button {
-	background: #90b912;
-}
-
-.demo-4 .dl-menuwrapper button:hover,
-.demo-4 .dl-menuwrapper button.dl-active,
-.demo-4 .dl-menuwrapper ul {
-	background: #79a002;
-}
-
-/* Demo 5 */
-.demo-5 .dl-menuwrapper button {
-	background: #744783;
-}
-
-.demo-5 .dl-menuwrapper button:hover,
-.demo-5 .dl-menuwrapper button.dl-active,
-.demo-5 .dl-menuwrapper ul {
-	background: #643771;
-}
->>>>>>> master
