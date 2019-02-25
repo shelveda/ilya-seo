@@ -1,3 +1,15 @@
+//responsive break 
+
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; //1000px
+
+
+
+
+
+
+
+
 *,
 *::before,
 *::after {
@@ -10,13 +22,18 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1 rem equals 10 px
+
+    @media only screen and (max-width: $bp-largest){
+        font-size: 50%;
+    }
+
 }
 
 body{
     margin-top: 5px;
     direction: rtl;
     font-family: $font-primary;
-    // font-family: yekan;
+    font-family: yekan;
     color: $color-grey-dark-2;
     font-weight: 300;
     background-color: $color-grey-light-3;

@@ -101,11 +101,12 @@
 }
 
 .btn-simple{
+    
     text-transform: uppercase;
     text-decoration: none;
     padding: .4rem 2rem ;
     display: inline-block;
-    border-radius: 3rem;
+    border-radius: 1.5rem;
     transition: all 0.2s;
     position: relative;
     //change for the <button> element
@@ -127,8 +128,9 @@
     // }
         
     &:hover {
+
         transform: translateY(-.3rem);
-        box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+        // box-shadow: 0 1rem 2rem rgba($color-black,0.2);
     }
     &:active{
         transform: translateY(0rem);

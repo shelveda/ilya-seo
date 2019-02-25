@@ -1,16 +1,17 @@
 .logo-bar{
 
     display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: minmax(max-content,1fr) 3fr  minmax(max-content,1fr);
     grid-template-rows: min-content;
     grid-column-gap: 2rem;
     justify-content: start;
-    align-content: center;
+    // align-content: center;
     height: 100%;
 
     &__img{
-        width: 40%;
-        justify-self: start;
+        max-height:4rem;
+        width: 100%;
+        justify-self: center;
         align-self: center;
 
     }
@@ -23,6 +24,8 @@
         justify-self: center;
         align-self: center;
         font-family: none;
+
+       
         
 
         &-input{
@@ -36,19 +39,32 @@
             font-size: 1.8rem;
             font-family: 'yekan';
 
+            &::placeholder{
+                opacity:.9;
+                color: $color-secondary;
+
+            }
+
         }
 
         &-icon{
             color: $color-white;
             border: 1px solid $color-primary;
             background-color: $color-primary;
+            background-color: $color-tertiary;
+            background-color: $color-secondary;
+
+
+
             padding: 5px 10px;
             border-radius: 5px 0 0 5px ;
-            transition: all 0.2s;
+            transition: all 0.1s;
 
             &:hover {
                 // background-color: rgba(#fff,.05);
                 transform: translateX(3px);
+                background-color: $color-tertiary;
+
             }
         }
         
@@ -57,11 +73,17 @@
 
     &__login {
         // height: 80%;
+        // width: 128px;
+        // min-width:10rem;
         justify-self: end;
-        align-self: start;
+        align-self: center;
         font-family: yekan;
         font-size: 1.6rem;
-        font-weight: 600;
+        font-weight: 300;
+        // border: .1px solid $color-secondary;
+        // border: 5px solid $color-grey-light-3;
+
+        color:$color-grey-light-3;
               
 
     }

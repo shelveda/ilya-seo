@@ -33,66 +33,14 @@
         
     }
 
-    &__item-sub{
-
-        margin-right: 5px;
-        
-        height: 100%;
-        border:1px solid $color-primary;
-        border-radius: 5px;
-        
-        background-color: $color-grey-light-3;
-        // border-bottom: 3px solid $color-grey-dark-2;
-        // border-bottom: 5px solid $color-primary;
-        background-color: $color-grey-dark-2;
-
-        background-color: $color-secondary;
-
-
-
-
-
-        // line-height: 4rem;
-        justify-self: start;
-        align-self: center;
-        font-family: yekan;
-        font-size: 1.6rem;   
-        padding:  0px 10px;
-        // margin-bottom: 5px;
-        transition: height .1s;
-        
-
-        a{
-            text-decoration: none;
-            color: $color-black;
-            color: white;
-        }
-
-        &:hover,
-        &:active {
-            background-color: $color-tertiary;
-            height: 110%;
-        // border-bottom: 5px solid red;
-        // border-bottom-width:10px; 
-            //  border-bottom-color:red;
-        }
-
-
-    }
-
     
-
    
 
     &__item-main{
+        
         height: 100%;
         border-bottom: 3px solid $color-primary;
-        // border-bottom: 3px solid $color-primary;
-        // border-bottom: 3px solid $color-grey-dark-2;
-
-
-        // border-bottom: 5px solid $color-primary;
-
+        border-radius: 3px 3px 0 0;
 
 
         // line-height: 4rem;
@@ -107,7 +55,8 @@
 
         a{
             text-decoration: none;
-            color: $color-black;
+            // color: $color-black;
+            color:$color-secondary;
             // color: $color
         }
         &:hover,
@@ -131,6 +80,50 @@
         }
 
     }
+
+    &__item-sub{
+        border-bottom: 3px solid $color-grey-light-3;
+
+
+        margin-right: 5px;
+        
+        height: 100%;
+        // border:1px solid $color-primary;
+        border-radius: 3px;
+
+        background-color: $color-grey-light-3;
+
+
+
+        // line-height: 4rem;
+        justify-self: center;
+        align-self: center;
+        font-family: yekan;
+        font-size: 1.4rem;   
+        padding:  0px 10px;
+        // margin-bottom: 5px;
+        transition: height .1s;
+        
+
+        a{
+            text-decoration: none;
+            color: $color-secondary;
+            // color: white;
+        }
+
+        &:hover,
+        &:active {
+            border-radius: 3px 3px 0 0;
+            height: 110%;
+            border-bottom-color:$color-tertiary;
+
+        }
+
+
+    }
+
+    
+
 
 }
     
