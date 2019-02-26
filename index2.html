@@ -19,7 +19,6 @@
 
         <script src="js/modernizr.custom.js"></script>
 
-
         <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -49,49 +48,26 @@
 
     <div class="navbar-base">
         <div class="navbar-1row-t1__main">
-            <ul  class="navbar-1row-t1">
-
-                <div class="navbar-1row-t1__item-main">
-                    <li class="navbar-1row-t1__item-main--menu">
+            <ul class="navbar-1row-t1">
+                    <li class="navbar-1row-t1__item-main">
                         <a href="#">تجهیزات آزمایشگاهی</a>
                     </li>
-                    <ul class="dl-menu">
-                        <li class="dl-menu"></li>
-                    </ul>
-                </div>
-
-                <div class="navbar-1row-t1__item-main">
-                    <li class="navbar-1row-t1__item-main--menu">
+                <ul class="dl-menu"></ul>
+                    <li class="navbar-1row-t1__item-main">
                             <a href="#">مواد شیمیایی</a>
                         </li>
-                    <ul class="dl-menu">
-                        <li class="dl-menu1"></li>
-                    </ul>
-                </div>
-                <div class="navbar-1row-t1__item-main">
-                    <li class="navbar-1row-t1__item-main--menu">
+
+                    <li class="navbar-1row-t1__item-main">
                         <a href="#">مطالب و اخبار</a>    
                     </li>
-                <ul class="dl-menu">
-                    <li class="dl-menu2"></li>
-                </ul>
-                </div>
-                <div class="navbar-1row-t1__item-main">
-                    <li class="navbar-1row-t1__item-main--menu">
+
+                    <li class="navbar-1row-t1__item-main">
                         <a href="#">تأمین کنندگان</a>
                     </li>
-                <ul class="dl-menu">
-                    <li class="dl-menu3"></li>
-                </ul>
-                </div>
-                <div class="navbar-1row-t1__item-main">
-                    <li class="navbar-1row-t1__item-main--menu">
+
+                    <li class="navbar-1row-t1__item-main">
                         <a href="#">تعرفه ها</a>
                     </li>
-                <ul class="dl-menu">
-                    <li class="dl-menu4"></li>
-                </ul>
-                </div>
             </ul>
 
         </div>
@@ -106,6 +82,7 @@
                 </ul>
             </div>
     </div>
+
     <script>
 
         var jasondata =[
@@ -120,66 +97,6 @@
             },
             {
                 title:"ostovane",
-                id:3,
-            }
-        ];
-        var jasondata1 =[
-
-            {
-                title:"asid",
-                id:1,
-            },
-            {
-                title:"amoniak",
-                id:2,
-            },
-            {
-                title:"solfat",
-                id:3,
-            }
-        ];
-        var jasondata2 =[
-
-            {
-                title:"news1",
-                id:1,
-            },
-            {
-                title:"news2",
-                id:2,
-            },
-            {
-                title:"news3",
-                id:3,
-            }
-        ];
-        var jasondata3 =[
-
-            {
-                title:"option1",
-                id:1,
-            },
-            {
-                title:"option2",
-                id:2,
-            },
-            {
-                title:"option3",
-                id:3,
-            }
-        ];
-        var jasondata4 =[
-
-            {
-                title:"plan1",
-                id:1,
-            },
-            {
-                title:"plan2",
-                id:2,
-            },
-            {
-                title:"plan3",
                 id:3,
             }
         ];
@@ -206,11 +123,6 @@
         }
 
         createList2(document.querySelector(".dl-menu"), jasondata);
-        createList2(document.querySelector(".dl-menu1"), jasondata1);
-        createList2(document.querySelector(".dl-menu2"), jasondata2);
-        createList2(document.querySelector(".dl-menu3"), jasondata3);
-        createList2(document.querySelector(".dl-menu4"), jasondata4);
-
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.dlmenu.js"></script>
@@ -220,7 +132,6 @@
         });
 
     </script>
-
 </header>
 
 <section class="section-slider">
