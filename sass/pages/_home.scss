@@ -1,42 +1,86 @@
 .container {
     display: grid;
     grid-template-rows: min-content 80vh auto  min-content ;
-    grid-template-columns:[full-start] minmax(6rem,1fr) [center-start] repeat(8,[col-start] minmax(min-content, 16rem) [col-end])[center-end] minmax(6rem,1fr) [full-end];
+    grid-template-columns:[full-start] minmax(6rem,1fr) [center-start] repeat(8,[col-start] minmax(min-content, 14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end];
     grid-row-gap: 5px;
     // grid-column-gap: 5px;
+    justify-content: center;
     
     & > * {
         // margin:20px;
         padding: 1.2rem;
         font-size: 3rem;
-        
     }
+    backface-visibility: hidden;
+    
+    @media only screen and (max-width: $bp-medium){
+        grid-template-rows: min-content 60vh 80vh auto  min-content ;
 
+        grid-template-columns: [full-start] 1rem [center-start] repeat(8,[col-start] minmax(min-content, 14rem) [col-end])[center-end] 1rem [full-end];
+
+
+    }
 }
-
 
 .section-slider{
     background-color: brown;    
+    // grid-column
     grid-column: center-start / 7;
+
+    @media only screen and (max-width: $bp-medium){
+
+        margin: 0.5rem 4rem;
+        grid-column: center-start / center-end;
+
+    }
 }
 
 .section-price{
     background-color: orange; 
-    grid-column: 7 / center-end;   
+    grid-column: 7 / center-end; 
+    
+    @media only screen and (max-width: $bp-medium){
+
+        margin: 0.5rem 8rem;
+        grid-column: center-start / center-end;
+
+    }
 }
 
 .section-news {
     // margin-right: 5rem;
     display: grid;
 
-    overflow-x: auto;
-    background-color: grey;    
+    // overflow-x: auto;
+    // background-color: grey;    
     grid-column: center-start / center-end;
 
     grid-template-rows: 1fr;
     // grid-template-columns: repeat(auto-fit , 25rem);
     grid-template-columns: repeat(auto-fit , minmax(25rem,1fr));
-    grid-gap: 6rem;
+    grid-gap: 4rem;
+    margin-bottom: 2rem;
+    backface-visibility: hidden;
+
+    @media only screen and (max-width: $bp-medium){
+            margin: 0 7rem;
+
+            overflow-x: auto;
+            overflow-y:hidden;
+            grid-column: full-start / full-end;
+        
+            display:flex;
+            // flex-direction: row;
+            justify-content: space-between;
+            // margin-right: 1rem;
+
+            
+            
+            scrollbar-color: #2b3b2b grey;
+            scrollbar-width: thin;
+    }
+
+
 }
 
 
