@@ -58,14 +58,14 @@
     background-color: #555; }
 
 .section-news {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
     scrollbar-color: #2b2b2b grey;
     scrollbar-width: thin;
+}
+.news-card {
+    flex-shrink: 0;
+    width: 30%;
 }
 
 /*table-price*/

@@ -95,9 +95,9 @@
 				var $item = $(this),
 					$submenu = $item.children( 'ul.dl-submenu' );
 
-                 var $p = $item.find('a').css('background-color','red');;
+                  var $p = $item.find('a[class=dl-menu__link]:first').text();
 					// alert($p);
-				// $('.dl-trigger').attr('value',$p);
+				 $('.dl-trigger').attr('placeholder',$p);
 
 				if( $submenu.length > 0 ) {
 

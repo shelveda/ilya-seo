@@ -27,20 +27,19 @@
 	margin-right: 100px;
 }
 
-.dl-menuwrapper select {
+.dl-menuwrapper input {
 	width: 90%;
 	overflow: hidden;
 	position: relative;
 }
 
-.dl-menuwrapper select:hover,
-.dl-menuwrapper select.dl-active,
+.dl-menuwrapper input:hover,
+.dl-menuwrapper input.dl-active,
 .dl-menuwrapper ul {
-	background: #aaa;
+	background: #080102;
 }
 
-.dl-menuwrapper select:after {
-	content: '';
+.dl-menuwrapper input:after {
 	position: absolute;
 	width: 100%;
 	height: 5px;
@@ -255,15 +254,15 @@ All this is done for any sub-level being entered.
 
 /* Colors for demos */
 
-.demo-1 .dl-menuwrapper select {
-	background: #979ea0;
+.demo-1 .dl-menuwrapper input {
+	background: #eef9fc;
 
 }
 
-.demo-1 .dl-menuwrapper select:hover,
-.demo-1 .dl-menuwrapper select.dl-active,
+.demo-1 .dl-menuwrapper input:hover,
+.demo-1 .dl-menuwrapper input.dl-active,
 .demo-1 .dl-menuwrapper ul {
-	background: #979ea0;
+	background: #cbd3cd;
 }
 
 

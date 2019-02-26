@@ -14,55 +14,112 @@
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
-		<div class="container demo-1">	
 
-			<div class="main clearfix">
-				<div class="column">
-					<div id="dl-menu" class="dl-menuwrapper">Menu
-						<select class="dl-trigger"  ></select>
-						<ul class="dl-menu" >
-							<li>
-								<a href="#">saeed</a>
-								<ul class="dl-submenu ">
-									<li><a href="#">child1</a></li>
-									<li><a href="#">child2</a></li>
-								</ul>
-							</li>
+        <div class="container demo-1">
 
-							<li>
-								<a href="#" title="fashion">ali</a>
-								<ul class="dl-submenu">
-									<li>
-											<a href="#">child1</a>
-									</li>
-									<li>
-										<a href="#">child2</a>
-										<ul class="dl-submenu">
-											<li><a href="#">grand1</a></li>
-											<li><a href="#">grand2</a></li>
-										</ul>
-									</li>
-									
-								</ul>
-							</li>
-							
-						</ul>
+            <div class="main clearfix">
+                <div class="column">
+                    <div id="dl-menu" class="dl-menuwrapper">Menu
+        <input class="dl-trigger" placeholder="" >
+        <ul class="dl-menu"></ul>
 
-					</div><!-- /dl-menuwrapper -->
-				</div>
-			</div>
-		</div><!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/jquery.dlmenu.js"></script>
-		<script>
-			$(function() {
-				$( '#dl-menu' ).dlmenu();
-			});
-		</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var jasondata =[
+
+                { title:"Fashion",
+                    id:1,
+                    nest:[
+                        {
+                            id:2,
+                            title:"Men",
+                        },
+                        {
+                            id:3,
+                            title:"Women",
+                        },
+                        {
+                            id:4,
+                            title:"Children",
+                            nest:[
+                                {
+                                    id:5,
+                                    title:"Boys",
+                                },
+                                {
+                                    id:6,
+                                    title:"Girls",
+                                }
+                            ]
+                        },
+                    ]
+                },
+                { title:"Furniture",
+                    id:7,
+                    nest:[
+                        {
+                            id:8,
+                            title:"Living Room",
+                            nest:[
+                                {
+                                    id:9,
+                                    title:"Sofas &amp; Loveseats",
+                                },
+                                {
+                                    id:10,
+                                    title:"Coffee &amp; Accent Tables",
+                                }
+                            ]
+                        },
+                        {
+                            id:11,
+                            title:"Home Office",
+                        },
+                        {
+                            id:12,
+                            title:"Dining &amp; Bar",
+                        }
+                    ]
+                }
+            ];
+            function createList2(parent, array) {
+
+                array.forEach(function (o) {
+
+                    var li = document.createElement("li"),ul;
+                    var a = document.createElement("a");
+                    a.className="dl-menu__link";
+                    a.textContent= o.title;
+                    a.href="#";
+                    li.appendChild(a);
+                    parent.appendChild(li);
+
+                    if (o.nest) {
+                        ul = document.createElement("ul");
+                        ul.className="dl-submenu";
+                        li.appendChild(ul);
+                        createList2(ul, o.nest);
+                    }
+                });
+
+            }
+
+            createList2(document.querySelector(".dl-menu"), jasondata);
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="js/jquery.dlmenu.js"></script>
+            <script>
+            $(function() {
+                $( '#dl-menu' ).dlmenu();
+            });
+
+        </script>
 
 
-<select name="saeed" id="reza" label="saassee" placeholder="ssssss">
-	<option value="1">saeed</option>
-</select>
-	</body>
+    </body>
 </html>
