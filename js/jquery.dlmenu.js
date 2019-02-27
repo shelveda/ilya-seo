@@ -76,31 +76,29 @@
 
 			var self = this;
 
-            this.$trigger.mouseover( 'dlmenu', function() {
+            var timer;
+
+            this.$trigger.on( 'mouseover.dlmenu', function() {
 
                     self._openMenu();
 
-                return false;
+                clearTimeout(timer);
 
-            } );
-            this.$trigger.mouseout( 'dlmenu', function() {
+            }).on('mouseleave.dlmenu',function () {
 
-                self._closeMenu();
+                timer = setTimeout(function () {
+                    self._closeMenu();
+                }, 50);
+            });
 
-                return false;
-            } );
-            this.$menu.mouseover( 'dlmenu', function() {
+            this.$menu.on( 'mousemove.dlmenu', function() {
 
-                self._openMenu();
-
-                    return false;
-            } );
-            this.$menu.mouseout( 'dlmenu', function() {
+                    self._openMenu();
+            });
+            this.$menu.on( 'mouseout.dlmenu', function() {
 
                 self._closeMenu();
-
-                return false;
-            } );
+            });
 
 			this.$menuitems.on( 'click.dlmenu', function( event ) {
 				
