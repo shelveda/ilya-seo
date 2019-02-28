@@ -5,54 +5,76 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
     <link href="style.css" rel="stylesheet">
+
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 
 </head>
 
 <body>
 
-<section class="section slider">
+<div class="table">
+    <h3>Table Price</h3>
+    <table class="table__child">
+        <tfoot>
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Change</th>
+            <th>Minimum</th>
+            <th>Maximum</th>
+            <th>Time</th>
+        </tr>
+        </tfoot>
+    </table>
+</div>
 
-    <input type="radio" name="slider" id="slide-1" class="slider__radio">
-    <input type="radio" name="slider" id="slide-2" class="slider__radio" checked>
-    <input type="radio" name="slider" id="slide-3" class="slider__radio">
+<script>
+    var dataSet = [
+        [ "asid", "$320,800","","","","" ],
+        [ "solfat", "$170,750","","","","" ],
+        [ "manyaziom", "$86,000","","","","" ],
+        [ "asid", "$320,800","","","","" ],
+        [ "solfat", "$170,750","","","","" ],
+        [ "manyaziom", "$86,000","","","","" ],
+    ];
+    $(document).ready(function() {
+        $('.table__child tfoot tr th').each( function () {
+            var title = $(this).text();
+            $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+        } );
+        var table = $('.table__child').DataTable({
 
-    <div class="slider__holder">
+            scrollY:        200,
+            scrollCollapse: true,
+            paging:         false,
+            dom:"<frtp>",
+            data: dataSet,
+            columns: [
+                { title: "Title" },
+                { title: "Price" },
+                { title: "Change" },
+                { title: "Minimum" },
+                { title: "Maximum" },
+                { title: "Price" },
+                { title: "Time" },
+            ]
+        });
+        table.columns().every( function () {
+            var that = this;
 
-        <label for="slide-1" class="slider__item slider__item--1 card">
-            <div class="slider__item-content">
-
-                <h1 class="slider__item-text serif">slide 1</h1>
-
-            </div>
-        </label> <!-- Slider__item -->
-
-        <label for="slide-2" class="slider__item slider__item--2 card">
-            <div class="slider__item-content">
-
-                <h1 class="slider__item-text serif">slide 2</h1>
-
-            </div>
-        </label> <!-- Slider__item -->
-
-        <label for="slide-3" class="slider__item slider__item--3 card">
-            <div class="slider__item-content">
-
-                <h1 class="slider__item-text serif">slide 3</h1>
-
-            </div>
-        </label>
-
-    </div> <!-- Slider Holder -->
-
-    <div class="bullets">
-        <label for="slide-1" class="bullets__item bullets__item--1"></label>
-        <label for="slide-2" class="bullets__item bullets__item--2"></label>
-        <label for="slide-3" class="bullets__item bullets__item--3"></label>
-    </div> <!-- Bullets -->
-
-</section> <!-- Section Slider -->
-
+            $( 'input' ).on( 'keyup change', function () {
+                if ( that.search() !== this.value ) {
+                    that
+                        .search( this.value )
+                        .draw();
+                }
+            } );
+        } );
+    } );
+</script>
 </body>
 </html>

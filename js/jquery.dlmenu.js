@@ -39,7 +39,7 @@
 			this.options = $.extend( true, {}, $.DLMenu.defaults, options );
 			// cache some elements and initialize some variables
 			this._config();
-			
+
 			var animEndEventNames = {
 					'WebkitAnimation' : 'webkitAnimationEnd',
 					'OAnimation' : 'oAnimationEnd',
@@ -141,42 +141,6 @@
 				}
 
 			} );
-
-			this.$back.on( 'click.dlmenu', function( event ) {
-				
-				var $this = $( this ),
-					$submenu = $this.parents( 'ul.dl-submenu:first' ),
-					$item = $submenu.parent(),
-
-					$flyin = $submenu.clone().insertAfter( self.$menu );
-
-				var onAnimationEndFn = function() {
-					self.$menu.off( self.animEndEventName ).removeClass( self.options.animationClasses.classin );
-					$flyin.remove();
-				};
-
-				setTimeout( function() {
-					$flyin.addClass( self.options.animationClasses.classout );
-					self.$menu.addClass( self.options.animationClasses.classin );
-					if( self.supportAnimations ) {
-						self.$menu.on( self.animEndEventName, onAnimationEndFn );
-					}
-					else {
-						onAnimationEndFn.call();
-					}
-
-					$item.removeClass( 'dl-subviewopen' );
-					
-					var $subview = $this.parents( '.dl-subview:first' );
-					if( $subview.is( 'li' ) ) {
-						$subview.addClass( 'dl-subviewopen' );
-					}
-					$subview.removeClass( 'dl-subview' );
-				} );
-
-				return false;
-
-			} );
 			
 		},
 		closeMenu : function() {
@@ -250,9 +214,9 @@
 				}
 				instance[ options ].apply( instance, args );
 			});
-		} 
+		}
 		else {
-			this.each(function() {	
+			this.each(function() {
 				var instance = $.data( this, 'dlmenu' );
 				if ( instance ) {
 					instance._init();
