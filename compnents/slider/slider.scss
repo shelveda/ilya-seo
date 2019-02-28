@@ -1,9 +1,16 @@
 .slider {
-  position: relative;
+  position: absolute;
   height: 50%;
   width: 50%;
-  background: gray;
+  background: #54585a;
   overflow: hidden;
+
+  h1{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+
+  }
 
   &__slide{
     position: absolute;
@@ -17,17 +24,25 @@
     img{
       position: absolute;
       top: 0;
-      left: 0%;
-      height: 100%;
+      left: 0;
+      height: 50%;
       width: 100%;
     }
-    h1 {
+    h1{
+      position: absolute;
+      top: 0;
+      left: 80%;
+      height: 50%;
+      width: 100%;
+    }
+    h2{
       position: absolute;
       top: 20%;
-      right: 0;
-      height: 10%;
-      color: white;
+      left: 70%;
+      height: 50%;
+      width: 100%;
     }
+
     &:nth-child(2) {
       -webkit-animation-delay: 5s;
     }
@@ -37,6 +52,34 @@
     &:nth-child(4) {
       -webkit-animation-delay: 15s;
     }
+  }
+  &__slide1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    height: 70%;
+    width: 30%;
+
+
+
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      -webkit-animation: zoomin 3s ease-in infinite;
+    }
+
+    //&:nth-child(2) {
+    //  -webkit-animation-delay: 5s;
+    //}
+    //&:nth-child(3) {
+    //  -webkit-animation-delay: 10s;
+    //}
+    //&:nth-child(4) {
+    //  -webkit-animation-delay: 15s;
+    //}
   }
 }
 
@@ -53,4 +96,9 @@
   100% {
     transform: translateY(-100%);
   }
+}
+@-webkit-keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
 }
