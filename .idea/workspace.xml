@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae39a19-9df0-44a2-a78f-a07e84698ed9" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/compnents/slider1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compnents/slider1/slider1.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compnents/slider1/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compnents/table/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/compnents/table/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compnents/table/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/compnents/table/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compnents/table/table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/compnents/table/table.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.dlmenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.dlmenu.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,6 +57,8 @@
         <option value="$PROJECT_DIR$/compnents/table/index.html" />
         <option value="$PROJECT_DIR$/compnents/table/style.css" />
         <option value="$PROJECT_DIR$/compnents/table/table.scss" />
+        <option value="$PROJECT_DIR$/compnents/slider1/index.html" />
+        <option value="$PROJECT_DIR$/compnents/slider1/style.css" />
       </list>
     </option>
   </component>
@@ -81,7 +81,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="28" />
     <option name="y" value="-13" />
     <option name="width" value="1346" />
@@ -105,6 +105,12 @@
               <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
               <item name="compnents" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
+              <item name="compnents" type="462c0819:PsiDirectoryNode" />
+              <item name="slider1" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -121,11 +127,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\workspace\php\seo\ilya-seo\compnents\slider1" />
       <recent name="D:\dev\workspace\php\seo\ilya-seo\compnents\slider" />
       <recent name="D:\dev\workspace\php\seo\ilya-seo\img" />
       <recent name="D:\dev\workspace\php\seo\ilya-seo\js" />
       <recent name="D:\dev\workspace\php\seo\ilya-seo" />
-      <recent name="D:\dev\workspace\php\seo\ilya-seo\compnents" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dev\workspace\php\seo\ilya-seo\compnents\scroll" />
@@ -159,10 +165,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56889000" />
+    <option name="totallyTimeSpent" value="58351000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Regex Tester" order="7" />
@@ -217,19 +224,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2000">
-          <caret line="80" column="17" lean-forward="true" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compnents/New Text Document.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/font-awesome-all.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/compnents/table/table.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -495,6 +489,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compnents/slider1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compnents/slider1/slider1.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compnents/slider1/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>

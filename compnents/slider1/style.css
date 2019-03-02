@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box; }
+
+.slider {
+    width: 300px;
+    text-align: center;
+    overflow: hidden; }
+.slider__slides {
+    display: flex;
+    overflow-x: auto;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; }
+.slider__slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px; }
+.slider__slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px; }
+.slider__slides::-webkit-scrollbar-track {
+    background: transparent; }
+.slider__slides div {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: #e0afee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px; }
+.slider__slides div:target {
+    transform: scale(0.8); }
+.slider a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #b6ff59;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative; }
+.slider a:active {
+    top: 1px; }
+.slider a:focus {
+    background: #f0fbff; }
