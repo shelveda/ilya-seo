@@ -10,6 +10,8 @@
         <!-- <link rel="stylesheet" href="css/font-awesome-all.min.css"> -->
         <link rel="stylesheet" href="css/all.min.css">
 
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+
         <link rel="stylesheet" href="css/style.css">
 
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -17,18 +19,15 @@
         <title>Ilya Cms &mdash; Front </title>
 
 
-        <script
-			  src="https://code.jquery.com/jquery-3.3.1.min.js"
-			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-              crossorigin="anonymous"></script>
-              
-        <script src="js/index.js"></script>
+      
 
     </head>
 
 <body class="container">
+    
 
 <header class="header">
+
     <div class="logo-bar">
         <img src="img/logo4.png" alt="logo" class="logo-bar__img">
         <div class="logo-bar__search">
@@ -44,16 +43,36 @@
         
     </div>
 
-    <div class="navbar-base">
+    <div class="navbar-base" >
         <div class="navbar-1row-t1__main">
             <ul class="navbar-1row-t1">
-                    <li class="navbar-1row-t1__item-main">
-                        <a href="#">تجهیزات آزمایشگاهی</a>
+                    <li id="nav-li-1" class="navbar-1row-t1__item-main">
+                        <a href="#" onclick="setIdforShowMenu('nav-li-1')" class="dropbtn">تجهیزات آزمایشگاهی</a>
+                        <div  class="navbar-1row-t1__item-main-drop dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
                     </li>
                     
-                    <li class="navbar-1row-t1__item-main">
-                            <a href="#">مواد شیمیایی</a>
-                        </li>
+                    <li class="navbar-1row-t1__item-main" id="nav-li-2">
+                        <a href="#" onclick="setIdforShowMenu('nav-li-2')" class="dropbtn">مواد شیمیایی</a>
+                        <div class="navbar-1row-t1__item-main-drop dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+
+                    <li id="nav-li-3" class="navbar-1row-t1__item-main " >
+                            <a href="#" onclick="setIdforShowMenu('nav-li-3')" class="dropbtn">تجهیزات آزمایشگاهی</a>
+                            <div class="navbar-1row-t1__item-main-drop dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                    </li>
+
                     <li class="navbar-1row-t1__item-main">
                         <a href="#">مطالب و اخبار</a>    
                     </li>
@@ -82,44 +101,130 @@
 
 </header>
 
+<section class="section-price" >
+
+        <div class="table">
+                <!-- <h3>Table Price</h3> -->
+                <table class="table__child">
+                    <tfoot>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <!-- <th>Change</th>
+                        <th>Minimum</th>
+                        <th>Maximum</th>
+                        <th>Time</th> -->
+                    </tr>
+                    </tfoot>
+                </table>
+        </div>
+                
+    
+    
+    </section>
+    
+
 <section class="section-slider">
+    <div class="slider">
+        <h1>Title</h1>
+        <div class="slider__slide">
+            <img src="../img/blue.png">
+            <h1>Slider1</h1>
+            <h2>Description</h2>
+            <div class="slider__slide1">
+                <img src="../img/besher.jpg">
+            </div>
+        </div>
+        <div class="slider__slide">
+            <img src="../img/red.jpg" >
+            <h1>Slider2</h1>
+            <h2>Description</h2>
+            <div class="slider__slide1">
+                <img src="../img/erlen.jpg">
+            </div>
+        </div>
+        <div class="slider__slide">
+            <img src="../img/blue.png" >
+            <h1>Slider3</h1>
+            <h2>Description</h2>
+            <div class="slider__slide1">
+                <img src="../img/besher.jpg">
+            </div>
+        </div>
+        <div class="slider__slide">
+            <img src="../img/green.jpg" >
+            <h1>Slider4</h1>
+            <h2>Description</h2>
+            <div class="slider__slide1">
+                <img src="../img/ostovane.jpg">
+            </div>
+        </div>
+    </div>
+
 
 </section>
 
-
-<section class="section-price" id="testing2">
-
+<section class="section-popular-news">
 
 </section>
+
+<section class="section-last-article">
+
+</section>
+
+<section class="section-last-advs"></section>
+
 
 <section class="section-news">
+    <div class="title-1row">
+        <h2 class=title-1row__header>آخرین اخبار</h2>
+        <div class="title-1row__empty-content"></div>
+    </div>
 
-    <a class="news-card-simple" href="#">
-        <img src="img/1.jpg" alt="news 1" class="news-card-simple__img">
-        <p class="news-card-simple__head" >خبر</p>
-        <h6 class="news-card-simple__title">خبر اول </h6>
-       
-    </a>
+    <div class="news-box">
 
-    <a class="news-card-simple" href="#">
-        <img src="img/2.jpg" alt="news 1" class="news-card-simple__img">
-        <p class="news-card-simple__head" >خبر</p>
-        <h6 class="news-card-simple__title">خبر دوم </h6>
-        
-    </a>
-    <a class="news-card-simple" href="#">
-        <img src="img/3.jpg" alt="news 1" class="news-card-simple__img">
-        <p class="news-card-simple__head" >خبر</p>
-        <h6 class="news-card-simple__title">خبر سوم</h6>
-        
-    </a>
+        <a class="news-card-simple" href="#">
+            <img src="img/1.jpg" alt="news 1" class="news-card-simple__img">
+            <p class="news-card-simple__head" >خبر</p>
+            <h6 class="news-card-simple__title">خبر اول </h6>
+            
+        </a>
+    
+        <a class="news-card-simple" href="#">
+            <img src="img/2.jpg" alt="news 1" class="news-card-simple__img">
+            <p class="news-card-simple__head" >خبر</p>
+            <h6 class="news-card-simple__title">خبر دوم </h6>
+            
+        </a>
+        <a class="news-card-simple" href="#">
+            <img src="img/3.jpg" alt="news 1" class="news-card-simple__img">
+            <p class="news-card-simple__head" >خبر</p>
+            <h6 class="news-card-simple__title">خبر سوم</h6>
+            
+        </a>
+
+    </div>
+
+    
     
 
 </section>
 
 <footer class="footer">footer</footer>
 
+<div class="test"></div>
 
+
+
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<script src="js/index.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 
 </body>
 

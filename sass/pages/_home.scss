@@ -1,31 +1,50 @@
+$columnsize : 10rem;
+
 .container {
     display: grid;
-    grid-template-rows: min-content 80vh auto  min-content ;
-    grid-template-columns:[full-start] minmax(6rem,1fr) [center-start] repeat(8,[col-start] minmax(min-content, 14rem) [col-end])[center-end] minmax(6rem,1fr) [full-end];
-    grid-row-gap: 5px;
+    grid-template-rows: min-content auto 30vh auto auto ;
+
+    grid-template-columns:[full-start] minmax(6rem,1fr) [center-start] repeat(12,[col-start] minmax(min-content, $columnsize) [col-end])[center-end] minmax(6rem,1fr) [full-end];
+
+
+    // grid-template-columns:[full-start] minmax(6rem,1fr) [center-start] repeat(12,[col-start] 1fr [col-end])[center-end] minmax(6rem,1fr) [full-end];
+    
+    // max-width: 1600px;
+    
+    grid-row-gap: 1rem;
     // grid-column-gap: 5px;
     justify-content: center;
     
     & > * {
         // margin:20px;
-        padding: 1.2rem;
+        padding: 1rem;
         font-size: 3rem;
     }
     backface-visibility: hidden;
     
     @media only screen and (max-width: $bp-medium){
-        grid-template-rows: min-content 60vh 80vh auto  min-content ;
+        grid-template-rows: min-content min-content 40vh auto  min-content ;
 
-        grid-template-columns: [full-start] 1rem [center-start] repeat(8,[col-start] minmax(min-content, 14rem) [col-end])[center-end] 1rem [full-end];
-
+        grid-template-columns: [full-start] 1rem [center-start] repeat(12,[col-start] minmax(min-content, $columnsize) [col-end])[center-end] 1rem [full-end];
 
     }
 }
 
 .section-slider{
-    background-color: brown;    
-    // grid-column
-    grid-column: center-start / 7;
+
+    background-color: $color-grey-light-1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+     0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    grid-column: 6 / center-end;
+
+    // height: 100%;
+    width: 100%;
+    max-width: 80rem;
+
+   
+
+    // display: none;
 
     @media only screen and (max-width: $bp-medium){
 
@@ -36,8 +55,29 @@
 }
 
 .section-price{
-    background-color: orange; 
-    grid-column: 7 / center-end; 
+    // background-color: orange; 
+    margin-left: 1rem;
+    background-color: $color-grey-light-1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+     0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
+    //  max-width: 30rem;
+    //  height: 500px;
+
+    // width: 300px;
+    //  height:50vw;
+
+    //  max-height: calc(2*#{$columnsize});
+    //  max-height: 60vh;
+
+      
+
+    //  max-height: 500px !important;
+
+    //  width: 40rem;
+
+
+    grid-column: center-start / 6; 
     
     @media only screen and (max-width: $bp-medium){
 
@@ -47,20 +87,62 @@
     }
 }
 
+.section-popular-news {
+
+    margin-left: 1rem;
+
+    background-color: $color-grey-light-1;    
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    grid-column: center-start / 6; 
+    
+    
+}
+
+.section-last-article {
+
+    margin-left: 1rem;
+
+    background-color: $color-grey-light-1;    
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    grid-column: 6 / 10; 
+    
+    
+}
+
+.section-last-advs {
+
+    // margin-left: 1rem;
+
+    background-color: $color-grey-light-1;    
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    grid-column: 10 / center-end ; 
+    
+    
+}
+
 .section-news {
+    
     // margin-right: 5rem;
     display: grid;
-
     // overflow-x: auto;
-    // background-color: grey;    
+    background-color: $color-grey-light-1;    
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19);
     grid-column: center-start / center-end;
 
-    grid-template-rows: 1fr;
+    grid-template-rows: min-content 1fr;
     // grid-template-columns: repeat(auto-fit , 25rem);
-    grid-template-columns: repeat(auto-fit , minmax(25rem,1fr));
-    grid-gap: 4rem;
-    margin-bottom: 2rem;
+    // grid-template-columns: repeat(auto-fit , minmax(25rem,1fr));
+
+
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+    // margin-bottom: 2rem;
     backface-visibility: hidden;
+    // padding-bottom: 2.5rem;
 
     @media only screen and (max-width: $bp-medium){
             margin: 0 7rem;
@@ -74,8 +156,6 @@
             justify-content: space-between;
             // margin-right: 1rem;
 
-            
-            
             scrollbar-color: #2b3b2b grey;
             scrollbar-width: thin;
     }

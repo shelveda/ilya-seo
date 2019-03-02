@@ -1,0 +1,51 @@
+.table{
+  // max-width: 300px !important;
+
+  // font-family:'Roboto','yekan' ;
+  // font-family: 'Roboto';
+
+  font-family: 'yekan', 'Roboto';
+
+  font-size: 1.6rem;
+
+  &__child {
+    height: 100%;
+    // width: 50px;
+    text-align: center;
+
+    th {
+      background-color: white;
+      font-weight: bold;
+    }
+    th, td {
+      // padding: 10px 18px !important;
+      border-bottom: 1px solid #b0bed9;
+    }
+    tr.odd {
+
+      background-color: #cbd3cd;
+
+      &:hover {
+        background-color: #b0bed9;
+      }
+    }
+    tr.even {
+
+      background-color: white;
+
+      &:hover {
+        background-color: #b0bed9;
+      }
+    }
+  }
+
+  .dataTables_filter {
+    float: right;
+    text-align: right;
+
+    input {
+      margin-left: 1rem;
+    }
+  }
+}
+
