@@ -37,6 +37,8 @@ html {
 }
 
 body{
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr) minmax(min-content,1440px) minmax(6rem, 1fr);
     margin-top: 5px;
     direction: rtl;
     font-family: $font-primary;
@@ -44,6 +46,14 @@ body{
     color: $color-grey-dark-2;
     font-weight: 300;
     background-color: $color-grey-light-3;
+
+    @media only screen and (max-width: $bp-medium){
+       
+
+        grid-template-columns: 1rem minmax(min-content,1440px) 1rem;
+        
+
+    }
 }
 
 
