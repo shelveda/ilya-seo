@@ -106,132 +106,20 @@
                 </ul>
             </div>
     </div>
-    <script>
 
-        var jasondata =[
-
-            {
-                title:"Erlen",
-                id:1,
-            },
-            {
-                title:"Besher",
-                id:2,
-            },
-            {
-                title:"ostovane",
-                id:3,
-            }
-        ];
-        var jasondata1 =[
-
-            {
-                title:"asid",
-                id:1,
-            },
-            {
-                title:"amoniak",
-                id:2,
-            },
-            {
-                title:"solfat",
-                id:3,
-            }
-        ];
-        var jasondata2 =[
-
-            {
-                title:"news1",
-                id:1,
-            },
-            {
-                title:"news2",
-                id:2,
-            },
-            {
-                title:"news3",
-                id:3,
-            }
-        ];
-        var jasondata3 =[
-
-            {
-                title:"option1",
-                id:1,
-            },
-            {
-                title:"option2",
-                id:2,
-            },
-            {
-                title:"option3",
-                id:3,
-            }
-        ];
-        var jasondata4 =[
-
-            {
-                title:"plan1",
-                id:1,
-            },
-            {
-                title:"plan2",
-                id:2,
-            },
-            {
-                title:"plan3",
-                id:3,
-            }
-        ];
-        function createList2(parent, array) {
-
-            array.forEach(function (o) {
-
-                var li = document.createElement("li"),ul;
-                var a = document.createElement("a");
-                a.className="dl-menu__link";
-                a.textContent= o.title;
-                a.href="#";
-                li.appendChild(a);
-                parent.appendChild(li);
-
-                if (o.nest) {
-                    ul = document.createElement("ul");
-                    ul.className="dl-submenu";
-                    li.appendChild(ul);
-                    createList2(ul, o.nest);
-                }
-            });
-
-        }
-
-        createList2(document.querySelector(".dl-menu"), jasondata);
-        createList2(document.querySelector(".dl-menu1"), jasondata1);
-        createList2(document.querySelector(".dl-menu2"), jasondata2);
-        createList2(document.querySelector(".dl-menu3"), jasondata3);
-        createList2(document.querySelector(".dl-menu4"), jasondata4);
-
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
-    <script>
-        $(function() {
-            $( '.navbar-1row-t1__item-main' ).dlmenu();
-        });
-
-    </script>
 
 </header>
 
 <section class="section-slider">
     <div class="slider">
         <h1>Title</h1>
+
         <div class="slider__slide">
             <img src="img/blue.png">
             <h1>Slider1</h1>
             <h2>Description</h2>
             <div class="slider__slide1">
-                <img src="img/besher.jpg">
+                <i class="fas fa-bong"></i>
             </div>
         </div>
         <div class="slider__slide">
@@ -239,7 +127,7 @@
             <h1>Slider2</h1>
             <h2>Description</h2>
             <div class="slider__slide1">
-                <img src="img/erlen.jpg">
+                <i class="fas fa-vial"></i>
             </div>
         </div>
         <div class="slider__slide">
@@ -247,7 +135,7 @@
             <h1>Slider3</h1>
             <h2>Description</h2>
             <div class="slider__slide1">
-                <img src="img/besher.jpg">
+                <i class="fas fa-prescription-bottle"></i>
             </div>
         </div>
         <div class="slider__slide">
@@ -255,7 +143,7 @@
             <h1>Slider4</h1>
             <h2>Description</h2>
             <div class="slider__slide1">
-                <img src="img/ostovane.jpg">
+                <i class="fas fa-vials"></i>
             </div>
         </div>
     </div>

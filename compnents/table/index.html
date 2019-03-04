@@ -1,80 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h1>Test</h1>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"/>
+
     <link href="style.css" rel="stylesheet">
-
-
-    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
 
 </head>
 
 <body>
 
-<div class="table">
-    <h3>Table Price</h3>
-    <table class="table__child">
-        <tfoot>
-        <tr>
-            <th>Title</th>
-            <th>Price</th>
-            <th>Change</th>
-            <th>Minimum</th>
-            <th>Maximum</th>
-            <th>Time</th>
-        </tr>
-        </tfoot>
-    </table>
-</div>
+<table id="example" class="cell-border display nowrap">
+    <tfoot>
+    <tr>
+        <th id="title">Title</th>
+        <th>Price</th>
+        <th>Change</th>
+        <th>Minimum</th>
+        <th>Maximum</th>
+    </tr>
+    </tfoot>
+</table>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+
 
 <script>
     var dataSet = [
-        [ "asid", "$320,800","","","","" ],
-        [ "solfat", "$170,750","","","","" ],
-        [ "manyaziom", "$86,000","","","","" ],
-        [ "asid", "$320,800","","","","" ],
-        [ "solfat", "$170,750","","","","" ],
-        [ "manyaziom", "$86,000","","","","" ],
+        [ "asid", "$320,800","ff","dd","$320,800" ],
+        [ "solfat", "$170,750","fd","gd","$320,800" ],
+        [ "manyaziom", "$86,000","dd","df","$320,800" ],
+        [ "asid", "$320,800","gf","gf","$320,800"],
+        [ "solfat", "$170,750","df","ddd","$320,800" ],
+        [ "manyaziom", "$86,000","fs","sf","$320,800"],
     ];
-    $(document).ready(function() {
-        $('.table__child tfoot tr th').each( function () {
-            var title = $(this).text();
-            $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-        } );
-        var table = $('.table__child').DataTable({
 
-            scrollY:        200,
-            scrollCollapse: true,
-            paging:         false,
-            dom:"<frtp>",
+    $(document).ready(function() {
+
+        $('#example tfoot th#title').each(function () {
+            var title = $(this).text();
+            $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+        });
+
+        var table = $('#example').DataTable({
+            responsive: {
+                details: {
+                    display: $.fn.dataTable.Responsive.display.modal({
+                        header: function (row) {
+                            var data = row.data();
+                            return 'Details for ' + data[0] + ' ' + data[1];
+                        }
+                    }),
+                    renderer: $.fn.dataTable.Responsive.renderer.tableAll(),
+                }
+            },
+            columnDefs: [
+                { className: 'none',
+                    targets:   -1,
+                },
+            ],
+            fixedColumns: true,
+            scrollY: 100,
+            deferRender: true,
+            scroller: {
+                srowHeight: 40,
+            },
+            dom: "<<'table't><'page'p>>",
             data: dataSet,
             columns: [
-                { title: "Title" },
-                { title: "Price" },
-                { title: "Change" },
-                { title: "Minimum" },
-                { title: "Maximum" },
-                { title: "Price" },
-                { title: "Time" },
+                {title: "Title", "width": "20%" },
+                {title: "Price", "width": "20%"},
+                {title: "Change", "width": "20%"},
+                {title: "Minimum",className: "none"},
+                {title: "Maximum",className: "none"},
             ]
         });
-        table.columns().every( function () {
+
+        table.columns().every(function () {
             var that = this;
 
-            $( 'input' ).on( 'keyup change', function () {
-                if ( that.search() !== this.value ) {
+            $('input', this.footer()).on('keyup change', function () {
+                if (that.search() !== this.value) {
                     that
-                        .search( this.value )
+                        .search(this.value)
                         .draw();
                 }
-            } );
-        } );
-    } );
+            });
+        });
+    });
 </script>
+
+
+
 </body>
+
 </html>
