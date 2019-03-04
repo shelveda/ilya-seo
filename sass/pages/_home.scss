@@ -3,7 +3,7 @@ $columnsize : 10rem;
 .container {
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: min-content auto 30vh auto auto ;
+    grid-template-rows: min-content auto auto auto min-content ;
 
     // grid-template-columns:[full-start] minmax(6rem,1fr) [center-start] repeat(12,[col-start] minmax(min-content, $columnsize) [col-end])[center-end] minmax(6rem,1fr) [full-end];
 
@@ -24,6 +24,28 @@ $columnsize : 10rem;
         padding: 1rem;
         font-size: 3rem;
     }
+
+
+    @media only screen and (max-width: $bp-largest){
+       
+    }
+   
+    @media only screen and (max-width: $bp-tablet-large){
+        
+    }
+
+    @media only screen and (max-width: $bp-tablet-default){
+        grid-template-rows: min-content auto auto 50vh auto min-content ;
+   
+    }
+
+    @media only screen and (max-width: $bp-mobile){
+        grid-template-rows: min-content repeat(6,auto) min-content;
+   
+    }
+
+
+
     backface-visibility: hidden;
     
     // @media only screen and (max-width: $bp-medium){
@@ -40,54 +62,47 @@ $columnsize : 10rem;
      0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
     grid-column: 5 / center-end;
+    grid-row: 2/3;
 
-    // height: 100%;
     width: 100%;
-    // max-width: 80rem;
 
-   
+    @media only screen and (max-width: $bp-tablet-default){
 
-    // display: none;
-
-    @media only screen and (max-width: $bp-medium){
-
-        margin: 0.5rem 4rem;
-        grid-column: center-start / center-end;
-
+    grid-column: center-start / center-end;
     }
+
+
+    
 }
 
 .section-price{
-    // background-color: orange; 
-    margin-left: 1rem;
+
+    grid-column: center-start / 5; 
+    grid-row: 2/3;
+    
     background-color: $color-grey-light-1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
      0 3px 10px 0 rgba(0, 0, 0, 0.19);
 
-    //  max-width: 30rem;
-    //  height: 500px;
+    width: 97%;
+    margin-left: 1rem;
+    justify-self: center;
 
-    // width: 300px;
-    //  height:50vw;
-
-    //  max-height: calc(2*#{$columnsize});
-    //  max-height: 60vh;
-
-      
-
-    //  max-height: 500px !important;
-
-    //  width: 40rem;
-
-
-    grid-column: center-start / 5; 
-    
-    @media only screen and (max-width: $bp-medium){
-
-        margin: 0.5rem 8rem;
-        grid-column: center-start / center-end;
-
+    @media only screen and (max-width: $bp-tablet-default){
+        grid-row: 3/4;
+        grid-column: center-start / 7;
     }
+
+    @media only screen and (max-width: $bp-mobile){
+        grid-column: center-start / center-end;
+   
+    }
+
+
+    
+    
+    
+    // padding: 2rem;
 }
 
 .section-popular-news {
@@ -98,6 +113,21 @@ $columnsize : 10rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
     0 3px 10px 0 rgba(0, 0, 0, 0.19);
     grid-column: center-start / 5; 
+
+    padding: 0;
+
+    @media only screen and (max-width: $bp-tablet-default){
+        // grid-row: 3/4;
+        grid-column:center-start/ 7 ; 
+    }
+
+    @media only screen and (max-width: $bp-mobile){
+        grid-column: center-start / center-end;
+   
+    }
+    
+
+    
     
     
 }
@@ -110,6 +140,17 @@ $columnsize : 10rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
     0 3px 10px 0 rgba(0, 0, 0, 0.19);
     grid-column: 5 / 9; 
+    padding: 0;
+    @media only screen and (max-width: $bp-tablet-default){
+        // grid-row: 3/4;
+        grid-column: 7 / center-end ; 
+    }
+
+    @media only screen and (max-width: $bp-mobile){
+        grid-column: center-start / center-end;
+   
+    }
+    
     
     
 }
@@ -122,6 +163,19 @@ $columnsize : 10rem;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
     0 3px 10px 0 rgba(0, 0, 0, 0.19);
     grid-column: 9 / center-end ; 
+    padding: 0;
+
+
+    @media only screen and (max-width: $bp-tablet-default){
+        grid-row: 3/4;
+        grid-column: 7 / center-end ; 
+    }
+
+    @media only screen and (max-width: $bp-mobile){
+        grid-row: 4/5;
+        grid-column: center-start / center-end;
+   
+    }
     
     
 }
@@ -147,21 +201,21 @@ $columnsize : 10rem;
     backface-visibility: hidden;
     // padding-bottom: 2.5rem;
 
-    @media only screen and (max-width: $bp-medium){
-            margin: 0 7rem;
+    // @media only screen and (max-width: $bp-medium){
+    //         margin: 0 7rem;
 
-            overflow-x: auto;
-            overflow-y:hidden;
-            grid-column: center-start / center-end;
+    //         overflow-x: auto;
+    //         overflow-y:hidden;
+    //         grid-column: center-start / center-end;
         
-            display:flex;
-            // flex-direction: row;
-            justify-content: space-between;
-            // margin-right: 1rem;
+    //         display:flex;
+    //         // flex-direction: row;
+    //         justify-content: space-between;
+    //         // margin-right: 1rem;
 
-            scrollbar-color: #2b3b2b grey;
-            scrollbar-width: thin;
-    }
+    //         scrollbar-color: #2b3b2b grey;
+    //         scrollbar-width: thin;
+    // }
 
 
 }
