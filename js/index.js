@@ -102,7 +102,7 @@ var dataSet = [
         scroller: {
             srowHeight: 40,
         },
-        dom: "<<'table't><'page'p>>",
+        dom: "<<'table't>>",
         data: dataSet,
         columns: [
             {title: "Title"},
@@ -151,16 +151,30 @@ function menuColClose(){
 
   $('body').removeClass("fixed"); 
 
-
-
 }
 
+///tablet-slider
+$(document).ready(function(){
+$(".slider-tablet").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    rtl: true,
+    speed:1500,
+    accessibility:false,
+    arrows:false,
 
+});
+    $(".slider-mobile").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rtl: true,
+        dots:true,
+        arrows:false,
+        accessibility:false,
 
-
-
-
-
-
+    });
+});
 
   
