@@ -717,6 +717,11 @@ body {
   grid-gap: 4rem;
   backface-visibility: hidden;
   padding: 0 1rem 2.5rem 1rem; }
+  .news-box .slick-prev:before,
+  .news-box .slick-next:before {
+    color: #58585a; }
+  .news-box .slick-next:before {
+    margin: 15px; }
 
 .news-card {
   height: 100%;

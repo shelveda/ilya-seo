@@ -6,7 +6,7 @@
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_special-news.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_special-news.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +34,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="239" column="42" lean-forward="true" selection-start-line="239" selection-start-column="42" selection-end-line="239" selection-end-column="42" />
+            <state relative-caret-position="145">
+              <caret line="300" column="16" lean-forward="true" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -43,17 +43,17 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="165" column="17" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
+            <state relative-caret-position="320">
+              <caret line="209" column="9" selection-start-line="209" selection-start-column="9" selection-end-line="209" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_slider.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/components/_slider.scss">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="139" column="20" lean-forward="true" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+            <state relative-caret-position="250">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -86,7 +86,6 @@
         <option value="$PROJECT_DIR$/sass/components/table.scss" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/sass/components/_table.scss" />
-        <option value="$PROJECT_DIR$/sass/components/_special-news.scss" />
         <option value="$PROJECT_DIR$/compnents/slider/slider.scss" />
         <option value="$PROJECT_DIR$/sass/pages/_home.scss" />
         <option value="$PROJECT_DIR$/sass/components/tablet.scss" />
@@ -95,8 +94,11 @@
         <option value="$PROJECT_DIR$/sass/main.scss" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/sass/base/_base.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/components/_slider.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sass/abstracts/_variables.scss" />
+        <option value="$PROJECT_DIR$/a/ggg.php" />
+        <option value="$PROJECT_DIR$/sass/components/_special-news.scss" />
         <option value="$PROJECT_DIR$/js/index.js" />
       </list>
     </option>
@@ -142,35 +144,12 @@
             <path>
               <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
               <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
-              <item name="compnents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
-              <item name="compnents" type="462c0819:PsiDirectoryNode" />
-              <item name="slider2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
               <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
               <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-              <item name="abstracts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
@@ -232,7 +211,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76602000" />
+    <option name="totallyTimeSpent" value="81333000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -255,7 +234,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294893" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18381241" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18381241" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -314,20 +293,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/compnents/scroll/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compnents/scroll/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -456,20 +421,12 @@
         <state relative-caret-position="-1575" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_card.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3613" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compnents/table/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_special-news.scss">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/compnents/slider/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -506,13 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
@@ -557,11 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/abstracts/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1650" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -569,31 +514,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_slider.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_feature-box.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/abstracts/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="627" column="20" lean-forward="true" selection-start-line="627" selection-start-column="20" selection-end-line="627" selection-end-column="20" />
+        <state relative-caret-position="-1523" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a/ggg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_special-news.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="239" column="42" lean-forward="true" selection-start-line="239" selection-start-column="42" selection-end-line="239" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_slider.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="139" column="20" lean-forward="true" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+        <state relative-caret-position="145">
+          <caret line="300" column="16" lean-forward="true" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="165" column="17" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
+        <state relative-caret-position="320">
+          <caret line="209" column="9" selection-start-line="209" selection-start-column="9" selection-end-line="209" selection-end-column="9" />
         </state>
       </provider>
     </entry>
