@@ -76,7 +76,7 @@ var dataSet = [
 
     $('#example tfoot th#title').each(function () {
         var title = $(this).text();
-        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+        $(this).html('<input type="text" placeholder="جستجوی  ' + title + '" />');
     });
 
     var table = $('#example').DataTable({
@@ -105,7 +105,7 @@ var dataSet = [
         dom: "<<'table't>>",
         data: dataSet,
         columns: [
-            {title: "Title"},
+            {title: "عنوان"},
             {title: "Price"},
             {title: "Change"},
             {title: "Minimum",className: "none"},

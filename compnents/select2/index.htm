@@ -1,142 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <h1>select 2</h1>
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <h1>Test1</h1>
 
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-    
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.1/css/select2.min.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet">
+
 
 </head>
+
+
 <body>
-    <div id="selection-log"></div>
-    <div id="test">
-        <select id="selection"></select>
-    </div>
 
+<select id="selection" ></select>
 
-    <button class="btnme" id="sse">saeed</button>
+</select>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.1/js/select2.min.js"></script>
 <script>
+    var $data_city =
+        [
+            {id:0, text: 'option1'},
+            {id: 1, text: 'option2'},
+            {id: 2, text: 'option3'},
+            {id:3, text: 'option4'},
+            {id: 4, text: 'option5'},
+            {id: 5, text: 'option6'},
+            {id:6, text: 'option7'},
+            {id: 7, text: 'option8'},
+            {id: 8, text: 'option9'},
+        ];
 
-var data3 = {
-    id: 1,
-    text: 'Barn owl'
-};
-    var data2 =[ {
-            "id": 3,
-            "title": "Option 2.1"
-        },
-        {
-            "id": 4,
-            "title": "Option 2.2"
-        }
-    ];
-
-    var saeed = 'hello';
-
-    var data = [
-    {
-        id: 0,
-        title: 'enhancement',
-        level:1
-    },
-    {
-        id: 1,
-        title: 'bug',
-        level:1,
-        
-    },
-    {
-        id: 2,
-        title: 'duplicate',
-        level:2
-    },
-    {
-        id: 3,
-        title: 'invalid',
-        level:2
-    },
-    {
-        id: 4,
-        title: 'wontfix',
-        level:1
-    }
-];
-
-
-    
 
     $(document).ready(function () {
 
         $('#selection').select2({
-            data:data,
             width:'50%',
             placeholder: 'Select an option',
             closeOnSelect:false,
+            // multiple:true,
             allowClear:true,
-            templateResult: function(result) {
-                return result.title + "<span class='level' data-val='" + result.level + "' ></span>" ;
-            },
-            templateSelection: function(selection) {
-                return selection.title;
-            },
-
-            escapeMarkup: function (m) { return m; }
+            data:$data_city,
         });
-
-        $("#sse").on("click",function(){
-            $("#selection").append(newState).trigger('change');
-
-        });
-
-        
-
-
-
-        function log(e) {
-            var e=$("<li>"+e+"</li>");
-            $("#selection-log").append(e);
-            e.animate({opacity:1}, 10000, 'linear', function() { e.animate({opacity:0}, 2000, 'linear', function() {e.remove(); }); });
-        }
-
-        $('#selection')
-            .on("select2:open", function (e) {
-                log("open", e);
-                 $('.select2-container').find('.select2-dropdown')
-                    .find('.select2-results').find('.select2-results__options')
-                    .find("li[aria-disabled='true']").hide();
-
-                })
-            .on("change", function(e) {
-                log("change "+JSON.stringify({val:this.value}));
-
-            })
-            .on("select2:select", function(e) {
-                log("select "+JSON.stringify({}));
-
-                var level =$('.select2-results__options:first').find("li[aria-selected=true]").find('span[class=level]').attr("data-val");
-
-                // $('#selection').val(null).trigger('change')
-                $('#selection').append(saeed).trigger('change');
-
-                // alert(level);
-
-                })
-
-            .on("select2:close", function (e) { log("close", e); });
-
-
     });
 
 </script>
+
+
 </body>
 </html>
