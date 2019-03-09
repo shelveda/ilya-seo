@@ -1,0 +1,10 @@
+{
+    "sync.gist": "06692c6025bd803f241d4112b80fddaad423550a",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.forceDownload": false,
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true
+}

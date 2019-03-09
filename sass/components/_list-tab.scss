@@ -18,13 +18,29 @@
         color: $color-secondary;
         // font-weight: 600;
 
-        background-color: $color-secondary;
-        background-color: $color-tertiary;
         border-bottom: 1px solid $color-grey-light-3;
 
         border-bottom: 1px solid $color-grey-light-3;
         // border-bottom: 1px solid black;
         color:white;
+
+        &--back-color-primary{
+            background-color: $color-primary;
+
+        }
+
+
+        &--back-color-secondary{
+            background-color: $color-secondary;
+
+        }
+
+     
+        &--back-color-tertiary{
+            background-color: $color-tertiary;
+
+        }
+
     }
 
     &__btns{
@@ -70,7 +86,37 @@
 
 
     }
+
+   
     &__list{
+        font-size: 1.2rem;
+        padding:.5rem 2rem 1rem 1rem;
+        color:$color-secondary;
+        align-self: start;
+        justify-self: start;
+        text-decoration: none;  
+        list-style: none;
+        a{
+            text-decoration: none;
+            color:$color-secondary;
+
+            &:hover {
+                color:$color-primary;
+                
+            }
+            i{
+                margin-left: .2rem;
+                transform: translateY(1px);
+            }
+
+        }
+
+        &--box{
+           
+            list-style: none;
+        
+        }
+        
 
     }
 }

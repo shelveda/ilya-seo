@@ -3,8 +3,8 @@ var $id;
 
 function setIdforShowMenu(id) {
 
-    document.getElementById(`${id}`).querySelector('.dropdown-content').classList.toggle("show");
-    document.getElementById(`${id}`).classList.toggle("show2");
+    document.getElementById(`${id}`).querySelector('.dropdown-content').classList.toggle("display-block");
+    document.getElementById(`${id}`).classList.toggle("active-theme");
 
     window.$id =`#${id} .dropbtn`;
 
@@ -14,8 +14,8 @@ function setIdforShowMenu(id) {
     for (i = 0; i < dropdowns.length; i++) {
 
         var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        if (openDropdown.classList.contains('display-block')) {
+          openDropdown.classList.remove('display-block');
         }
     }
 
@@ -31,8 +31,8 @@ function setIdforShowMenu(id) {
 
     for (j = 0; j < dropdownsList.length; j++) {
       var openDropdown = dropdownsList[j];
-      if (openDropdown.classList.contains('show2')) {
-        openDropdown.classList.remove('show2');
+      if (openDropdown.classList.contains('active-theme')) {
+        openDropdown.classList.remove('active-theme');
       }
     }
 
@@ -47,16 +47,16 @@ window.onclick = function(event) {
     var j;
     for (j = 0; j < dropdownsList.length; j++) {
       var openDropdown = dropdownsList[j];
-      if (openDropdown.classList.contains('show2')) {
-        openDropdown.classList.remove('show2');
+      if (openDropdown.classList.contains('active-theme')) {
+        openDropdown.classList.remove('active-theme');
       }
     }
 
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      if (openDropdown.classList.contains('display-block')) {
+        openDropdown.classList.remove('display-block');
       }
     }
   }
@@ -65,65 +65,77 @@ window.onclick = function(event) {
 //// data table just test
 
 var dataSet = [
-    [ "asid", "$320,800","ff","dd","$320,800" ],
-    [ "solfat", "$170,750","fd","gd","$320,800" ],
-    [ "manyaziom", "$86,000","dd","df","$320,800" ],
-    [ "asid", "$320,800","gf","gf","$320,800"],
-    [ "solfat", "$170,750","df","ddd","$320,800" ],
-    [ "manyaziom", "$86,000","fs","sf","$320,800"],
+  [ "اسید", "$320,800","ff","dd","$320,800" ],
+  [ "سولفات", "$170,750","fd","gd","$320,800" ],
+  [ "منیزیم", "$86,000","dd","df","$320,800" ],
+  [ "اسید", "$320,800","gf","gf","$320,800"],
+  [ "سولفات", "$170,750","df","ddd","$320,800" ],
+  [ "منیزیم", "$86,000","fs","sf","$320,800"],
 ];
 
 
-    $('#example tfoot th#title').each(function () {
-        var title = $(this).text();
-        $(this).html('<input type="text" placeholder="جستجوی  ' + title + '" />');
-    });
+  $('#example tfoot th#title').each(function () {
+      var title = $(this).text();
+      $(this).html('<input type="text" placeholder=" جستجو در ' + title + '" />');
+  });
 
-    var table = $('#example').DataTable({
-        responsive: {
-            details: {
-                display: $.fn.dataTable.Responsive.display.modal({
-                    header: function (row) {
-                        var data = row.data();
-                        return 'Details for ' + data[0] + ' ' + data[1];
-                    }
-                }),
-                renderer: $.fn.dataTable.Responsive.renderer.tableAll(),
-            }
-        },
-        columnDefs: [
-            { className: 'none',
-                targets:   -1,
-            },
-        ],
-        fixedColumns: true,
-        scrollY: 100,
-        deferRender: true,
-        scroller: {
-            srowHeight: 40,
-        },
-        dom: "<<'table't>>",
-        data: dataSet,
-        columns: [
-            {title: "عنوان"},
-            {title: "Price"},
-            {title: "Change"},
-            {title: "Minimum",className: "none"},
-            {title: "Maximum",className: "none"},
-        ],
-    });
+  var table = $('#example').DataTable({
+    
+      responsive: {
+          details: {
+              display: $.fn.dataTable.Responsive.display.modal({
+                  header: function (row) {
+                      var data = row.data();
+                      return 'Details for ' + data[0] + ' ' + data[1];
+                  }
+              }),
+              renderer: $.fn.dataTable.Responsive.renderer.tableAll(),
+          }
+      },
+      columnDefs: [
+          { className: 'none',
+              targets:   -1,
+          },
+      ],
+      fixedColumns: true,
+      scrollY: "250",
+      deferRender: true,
+      scroller: {
+          srowHeight: 40,
+      },
+      dom: "<<'table't>>",
+      data: dataSet,
+      columns: [
+          {title: "عنوان",
+          width:"15%",
+          className:"dt-center",
+          },
+          {title: "قیمت",
+          width:"30%",
+          className:"dt-center"},
+          {title: "تغیرات",
+          width:"10%",
+          className:"dt-center",
+          },
+          {title: "حداقل",
+          width:"20%",className: "none"},
+          {title: "حداکثر",
+          width:"20%",className: "none"},
+      ],
+  });
 
-    table.columns().every(function () {
-        var that = this;
+  table.columns().every(function () {
+      var that = this;
 
-        $('input', this.footer()).on('keyup change', function () {
-            if (that.search() !== this.value) {
-                that
-                    .search(this.value)
-                    .draw();
-            }
-        });
-    });
+      $('input', this.footer()).on('keyup change', function () {
+          if (that.search() !== this.value) {
+              that
+                  .search(this.value)
+                  .draw();
+          }
+      });
+  });
+
 
 // function for menu 
 
@@ -133,17 +145,13 @@ function menuColOpen(){
 
  $('#mute').removeClass('none');
 
-//  $('#mute').addClass('mute__toggle');
 
  $('body').addClass("fixed");
-
-//  $('#mute').addClass("none");
-//  document.getElementById('main-wrapper').style.marginRight = "26vw";
+ document.getElementById('main-wrapper').style.marginRight = "26vw";
 
 }
 
 function menuColClose(){
-  // document.getElementById('mute').classList.remove('none');
 
   $('#mute').addClass("none");
 
@@ -153,19 +161,54 @@ function menuColClose(){
 
 }
 
+///news
+$(document).ready(function(){
+    $(".news-box").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        rtl: true,
+        accessibility:false,
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
 ///tablet & mobile-slider
 $(document).ready(function(){
-$(".slider-tablet").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    rtl: true,
-    speed:1500,
-    accessibility:false,
-    arrows:false,
+    $(".slider-tablet").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        rtl: true,
+        speed:1500,
+        accessibility:false,
+        arrows:false,
 
-});
+    });
     $(".slider-mobile").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -177,37 +220,11 @@ $(".slider-tablet").slick({
     });
 });
 
-///news
-$(document).ready(function(){
-    $(".news-box").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        rtl: true,
-        accessibility:false,
 
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-            }
-        },
-        {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-    });
-});
+
+
+
+
+
+
+  

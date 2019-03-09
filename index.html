@@ -1,7 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
   
-
 
 <head>
 
@@ -14,24 +14,33 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Roboto:100,300,300i,400" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"/>
 
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <meta http-equiv="Pragma" content="no-cache" /> <meta http-equiv="Expires" content="0" />
+    
+
+    <!-- Fonts and fontawesome -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Roboto:100,300,300i,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- dataTable -->
+    
+    <link rel="stylesheet" type="text/css"
+    href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet"
+    href="node_modules/datatables.net/extensions/Responsive/css/responsive.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
 
-    <!-- <link rel="stylesheet" href="css/font-awesome-all.min.css"> -->
-    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- ilya styles -->
 
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     
-        <title>Ilya Cms &mdash; Front </title>
-
-        <script src="js/modernizr.custom.js"></script>
+    <title>Ilya Cms &mdash; Front </title>
 
       
 
@@ -43,13 +52,16 @@
 
 
 <div class="container" id="main-wrapper">
+
+
 <header class="header">
+    
+    <div class="navbar-base-collapsed__icon--container" >
+       <a href="javascript:void(0);" id="nav-bottom" class="navbar-base-collapsed__icon" onclick="menuColOpen()"><i class="fal fa-bars"></i></a>
+       <h6>دسته بندی</h6>
+    </div>
 
-    <a href="javascript:void(0);" id="nav-bottom" class="navbar-base-collapsed__icon" onclick="menuColOpen()">
-            <i class="fal fa-bars"></i>
-    </a>
-
-    <div class="logo-bar">
+    <div class="logo-bar bp-min-tablet-default">
         <img src="img/logo4.png" alt="logo" class="logo-bar__img">
         <div class="logo-bar__search">
             <input type="text" class="logo-bar__search-input"
@@ -63,26 +75,130 @@
         <a href="#" class="btn-simple logo-bar__login btn--primary ">ثبت نام / ورود</a>
         
     </div>
+
+    <div class="logo-bar-tablet bp-min-mobile-default" >
+       
+        <div class="logo-bar-tablet__search">
+            <input type="text" class="logo-bar-tablet__search-input"
+            placeholder="جستجو...">
+            <a href="#" class="btn-search">
+                <i class="fal fa-search logo-bar-tablet__search-icon"></i>
+            </a>
+            
+        </div>
+
+        <div class="logo-bar-tablet__login">
+            <a href="#" class="btn-simple-tablet logo-bar-tablet__login-primary logo-bar-tablet__login--border-right ">
+                <i class="fal fa-user-plus"></i>
+            </a>
+
+            <a href="#" class="btn-simple-tablet logo-bar-tablet__login-secondary logo-bar-tablet__login--border-left">
+                <i class="fal fa-user"></i>
+            </a>
+        </div>
+
+        <img src="img/logo4.png" alt="logo" class="logo-bar-tablet__img">
+        
+        
+    </div>
+
+    <img src="img/logo4.png" alt="logo" class="logo-bar-mobile__img ">
+
+    <div class="logo-bar-mobile" >
+       
+            <div class="logo-bar-mobile__search">
+                <input type="text" class="logo-bar-mobile__search-input"
+                placeholder="جستجو...">
+                <a href="#" class="btn-search">
+                    <p class="logo-bar-mobile__search__line"></p>
+                    <i  class="fal fa-search logo-bar-mobile__search-icon"></i>
+                </a>
+                
+            </div>
     
+            <div class="logo-bar-mobile__login">
+                <a href="#" class="btn-simple-tablet logo-bar-mobile__login-primary logo-bar-mobile__login--border-right ">
+                    <i class="fal fa-user-plus"></i>
+                </a>
+    
+                <a href="#" class="btn-simple-tablet logo-bar-mobile__login-secondary logo-bar-mobile__login--border-left">
+                    <i class="fal fa-user" ></i>
+                </a>
+            </div>
+    
+            
+            
+    </div>
+
     <div class="navbar-base bp-min-tablet-default" >
         <div class="navbar-1row-t1__main">
             <ul class="navbar-1row-t1">
                 <li id="nav-li-1" class="navbar-1row-t1__item-main">
                     <a href="#" onclick="setIdforShowMenu('nav-li-1')" class="dropbtn">تجهیزات آزمایشگاهی</a>
                     <div  class="navbar-1row-t1__item-main-drop dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+
+                        <div class="navbar-1row-t1__item-main-drop--grid">
+                            <ul class="navbar-1row-t1__item-main-drop--grid--ul">
+                                    
+                                <li class="navbar-1row-t1__item-main-drop--grid--li">
+                                        <i class="fal fa-flask"></i>
+                                        <a href="">تجهیزات اول </a>
+                                </li>
+                                
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">تجهیزات دوم </a></li>
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">مشخصات</a></li>
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">ویژگی ها </a></li>
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">روش ها </a></li>
+                            </ul>
+
+                            <ul class="navbar-1row-t1__item-main-drop--grid--ul">
+
+                                <li class="navbar-1row-t1__item-main-drop--grid--li">
+                                    <i class="fal fa-flask"></i>
+                                    <a href="">خرید </a>
+                                </li>
+
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">خرید </a></li>
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">برنامه ریزی</a></li>
+                            </ul>
+                            
+                        </div>   
+                       
                     </div>
                 </li>
                 
                 <li class="navbar-1row-t1__item-main" id="nav-li-2">
                     <a href="#" onclick="setIdforShowMenu('nav-li-2')" class="dropbtn">مواد شیمیایی</a>
-                    <div class="navbar-1row-t1__item-main-drop dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
+                    <div  class="navbar-1row-t1__item-main-drop dropdown-content">
+
+                            <div class="navbar-1row-t1__item-main-drop--grid">
+                                <ul class="navbar-1row-t1__item-main-drop--grid--ul">
+                                        
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li">
+                                            <i class="fal fa-flask"></i>
+                                            <a href="">تجهیزات اول </a>
+                                    </li>
+                                    
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">تجهیزات دوم </a></li>
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">مشخصات</a></li>
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">ویژگی ها </a></li>
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">روش ها </a></li>
+                                </ul>
+    
+                                <ul class="navbar-1row-t1__item-main-drop--grid--ul">
+    
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li">
+                                        <i class="fal fa-flask"></i>
+                                        <a href="">خرید </a>
+                                    </li>
+    
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">خرید </a></li>
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">برنامه ریزی</a></li>
+                                </ul>
+                                
+                            </div>   
+                           
+                        </div>
                 </li>
 
                 <li class="navbar-1row-t1__item-main">
@@ -110,124 +226,170 @@
         </div>
     </div>
 
-  
-
     <div id="nav-collapsed" class="none tran-all navbar-base-collapsed">
-        <div class="navbar-base-collapsed__header">header</div>
+        <div class="navbar-base-collapsed__header">
+            <img src="img/logo4.png" alt="logo" class="logo-bar__img">
+            <h6>logotype</h6>
+        </div>
 
         <div class="navbar-base-collapsed__top">
-            <ul class="navbar-base-collapsed-item__main">
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-minus-hexagon navbar-base-collapsed__top--item-minus"></i>
                 تجهیزات آزمایشگاهی
-                <li>saeed</li>
-                <li>saeed</li><li>saeed</li>
-                <li>saeed</li><li>saeed</li>
-                <li>saeed</li>
+                <li>تجهیزات اول</li>
+                <li>تجهیزات دوم</li>
+                <li>تجهیزات سوم</li>
+                
 
             </ul>
-            <ul class="navbar-base-collapsed-item__main">
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-plus-hexagon navbar-base-collapsed__top--item-plus"></i>
                 مواد شیمیایی
             </ul>
-            <ul class="navbar-base-collapsed-item__main">
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-plus-hexagon navbar-base-collapsed__top--item-plus"></i>
                 مطالب و اخبار
             </ul>
-            <ul class="navbar-base-collapsed-item__main">
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-minus-hexagon navbar-base-collapsed__top--item-minus"></i>
                 تأمین کنندگان
-                <li>saeed</li>
-                <li>saeed</li>
+                <li>تأمین کننده 1</li>
+                <li>تأمین کننده 2</li>
                 
             </ul>
-            <ul class="navbar-base-collapsed-item__main">
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-plus-hexagon navbar-base-collapsed__top--item-plus"></i>
                 تعرفه ها
             </ul>
         </div>
         <div class="navbar-base-collapsed__bottom">
-            <ul class="navbar-base-collapsed-item__sub">
+            <a href="#" class="navbar-base-collapsed__bottom--item">
                 درباره ما 
-            </ul>
-            <ul class="navbar-base-collapsed-item__sub">
+            </a>
+            <a href="#" class="navbar-base-collapsed__bottom--item">
                 تماس با ما
-            </ul>
+            </a>
         </div>
         
     </div>
-        
+
+    <!-- <div id="nav-collapsed" class="none tran-all navbar-base-collapsed">
+            <div class="navbar-base-collapsed__header">
+                <img src="img/logo4.png" alt="logo" class="logo-bar__img">
+                <h6>logotype</h6>
+            </div>
+    
+            <div class="navbar-base-collapsed__top">
+                <ul class="navbar-base-collapsed-item__main">
+                    تجهیزات آزمایشگاهی
+                    <li>saeed</li>
+                    
+    
+                </ul>
+                <ul class="navbar-base-collapsed-item__main">
+                    مواد شیمیایی
+                </ul>
+                <ul class="navbar-base-collapsed-item__main">
+                    مطالب و اخبار
+                </ul>
+                <ul class="navbar-base-collapsed-item__main">
+                    تأمین کنندگان
+                    <li>saeed</li>
+                    <li>saeed</li>
+                    
+                </ul>
+                <ul class="navbar-base-collapsed-item__main">
+                    تعرفه ها
+                </ul>
+            </div>
+            <div class="navbar-base-collapsed__bottom">
+                <ul class="navbar-base-collapsed-item__sub">
+                    درباره ما 
+                </ul>
+                <ul class="navbar-base-collapsed-item__sub">
+                    تماس با ما
+                </ul>
+            </div>
+            
+</div> -->
     
 </header>
+
     
-<section class="section-price" >
+<section class="section-price" > 
 
-
+    <div class="list-tab__header list-tab__header--back-color-secondary">جدول خرید</div>
     <table id="example" class="cell-border display nowrap">
         <tfoot>
         <tr>
-            <th id="title" >عنوان</th>
-            <th>Price</th>
-            <th>Change</th>
-            <th>Minimum</th>
-            <th>Maximum</th>
+            <th id="title">عنوان</th>
+            <th>قیمت</th>
+            <th>تغییرات</th>
+            <th>حداقل</th>
+            <th>حداکثر</th>
         </tr>
         </tfoot>
     </table>
     
-        
-    
 </section>
-            
     
+
 <section class="section-slider">
 
     <div class="slider bp-min-tablet-default">
+
         <h1>Title</h1>
         <div class="slider__slide">
             <div class="slider__slide--1"></div>
-            <h1>Slider1</h1>
+            <h6>Slider1</h6>
 
             <div class="slider__slide1">
                 <i class="fas fa-bong"></i>
             </div>
         </div>
         <div class="slider__slide">
-            <div class="slider__slide--1"></div>
-            <h1>Slider2</h1>
+            <div class="slider__slide--2"></div>
+            <h6>Slider2</h6>
 
             <div class="slider__slide1">
                 <i class="fas fa-vial"></i>
             </div>
         </div>
         <div class="slider__slide">
-            <div class="slider__slide--1"></div>
-            <h1>Slider3</h1>
+            <div class="slider__slide--3"></div>
+            <h6>Slider3</h6>
 
             <div class="slider__slide1">
                 <i class="fas fa-prescription-bottle"></i>
             </div>
         </div>
         <div class="slider__slide">
-            <div class="slider__slide--1"></div>
-            <h1>Slider4</h1>
+            <div class="slider__slide--4"></div>
+            <h6>Slider4</h6>
 
             <div class="slider__slide1">
                 <i class="fas fa-vials"></i>
             </div>
         </div>
     </div>
+
 
     <div class="slider-tablet bp-min-mobile-default">
         <div class="slider-tablet__slide">
-                <i class="fas fa-bong"></i>
+            <i class="fas fa-bong"></i>
         </div>
         <div class="slider-tablet__slide">
-                <i class="fas fa-vial"></i>
+            <i class="fas fa-vial"></i>
         </div>
         <div class="slider-tablet__slide">
-                <i class="fas fa-prescription-bottle"></i>
+            <i class="fas fa-prescription-bottle"></i>
         </div>
         <div class="slider-tablet__slide">
-                <i class="fas fa-vials"></i>
+            <i class="fas fa-vials"></i>
         </div>
     </div>
 
-    <div class="slider-mobile ">
+    <div class="slider-mobile">
         <div class="slider-mobile__slide">
             <i class="fas fa-bong"></i>
         </div>
@@ -242,20 +404,23 @@
         </div>
     </div>
 
-
-
 </section>
-<section class="section-popular-news">
+
+
+<section class="section-last-advs">
     <div class="list-tab">
-        <div class="list-tab__header">مهم ترین اخبار</div>
+        <div class="list-tab__header list-tab__header--back-color-secondary">آخرین آگهی ها</div>
         <div class="list-tab__btns">
-            <button class="list-tab__btns--right">جدیدترین</button>
+            <button class="list-tab__btns--right ">جدیدترین</button>
             <button class="list-tab__btns--middle">پربازدیدترین</button>
             <button class="list-tab__btns--left">پرحاشیه ترین</button>
         </div>
         <div class="list-tab__list">
-            <ul class="list-tab__list--main">
-                <li class="list-tab__list--item">خبر1</li>
+            <ul class="list-tab__list--box">
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> آگهی اول</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> آگهی دوم</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> آگهی سوم</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> آگهی چهارم</a></li>
             </ul>
         </div>
     </div>
@@ -264,38 +429,46 @@
 
 <section class="section-last-article">
     <div class="list-tab">
-        <div class="list-tab__header">آخرین آگهی ها</div>
+        <div class="list-tab__header list-tab__header--back-color-tertiary">آخرین مقالات</div>
         <div class="list-tab__btns">
             <button class="list-tab__btns--right">جدیدترین</button>
             <button class="list-tab__btns--middle">پربازدیدترین</button>
             <button class="list-tab__btns--left">پرحاشیه ترین</button>
         </div>
         <div class="list-tab__list">
-            <ul class="list-tab__list--main">
-                <li class="list-tab__list--item">خبر1</li>
+            <ul class="list-tab__list--box">
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> مقاله اول</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> مقاله دوم</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> مقاله سوم</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> مقاله چهارم</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> مقاله پنجم</a></li>
+                
             </ul>
         </div>
     </div>
 
 </section>
 
-<section class="section-last-advs">
+<section class="section-popular-news">
     <div class="list-tab">
-        <div class="list-tab__header">آخرین مقالات</div>
+        <div class="list-tab__header list-tab__header--back-color-tertiary">مهم ترین اخبار</div>
         <div class="list-tab__btns">
             <button class="list-tab__btns--right">جدیدترین</button>
             <button class="list-tab__btns--middle">پربازدیدترین</button>
             <button class="list-tab__btns--left">پرحاشیه ترین</button>
         </div>
         <div class="list-tab__list">
-            <ul class="list-tab__list--main">
-                <li class="list-tab__list--item">خبر1</li>
+            <ul class="list-tab__list--box">
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> خبر اول</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> خبر دوم</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> خبر سوم</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> خبر چهارم</a></li>
+                <li class="list-tab__list--item"><a href="#"> <i class="fal fa-angle-double-left"></i> خبر پنجم</a></li>
             </ul>
         </div>
     </div>
 
 </section>
-
 
 
 <section class="section-news">
@@ -310,42 +483,84 @@
             <img src="img/1.jpg" alt="news 1" class="news-card-simple__img">
             <p class="news-card-simple__head" >خبر</p>
             <h6 class="news-card-simple__title">خبر اول </h6>
-
+            
         </a>
-
+    
         <a class="news-card-simple" href="#">
             <img src="img/2.jpg" alt="news 1" class="news-card-simple__img">
             <p class="news-card-simple__head" >خبر</p>
             <h6 class="news-card-simple__title">خبر دوم </h6>
-
+            
         </a>
         <a class="news-card-simple" href="#">
             <img src="img/3.jpg" alt="news 1" class="news-card-simple__img">
             <p class="news-card-simple__head" >خبر</p>
             <h6 class="news-card-simple__title">خبر سوم</h6>
-
+            
         </a>
 
     </div>
 
+    
+    
+
 </section>
 
-<footer class="footer">footer</footer>
+<footer class="footer">
+    <form action="#" class="email-news">
+        <div class="email-news__description">
+            <i class="fal fa-envelope-open"></i>
+            <label for="envelope">خبرنامه ایمیلی</label>
+        </div>
+
+        <label class="email-news__label"for="emailname-news">ایمیل خود را وارد کنید</label>
+        <div class="email-news-container">
+                <div class="email-news-container__btnsubmit">
+                        <i id="envelope"class="fal fa-paper-plane"></i>
+                        
+                </div>
+                <input class="email-news-container__input"type="text" id="emailname-news" name="firstname" placeholder="example: info@ilyaidea.ir">
+        </div>
+        
+    </form>
+
+    <div class="ilya-follow">
+        <div class="ilya-follow__header">
+            ما را در فضای مجازی دنبال کنید.
+        </div>
+
+        <div class="ilya-follow__icons">
+            <ul class="ilya-follow__icons--box">
+                <li class="ilya-follow__icons--item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="ilya-follow__icons--item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="ilya-follow__icons--item"><a href="#"><i class="fab fa-telegram"></i></a></li>
+                <li class="ilya-follow__icons--item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="ilya-follow__icons--item"><a href="#"><i class="fab fa-google-plus-g"></i></i></i></a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="footer3 bp-min-tablet-default">
+        توضیحات
+    </div>
+
+</footer>
+
+<div class="ilya-rights">
+    <p>تمامی حقوق متعلق به ایلیا ایده می باشد.</p>
+</div>
 
 
 
 </div>
 
-<script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
 
 
-
-<script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net/extensions/Responsive/js/dataTables.responsive.min.js"></script>
 <script src="node_modules/slick-carousel/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
 <script src="js/index.js"></script>

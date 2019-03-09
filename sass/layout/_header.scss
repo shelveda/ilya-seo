@@ -15,6 +15,8 @@
 
      @media only screen and (max-width: $bp-tablet-default){
         
-        grid-template-columns: min-content  1fr;
+        grid-template-columns: minmax(10rem,max-content)  minmax(10rem,1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 5px;
     }
 }
