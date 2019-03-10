@@ -21,3 +21,13 @@
 
 }
 
+.ilya-rights{
+    padding: 0;
+    grid-column: center-start / center-end;
+    border-top: 1px solid $color-secondary;
+    p{
+       
+        font-size: 1rem;
+        float: right;
+    }
+}

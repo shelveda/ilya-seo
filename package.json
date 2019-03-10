@@ -9,9 +9,19 @@
     "watch-home:sass": "node-sass sass/main.scss css/style.css -w",
     "start-home": "npm-run-all --parallel devserver-home watch-home:sass",
 
-    "devserver-adv": "live-server --open=nts.htm",
-    "watch-adv:sass" : "node-sass sass/main.scss css/style2.css -w",
-    "start-adv": "npm-run-all --parallel devserver-adv watch-adv:sass"
+    "devserver-adv": "live-server --open=adv.html",
+    "watch-adv:sass" : "node-sass sass/adv-page.scss css/style_adv.css -w",
+    "start-adv": "npm-run-all --parallel devserver-adv watch-adv:sass",
+
+
+    "com-base:sass"   : "node-sass sass/compiled/base.scss css/com-base.css",
+    "com-header:sass" : "node-sass sass/compiled/header.scss css/com-header.css",
+
+
+    "runner": "npm-run-all com-base:sass com-header:sass "
+
+
+    
 
   },
   "author": "Ilya",

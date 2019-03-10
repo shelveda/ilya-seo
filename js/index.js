@@ -147,7 +147,7 @@ function menuColOpen(){
 
 
  $('body').addClass("fixed");
- document.getElementById('main-wrapper').style.marginRight = "26vw";
+ 
 
 }
 

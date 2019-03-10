@@ -69,22 +69,50 @@ $color-tertiary: $color-orange;
 
 // $color-tertiary:rgba(241, 127, 27, 0.705) ;
 
-
-
 // FONT VARIABLES
 // $font-primary: 'Roboto', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 $default-font-size: 1.6rem;
 $font-primary: 'yekan';
 
-
 @font-face {
     font-family: 'yekan';
     src: url(../webfonts/Yekan.eot),
          url(../webfonts/Yekan.woff),
          url(../webfonts/Yekan.ttf);  
-     
-  }
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../webfonts/icomoon.eot');
+	src:url('../webfonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		  url('../webfonts/icomoon.woff') format('woff'),
+	   	url('../webfonts/icomoon.ttf') format('truetype'),
+	  	url('../webfonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 
 $box-shadow-1 : 0 1.5rem 4rem rgba($color-black , .15);
+
+
+
+
+// variable for media queries
+
+$bp-largest: 75em; // 1200px
+
+
+$bp-large: 56.25em; //900px
+
+
+$bp-medium:48em;// 768px
+
+
+
+$bp-tablet-large:62.5em; // 1000 px stands for 990 * 1440
+$bp-tablet-default: 50em; // 800 px stands for 768 * 1024
+
+$bp-mobile:30em; // 480 px stands for 480 * 640

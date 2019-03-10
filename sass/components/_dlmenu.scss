@@ -1,0 +1,198 @@
+/* Common styles of menus */
+
+.dl-menuwrapper {
+	width: 100%;
+	
+	
+    position: relative;
+    
+    ul {
+        padding: 0;
+        list-style: none;
+        
+    }
+
+    li {
+        position: relative;
+
+        a {
+            text-decoration: none;
+            display: block;
+            position: relative;
+            padding: 1.5rem 2rem;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            font-weight: 300;
+            color: $color-secondary;
+            outline: none;
+            font-family: yekan;
+        }
+    }
+
+    li.dl-back > a {
+	padding-right: 30px;
+	background: rgba(0,0,0,0.1);
+    }   
+
+
+
+    li.dl-back:after,
+    li > a:not(:only-child):after {
+	position: absolute;
+	top: 0;
+	line-height: 50px;
+	font-family: 'icomoon';
+	-webkit-font-smoothing: antialiased;
+	content: "\e000";
+    }
+
+    li.dl-back:after {
+        right: 1rem;
+        color:$color-tertiary;
+    }
+
+    li > a:after {
+        left: 1rem;
+        color:$color-tertiary;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .dl-menu {
+        width: 100%;
+        pointer-events: none;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .dl-menu.dl-menu-toggle {
+        transition: all 0.0s ease;
+    }
+
+    .dl-menu.dl-menuopen {
+        opacity: 1;
+        pointer-events: auto;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    /* Dynamically added submenu outside of the menu context */
+
+    > .dl-submenu {
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        margin: 0;
+    }
+    
+    
+}
+
+.no-touch .dl-menuwrapper li a:hover {
+	background: rgba(255,248,213,0.1);
+}
+
+
+
+/* Hide the inner submenus */
+.dl-menuwrapper li .dl-submenu {
+	display: none;
+}
+
+/* 
+When a submenu is openend, we will hide all li siblings.
+For that we give a class to the parent menu called "dl-subview".
+We also hide the submenu link. 
+The opened submenu will get the class "dl-subviewopen".
+All this is done for any sub-level being entered.
+*/
+.dl-menu.dl-subview li,
+.dl-menu.dl-subview li.dl-subviewopen > a,
+.dl-menu.dl-subview li.dl-subview > a {
+	display: none;
+}
+
+.dl-menu.dl-subview li.dl-subview,
+.dl-menu.dl-subview li.dl-subview .dl-submenu,
+.dl-menu.dl-subview li.dl-subviewopen,
+.dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
+.dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li {
+	display: block;
+}
+
+
+
+/* Animation classes for moving out and in */
+
+.dl-menu.dl-animate-out-1 {
+	-webkit-animation: MenuAnimOut1 0.0s;
+	animation: MenuAnimOut1 0.0s;
+	
+}
+
+@-webkit-keyframes MenuAnimOut1 {
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes MenuAnimOut1 {
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+.dl-menu.dl-animate-in-1 {
+	-webkit-animation: MenuAnimIn1 0.0s;
+	animation: MenuAnimIn1 0.0s;
+}
+
+@-webkit-keyframes MenuAnimIn1 {
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes MenuAnimIn1 {
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* No JS Fallback */
+.no-js .dl-menuwrapper .dl-menu {
+	position: relative;
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+
+.no-js .dl-menuwrapper li .dl-submenu {
+	display: block;
+}
+
+.no-js .dl-menuwrapper li.dl-back {
+	display: none;
+}
+
+.no-js .dl-menuwrapper li > a:not(:only-child) {
+	background: rgba(0,0,0,0.1);
+}
+
+.no-js .dl-menuwrapper li > a:not(:only-child):after {
+	content: '';
+}
+
+/* Colors for demos */
+
+/* Demo 1 */
+
+
+.dl-menuwrapper ul {
+	// background: #9e1847;
+}

@@ -1,0 +1,23 @@
+.container {
+    grid-template-rows: min-content  min-content min-content;
+}
+
+.push-menu{
+    
+}
+
+
+.adv-section {
+    // width: 100%;
+    // min-width: auto;
+    // min-height: auto;
+    // padding: 3em 2em; 
+    grid-row-gap: 1rem;
+   
+    grid-column: 3/9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+
+
+}
