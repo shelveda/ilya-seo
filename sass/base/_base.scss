@@ -93,12 +93,10 @@ body{
 .container {
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: min-content auto auto auto min-content min-content;
 
     grid-template-columns: [center-start] repeat(12,[col-start] 1fr [col-end])[center-end];
     
     grid-row-gap: 1rem;
-    // grid-column-gap: 5px;
     justify-content: center;
     
     & > * {
@@ -117,16 +115,21 @@ body{
     }
 
     @media only screen and (max-width: $bp-tablet-default){
-        grid-template-rows: min-content auto auto auto auto min-content min-content ;
     }
 
     @media only screen and (max-width: $bp-mobile){
-        grid-template-rows: min-content repeat(6,auto) min-content min-content;
+
     }
 
 
     backface-visibility: hidden;
     
 } 
+
+.ilya-box-shadow {
+    background-color: $color-grey-light-1;    
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
 
 
