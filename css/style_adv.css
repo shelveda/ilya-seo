@@ -122,7 +122,6 @@ body {
 .container {
   grid-column: 2/3;
   display: grid;
-  grid-template-rows: min-content auto auto auto min-content min-content;
   grid-template-columns: [center-start] repeat(12, [col-start] 1fr [col-end]) [center-end];
   grid-row-gap: 1rem;
   justify-content: center;
@@ -130,12 +129,10 @@ body {
   .container > * {
     padding: 1rem;
     font-size: 3rem; }
-  @media only screen and (max-width: 50em) {
-    .container {
-      grid-template-rows: min-content auto auto auto auto min-content min-content; } }
-  @media only screen and (max-width: 30em) {
-    .container {
-      grid-template-rows: min-content repeat(6, auto) min-content min-content; } }
+
+.ilya-box-shadow {
+  background-color: #f9f7f1;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
@@ -211,7 +208,7 @@ body {
 
 .ilya-rights {
   padding: 0;
-  grid-column: center-start / center-end;
+  grid-column: 2 / 3;
   border-top: 1px solid #58585a; }
   .ilya-rights p {
     font-size: 1rem;
@@ -327,9 +324,7 @@ body {
   text-transform: uppercase;
   text-decoration: none; }
   .btn-nohover:hover {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    background-color: #7ed56f;
-    color: #eee; }
+    opacity: 0.8; }
 
 .logo-bar {
   display: grid;

@@ -269,6 +269,15 @@ body {
     display: inline-block;
     border: 1px solid #ccc; }
 
+.d-none {
+  display: none !important; }
+
+.d-block {
+  display: block !important; }
+
+.d-grid {
+  display: grid !important; }
+
 .footer {
   grid-column: center-start / center-end;
   align-self: start;
