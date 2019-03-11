@@ -152,8 +152,23 @@ $(document).ready(function(){
 
 // dlmenu
 
+function setnewadv() {
+
+    $('.container').find('.adv-section').find('.adv-submit').removeClass('d-none');
+    $('.container').find('.adv-section').find('.adv-menu').addClass('d-none');
+
+}
+
+function changecontent() {
+
+    $('.container').find('.adv-section').find('.adv-menu').removeClass('d-none');
+    $('.container').find('.adv-section').find('.adv-submit').addClass('d-none');
+
+}
 
 ;( function( $, window, undefined ) {
+
+	$('.container').find('.adv-section').find('.adv-submit').addClass('d-none');
 
 	'use strict';
 
@@ -233,12 +248,26 @@ $(document).ready(function(){
 
 			} );
 
+
 			this.$menuitems.on( 'click.dlmenu', function( event ) {
 				
 				event.stopPropagation();
 
 				var $item = $(this),
 					$submenu = $item.children( 'ul.dl-submenu' );
+
+
+                var $p = $item.find('a[class="adv-item"]:first').text();
+
+                // alert($p);
+
+
+
+
+
+                $('.pushmenu-header').text($p);
+
+                $('.adv-submit__header--content').text($p);
 
 				if( $submenu.length > 0 ) {
 
