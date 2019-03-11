@@ -62,6 +62,31 @@ window.onclick = function(event) {
   }
 }
 
+
+// function for menu 
+
+function menuColOpen(){
+
+    $('#nav-collapsed').removeClass('none');
+   
+    $('#mute').removeClass('none');
+   
+   
+    $('body').addClass("fixed");
+    
+   
+   }
+   
+function menuColClose(){
+   
+    $('#mute').addClass("none");
+   
+    $('#nav-collapsed').addClass('none');
+   
+    $('body').removeClass("fixed"); 
+   
+   }
+
 //// data table just test
 
 var dataSet = [
@@ -137,29 +162,7 @@ var dataSet = [
   });
 
 
-// function for menu 
 
-function menuColOpen(){
-
- $('#nav-collapsed').removeClass('none');
-
- $('#mute').removeClass('none');
-
-
- $('body').addClass("fixed");
- 
-
-}
-
-function menuColClose(){
-
-  $('#mute').addClass("none");
-
-  $('#nav-collapsed').addClass('none');
-
-  $('body').removeClass("fixed"); 
-
-}
 
 ///news
 $(document).ready(function(){

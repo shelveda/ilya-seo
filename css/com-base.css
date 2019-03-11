@@ -22,6 +22,13 @@ ORDER: Base +typographu> general layout + rdid > page layout > component;
   font-family: 'yekan';
   src: url(../webfonts/Yekan.eot), url(../webfonts/Yekan.woff), url(../webfonts/Yekan.ttf); }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../webfonts/icomoon.eot");
+  src: url("../webfonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../webfonts/icomoon.woff") format("woff"), url("../webfonts/icomoon.ttf") format("truetype"), url("../webfonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .btn, .btn:link, .btn:visited, .btn-nohover, .btn-nohover:link, .btn-nohover:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -116,9 +123,7 @@ ORDER: Base +typographu> general layout + rdid > page layout > component;
   text-transform: uppercase;
   text-decoration: none; }
   .btn-nohover:hover {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    background-color: #7ed56f;
-    color: #eee; }
+    opacity: 0.8; }
 
 @keyframes moveInLeft {
   0% {
@@ -155,6 +160,14 @@ ORDER: Base +typographu> general layout + rdid > page layout > component;
   padding: 0;
   box-sizing: inherit;
   outline: none; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
 
 html {
   background-color: #eee;
@@ -205,7 +218,6 @@ body {
 .container {
   grid-column: 2/3;
   display: grid;
-  grid-template-rows: min-content auto auto auto min-content min-content;
   grid-template-columns: [center-start] repeat(12, [col-start] 1fr [col-end]) [center-end];
   grid-row-gap: 1rem;
   justify-content: center;
@@ -213,12 +225,10 @@ body {
   .container > * {
     padding: 1rem;
     font-size: 3rem; }
-  @media only screen and (max-width: 50em) {
-    .container {
-      grid-template-rows: min-content auto auto auto auto min-content min-content; } }
-  @media only screen and (max-width: 30em) {
-    .container {
-      grid-template-rows: min-content repeat(6, auto) min-content min-content; } }
+
+.ilya-box-shadow {
+  background-color: #f9f7f1;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;

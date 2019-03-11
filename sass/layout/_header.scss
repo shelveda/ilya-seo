@@ -13,10 +13,12 @@
     grid-row-gap: 15px;
      position: relative;
 
+
+     grid-template-columns:[start] repeat(12,minmax(0,1fr)) [end];
+
      @media only screen and (max-width: $bp-tablet-default){
         
-        grid-template-columns: minmax(10rem,max-content)  minmax(10rem,1fr);
-        grid-column-gap: 2rem;
+        grid-template-columns:[start] repeat(12,minmax(0,8.33%)) [end];
         grid-row-gap: 5px;
     }
 }

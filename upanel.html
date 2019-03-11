@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- chache stop -->
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <meta http-equiv="Pragma" content="no-cache" /> <meta http-equiv="Expires" content="0" />
+    
+
+    <!-- Fonts and fontawesome -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Roboto:100,300,300i,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- dataTable -->
+    
+    <link rel="stylesheet" type="text/css"
+    href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet"
+    href="node_modules/datatables.net/extensions/Responsive/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
+
+
+    <!-- ilya styles -->
+
+    <link rel="stylesheet" href="css/style_upanel.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="js/modernizr.custom.js"></script>
+    
+    <title>Ilya Cms &mdash; Front </title>
+
+
+</head>
+
+<body >
+<div id="mute" class="none" onclick="menuColClose()"></div>
+
+<div class="container" id="main-wrapper">
+
+<header class="header">
+    
+    <div class="navbar-base-collapsed__icon--container" >
+       <a href="javascript:void(0);" id="nav-bottom" class="navbar-base-collapsed__icon" onclick="menuColOpen()"><i class="fal fa-bars"></i></a>
+       <h6>دسته بندی</h6>
+    </div>
+
+    <div class="logo-bar bp-min-tablet-default">
+        <img src="img/logo4.png" alt="logo" class="logo-bar__img">
+        <div class="logo-bar__search">
+            <input type="text" class="logo-bar__search-input"
+            placeholder="جستجو...">
+            <a href="#" class="btn-search">
+                <i class="fal fa-search logo-bar__search-icon"></i>
+            </a>
+            
+        </div>
+
+        <a href="#" class="btn-simple logo-bar__login btn--primary ">ثبت نام / ورود</a>
+        
+    </div>
+
+    <div class="logo-bar-tablet bp-min-mobile-default" >
+       
+        <div class="logo-bar-tablet__search">
+            <input type="text" class="logo-bar-tablet__search-input"
+            placeholder="جستجو...">
+            <a href="#" class="btn-search">
+                <i class="fal fa-search logo-bar-tablet__search-icon"></i>
+            </a>
+            
+        </div>
+
+        <div class="logo-bar-tablet__login">
+            <a href="#" class="btn-simple-tablet logo-bar-tablet__login-primary logo-bar-tablet__login--border-right ">
+                <i class="fal fa-user-plus"></i>
+            </a>
+
+            <a href="#" class="btn-simple-tablet logo-bar-tablet__login-secondary logo-bar-tablet__login--border-left">
+                <i class="fal fa-user"></i>
+            </a>
+        </div>
+
+        <img src="img/logo4.png" alt="logo" class="logo-bar-tablet__img">
+        
+        
+    </div>
+
+    <img src="img/logo4.png" alt="logo" class="logo-bar-mobile__img ">
+
+    <div class="logo-bar-mobile" >
+       
+            <div class="logo-bar-mobile__search">
+                <input type="text" class="logo-bar-mobile__search-input"
+                placeholder="جستجو...">
+                <a href="#" class="btn-search">
+                    <p class="logo-bar-mobile__search__line"></p>
+                    <i  class="fal fa-search logo-bar-mobile__search-icon"></i>
+                </a>
+                
+            </div>
+    
+            <div class="logo-bar-mobile__login">
+                <a href="#" class="btn-simple-tablet logo-bar-mobile__login-primary logo-bar-mobile__login--border-right ">
+                    <i class="fal fa-user-plus"></i>
+                </a>
+    
+                <a href="#" class="btn-simple-tablet logo-bar-mobile__login-secondary logo-bar-mobile__login--border-left">
+                    <i class="fal fa-user" ></i>
+                </a>
+            </div>
+    
+            
+            
+    </div>
+
+    <div class="navbar-base bp-min-tablet-default" >
+        <div class="navbar-1row-t1__main">
+            <ul class="navbar-1row-t1">
+                <li id="nav-li-1" class="navbar-1row-t1__item-main">
+                    <a href="#" onclick="setIdforShowMenu('nav-li-1')" class="dropbtn">تجهیزات آزمایشگاهی</a>
+                    <div  class="navbar-1row-t1__item-main-drop dropdown-content">
+
+                        <div class="navbar-1row-t1__item-main-drop--grid">
+                            <ul class="navbar-1row-t1__item-main-drop--grid--ul">
+                                    
+                                <li class="navbar-1row-t1__item-main-drop--grid--li">
+                                        <i class="fal fa-flask"></i>
+                                        <a href="">تجهیزات اول </a>
+                                </li>
+                                
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">تجهیزات دوم </a></li>
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">مشخصات</a></li>
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">ویژگی ها </a></li>
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">روش ها </a></li>
+                            </ul>
+
+                            <ul class="navbar-1row-t1__item-main-drop--grid--ul">
+
+                                <li class="navbar-1row-t1__item-main-drop--grid--li">
+                                    <i class="fal fa-flask"></i>
+                                    <a href="">خرید </a>
+                                </li>
+
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">خرید </a></li>
+                                <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">برنامه ریزی</a></li>
+                            </ul>
+                            
+                        </div>   
+                       
+                    </div>
+                </li>
+                
+                <li class="navbar-1row-t1__item-main" id="nav-li-2">
+                    <a href="#" onclick="setIdforShowMenu('nav-li-2')" class="dropbtn">مواد شیمیایی</a>
+                    <div  class="navbar-1row-t1__item-main-drop dropdown-content">
+
+                            <div class="navbar-1row-t1__item-main-drop--grid">
+                                <ul class="navbar-1row-t1__item-main-drop--grid--ul">
+                                        
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li">
+                                            <i class="fal fa-flask"></i>
+                                            <a href="">تجهیزات اول </a>
+                                    </li>
+                                    
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">تجهیزات دوم </a></li>
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">مشخصات</a></li>
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">ویژگی ها </a></li>
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">روش ها </a></li>
+                                </ul>
+    
+                                <ul class="navbar-1row-t1__item-main-drop--grid--ul">
+    
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li">
+                                        <i class="fal fa-flask"></i>
+                                        <a href="">خرید </a>
+                                    </li>
+    
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">خرید </a></li>
+                                    <li class="navbar-1row-t1__item-main-drop--grid--li"><a href="">برنامه ریزی</a></li>
+                                </ul>
+                                
+                            </div>   
+                           
+                        </div>
+                </li>
+
+                <li class="navbar-1row-t1__item-main">
+                    <a href="#">مطالب و اخبار</a>    
+                </li>
+                
+                <li class="navbar-1row-t1__item-main">
+                    <a href="#">تأمین کنندگان</a>
+                </li>
+                <li class="navbar-1row-t1__item-main">
+                    <a href="#">تعرفه ها</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="navbar-1row-t1__sub">
+            <ul class="navbar-1row-t1">
+                <li class="navbar-1row-t1__item-sub">
+                    <a href="#">درباره ما</a>
+                </li>
+                <li class="navbar-1row-t1__item-sub">
+                    <a href="#">تماس با ما</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="nav-collapsed" class="none tran-all navbar-base-collapsed">
+        <div class="navbar-base-collapsed__header">
+            <img src="img/logo4.png" alt="logo" class="logo-bar__img">
+            <h6>logotype</h6>
+        </div>
+
+        <div class="navbar-base-collapsed__top">
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-minus-hexagon navbar-base-collapsed__top--item-minus"></i>
+                تجهیزات آزمایشگاهی
+                <li>تجهیزات اول</li>
+                <li>تجهیزات دوم</li>
+                <li>تجهیزات سوم</li>
+                
+
+            </ul>
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-plus-hexagon navbar-base-collapsed__top--item-plus"></i>
+                مواد شیمیایی
+            </ul>
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-plus-hexagon navbar-base-collapsed__top--item-plus"></i>
+                مطالب و اخبار
+            </ul>
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-minus-hexagon navbar-base-collapsed__top--item-minus"></i>
+                تأمین کنندگان
+                <li>تأمین کننده 1</li>
+                <li>تأمین کننده 2</li>
+                
+            </ul>
+            <ul class="navbar-base-collapsed__top--item">
+                    <i class="fal fa-plus-hexagon navbar-base-collapsed__top--item-plus"></i>
+                تعرفه ها
+            </ul>
+        </div>
+        <div class="navbar-base-collapsed__bottom">
+            <a href="#" class="navbar-base-collapsed__bottom--item">
+                درباره ما 
+            </a>
+            <a href="#" class="navbar-base-collapsed__bottom--item">
+                تماس با ما
+            </a>
+        </div>
+        
+    </div>
+
+</header>
+
+<section class="section-uinformation">
+مشخصات
+</section>
+
+<section class="section-moving-price">
+    تغییرات قیمت ها
+</section>
+
+<section class="section-add">
+    <div class="title-1row">
+        <h2 class=title-1row__header>درج کنید</h2>
+        <div class="title-1row__empty-content"></div>
+    </div>
+    <div class="section-add__navbar">  
+        <ul class="section-add__navbar--ul">
+            <li class="section-add__navbar--li">آگهی </li>
+            <li class="section-add__navbar--li">گوش به زنگ </li>
+            <li class="section-add__navbar--li">اخبار</li>
+        </ul>
+    </div>
+
+    <div class="section-add__buttoms">
+        <button>درج اگهی جدید</button>
+    </div>
+
+    <div class="section-add__container">
+        <div>آگهی 1</div>
+        <div>آگهی 2</div>
+
+    </div>
+    
+</section>
+
+<section class="section-news">
+        <div class="title-1row">
+            <h2 class=title-1row__header>آخرین اخبار</h2>
+            <div class="title-1row__empty-content"></div>
+        </div>
+    
+        <div class="news-box">
+    
+            <a class="news-card-simple" href="#">
+                <img src="img/1.jpg" alt="news 1" class="news-card-simple__img">
+                <p class="news-card-simple__head" >خبر</p>
+                <h6 class="news-card-simple__title">خبر اول </h6>
+                
+            </a>
+        
+            <a class="news-card-simple" href="#">
+                <img src="img/2.jpg" alt="news 1" class="news-card-simple__img">
+                <p class="news-card-simple__head" >خبر</p>
+                <h6 class="news-card-simple__title">خبر دوم </h6>
+                
+            </a>
+            <a class="news-card-simple" href="#">
+                <img src="img/3.jpg" alt="news 1" class="news-card-simple__img">
+                <p class="news-card-simple__head" >خبر</p>
+                <h6 class="news-card-simple__title">خبر سوم</h6>
+                
+            </a>
+    
+        </div>
+    
+        
+        
+</section>
+
+
+</div>
+<div class="ilya-rights">
+    <p>تمامی حقوق متعلق به ایلیا ایده می باشد.</p>
+</div>
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+<script src="node_modules/slick-carousel/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/upanel.js"></script>
+   
+</body>
+
+</html>
+
