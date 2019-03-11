@@ -1,0 +1,157 @@
+.ilya-rights{
+    // position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    
+}
+
+html{
+    background: #30E8BF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body{
+    background-color: transparent;
+}
+
+.ilya-rights{
+    color:$color-grey-light-1;
+    border-top-color:  transparent !important;
+}
+
+.form-sign {
+    padding: 1.5rem;
+    color:$color-secondary;
+    font-size: 1.5rem;
+    display: grid;
+
+    grid-template-rows: auto;
+    grid-row-gap: 1rem;
+    justify-content: center;
+    align-content: center;
+
+    justify-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 15%;
+
+    // height: 50rem;
+    width: 40rem;
+
+    transform: translate(-50%,-50%);
+    a{
+        text-decoration: none;
+        color:$color-secondary;
+    }
+
+    &__header{
+        text-align: center;
+        margin:1rem 0 0.5rem 0;
+        position: relative;
+        color:$color-primary;
+        i{
+            font-size: 12rem;
+        }
+    }
+
+    &__content {
+
+
+    }
+
+    &__footer{
+
+
+    }
+
+
+    input[type=text], input[type=password] {
+        font-family: yekan,roboto;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 1rem 2rem;
+        margin: 0.5rem 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+       
+    }
+
+}
+
+
+.form-signup {
+
+    padding: 1.5rem;
+    color:$color-secondary;
+    font-size: 1.5rem;
+    display: grid;
+
+    grid-template-rows: auto;
+    grid-row-gap: 1rem;
+    justify-content: center;
+    align-content: center;
+
+    justify-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 65%;
+
+    height: 50rem;
+    width: 80rem;
+
+    transform: translate(-50%,-50%);
+
+    a{
+        text-decoration: none;
+        color:$color-secondary;
+    }
+
+    &__header{
+        text-align: center;
+        margin:1rem 0 0.5rem 0;
+        position: relative;
+        color:$color-primary;
+        i{
+            font-size: 12rem;
+        }
+    }
+
+    &__content {
+
+
+    }
+
+    &__footer{
+
+
+    }
+
+
+    input[type=text], input[type=password] {
+        font-family: yekan,roboto;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 1rem 2rem;
+        margin: 0.5rem 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+       
+    }
+
+
+}
+
+.d-none{
+    display: none !important;
+}
+.d-block{
+    display: block !important;
+}
+.d-grid {
+    display:grid !important;
+}

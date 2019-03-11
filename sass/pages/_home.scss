@@ -1,4 +1,43 @@
 
+.container {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: min-content auto auto auto min-content min-content;
+
+    grid-template-columns: [center-start] repeat(12,[col-start] 1fr [col-end])[center-end];
+    
+    grid-row-gap: 1rem;
+    // grid-column-gap: 5px;
+    justify-content: center;
+    
+    & > * {
+        // margin:20px;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+
+
+    @media only screen and (max-width: $bp-largest){
+       
+    }
+   
+    @media only screen and (max-width: $bp-tablet-large){
+        
+    }
+
+    @media only screen and (max-width: $bp-tablet-default){
+        grid-template-rows: min-content auto auto auto auto min-content min-content ;
+    }
+
+    @media only screen and (max-width: $bp-mobile){
+        grid-template-rows: min-content repeat(6,auto) min-content min-content;
+    }
+
+
+    backface-visibility: hidden;
+    
+} 
+
 .section-slider{
 
     background-color: $color-grey-light-1;

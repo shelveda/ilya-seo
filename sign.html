@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- chache stop -->
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /> <meta http-equiv="Pragma" content="no-cache" /> <meta http-equiv="Expires" content="0" />
+    
+
+    <!-- Fonts and fontawesome -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Roboto:100,300,300i,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- dataTable -->
+    
+    <link rel="stylesheet" type="text/css"
+    href="node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+
+    <link rel="stylesheet"
+    href="node_modules/datatables.net/extensions/Responsive/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
+
+
+    <!-- ilya styles -->
+
+    <link rel="stylesheet" href="css/style_sign.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="js/modernizr.custom.js"></script>
+    
+    <title>Ilya Cms &mdash; Front </title>
+
+
+</head>
+
+<body>
+<div class="container" id="main-wrapper">
+
+<form class="form-sign ilya-box-shadow">
+    <div class="form-sign--signup-button">
+    <button type="submit" class="btn-nohover btn--primary " onclick="showsignup()">Login</button>
+        <span>
+            در صورتی که عضو نیستید برای ثبت نام کلیک کنید
+        </span>
+
+    </div>
+    
+    <div class="form-sign__header">
+        <i class="fal fa-user"></i>    
+    </div>
+    <div class="form-sign__content">
+
+        <div class="form-sign__content--email">
+
+            <label for="form-sign-uname"><b> نام کاربری یا ایمیل</b></label>
+            <input type="text" placeholder="نام کاربری را وارد کنید" name="form-sign-uname" required>
+        
+            <label for="form-sign-psw"><b>رمز عبور</b></label>
+            <input type="password" placeholder="Enter Password" name="form-sign-psw" required>
+    
+            <span class="form-sign__footer--froget">
+                    <a href="#" onclick="signupmobile()">ورود از طریق تلفن همراه</a>
+                </span>
+            
+                <span class="form-sign__footer--froget">
+                     <a href="#">فراموشی رمز</a>
+                </span>
+        </div>
+
+        <div class="form-sign__content--mobile">
+            <label for="form-sign-uname"><b>شماره تلفن همراه خود را وارد کنید</b></label>
+            <input type="text" placeholder="شماره موبایل نمونه:  (09123456789)"     name="form-sign-uname" required>
+
+        </div>
+
+    </div>
+
+    <div class="form-sign__footer">
+        <button type="submit" class="btn-nohover btn--primary ">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> 
+            ذخیره شود
+        </label>
+        <button class="form-sign__footer--cancel">
+            خروج
+        </button>
+    </div>
+
+    
+</form>
+
+<form action="" class="form-signup ilya-box-shadow">
+
+    <div class="form-sign--signin-button">
+                <button type="submit" class="btn-nohover btn--primary " onclick="showsignin()">Login</button>
+                    <span>
+                        قبلا ثبت نام کرده اید؟ برای ورود کلیک کنید.
+                    </span>
+            
+        </div>
+    <div class="form-signup__header">
+        <i class="fal fa-user-plus"></i>
+    </div>
+
+    
+    <div class="form-signup__content">
+
+        <div class="form-signup__content--email">
+
+            <label for="form-signup-uname"><b> نام کاربری یا ایمیل</b></label>
+            <input type="text" placeholder="نام کاربری را وارد کنید" name="form-signup-uname" required>
+        
+            <label for="form-signup-psw"><b>رمز عبور</b></label>
+            <input type="password" placeholder="Enter Password" name="form-signup-psw" required>
+            
+        </div>
+
+    
+    </div>
+
+    <div class="form-sign__footer">
+            <button type="submit" class="btn-nohover btn--primary ">Login</button>
+           
+            <button class="form-sign__footer--cancel">
+                خروج
+            </button>
+    </div>
+    
+
+</form>
+
+
+
+</div>
+<div class="ilya-rights">
+    <p>تمامی حقوق متعلق به ایلیا ایده می باشد.</p>
+</div>
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+<script src="node_modules/slick-carousel/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="js/login-signup.js"></script>
+
+</body>
+
+</html>
+

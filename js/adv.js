@@ -261,10 +261,6 @@ function changecontent() {
 
                 // alert($p);
 
-
-
-
-
                 $('.pushmenu-header').text($p);
 
                 $('.adv-submit__header--content').text($p);
@@ -308,7 +304,16 @@ function changecontent() {
 
 					$flyin = $submenu.clone().insertAfter( self.$menu );
 
-				var onAnimationEndFn = function() {
+                var $p = $item.find('a[class="adv-item"]:first').text();
+
+                 // alert($p);
+
+                $('.pushmenu-header').text($p);
+
+                // $('.adv-submit__header--content').text($p);
+
+
+                var onAnimationEndFn = function() {
 					self.$menu.off( self.animEndEventName ).removeClass( self.options.animationClasses.classin );
 					$flyin.remove();
 				};
