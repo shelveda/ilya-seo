@@ -232,6 +232,19 @@ body {
   grid-row-gap: 1rem;
   backface-visibility: hidden; }
 
+.active {
+  border-bottom-color: #f9f7f1 !important;
+  background-color: #28b485 !important; }
+
+.d-none {
+  display: none !important; }
+
+.d-block {
+  display: block !important; }
+
+.d-grid {
+  display: grid !important; }
+
 .footer {
   grid-column: center-start / center-end;
   align-self: start;

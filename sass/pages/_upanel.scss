@@ -51,7 +51,6 @@
                 &:hover::after {
                    
                     color:$color-primary;
-                    
 
                     position: absolute;
 	                // top: 0;
@@ -94,4 +93,18 @@
     backface-visibility: hidden;
 }
 
+.active{
 
+    border-bottom-color: $color-grey-light-1 !important;
+    background-color: $color-primary  !important;
+
+}
+.d-none{
+    display: none !important;
+}
+.d-block{
+    display: block !important;
+}
+.d-grid {
+    display:grid !important;
+}

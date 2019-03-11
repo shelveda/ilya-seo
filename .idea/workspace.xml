@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae39a19-9df0-44a2-a78f-a07e84698ed9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/style_adv.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_adv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style_sign.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_sign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/adv.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/adv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/login-signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/login-signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/pages/_login-signup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_login-signup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign.html" beforeDir="false" afterPath="$PROJECT_DIR$/sign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style_upanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_upanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/upanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/upanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_1row-title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_1row-title.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/pages/_upanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_upanel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/upanel.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,26 +35,8 @@
       <file leaf-file-name="adv.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/adv.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sign.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sign.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="109" column="67" lean-forward="true" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login-signup.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/login-signup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="306">
+              <caret line="310" column="45" selection-start-line="310" selection-start-column="45" selection-end-line="310" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -67,6 +49,33 @@
               <folding>
                 <element signature="e#1506#1513#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upanel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upanel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="288" column="47" selection-start-line="288" selection-start-column="47" selection-end-line="288" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_upanel.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/pages/_upanel.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="95" selection-start-line="95" selection-end-line="100" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upanel.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/upanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="158" column="64" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -116,10 +125,14 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/compnents/select2/index.htm" />
         <option value="$PROJECT_DIR$/adv.html" />
-        <option value="$PROJECT_DIR$/js/adv.js" />
         <option value="$PROJECT_DIR$/sass/pages/_login-signup.scss" />
         <option value="$PROJECT_DIR$/sign.html" />
         <option value="$PROJECT_DIR$/js/login-signup.js" />
+        <option value="$PROJECT_DIR$/sass/components/_1row-title.scss" />
+        <option value="$PROJECT_DIR$/js/adv.js" />
+        <option value="$PROJECT_DIR$/upanel.html" />
+        <option value="$PROJECT_DIR$/sass/pages/_upanel.scss" />
+        <option value="$PROJECT_DIR$/js/upanel.js" />
       </list>
     </option>
   </component>
@@ -222,12 +235,12 @@
       <workItem from="1550504141273" duration="5231000" />
       <workItem from="1551088912113" duration="1049000" />
       <workItem from="1552108468223" duration="5471000" />
-      <workItem from="1552281585809" duration="12478000" />
+      <workItem from="1552281585809" duration="20337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116167000" />
+    <option name="totallyTimeSpent" value="124026000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -250,7 +263,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3294893" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19062027" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19062027" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -295,46 +308,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/components/_story.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-941" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_select2.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_multi-menu-push.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1905" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_header-temp2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-841" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_drop-simple.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compnents/table/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compnents/slider/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/pages/_home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1400">
@@ -538,31 +511,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="196" column="1" lean-forward="true" selection-start-line="196" selection-start-column="1" selection-end-line="196" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login-signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="109" column="67" lean-forward="true" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sass/pages/_login-signup.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
+        <state relative-caret-position="257">
+          <caret line="148" selection-start-line="148" selection-end-line="156" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/login-signup.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        <state relative-caret-position="325">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/adv.js">
+    <entry file="file://$PROJECT_DIR$/sass/components/_nav-1row.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/user-panel.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_1row-title.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+        <state relative-caret-position="409">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/sass/upanel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="196" column="1" lean-forward="true" selection-start-line="196" selection-start-column="1" selection-end-line="196" selection-end-column="1" />
+        <state relative-caret-position="350">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style_upanel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="821" column="5" selection-start-line="821" selection-start-column="5" selection-end-line="821" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upanel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="288" column="47" selection-start-line="288" selection-start-column="47" selection-end-line="288" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -576,17 +590,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sign.html">
+    <entry file="file://$PROJECT_DIR$/sass/pages/_upanel.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="109" column="67" lean-forward="true" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
+        <state relative-caret-position="297">
+          <caret line="95" selection-start-line="95" selection-end-line="100" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/login-signup.js">
+    <entry file="file://$PROJECT_DIR$/js/adv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="306">
+          <caret line="310" column="45" selection-start-line="310" selection-start-column="45" selection-end-line="310" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/upanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="158" column="64" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
         </state>
       </provider>
     </entry>

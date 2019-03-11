@@ -26,7 +26,6 @@ function setIdforShowMenu(id) {
     var dropdownsList = $(jqinput2);
 
     console.log(dropdownsList);
-
     var j;
 
     for (j = 0; j < dropdownsList.length; j++) {
@@ -89,6 +88,7 @@ function menuColClose(){
 //slick
 
 $(document).ready(function(){
+
     $(".news-box").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -122,9 +122,42 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function() {
 
+    $('.container').find('.section-add').find('#adv').addClass('d-none');
+    $('.container').find('.section-add').find('#alarm').addClass('d-none');
+    $('.container').find('.section-add').find('#news').addClass('d-none');
+});
 
+function setadv() {
 
+    $('.container').find('.section-add').find('#alarm').addClass('d-none');
+    $('.container').find('.section-add').find('#news').addClass('d-none');
+    $('.container').find('.section-add').find('#adv').removeClass('d-none');
+    $('.container').find('.section-add div ul li[onclick="setadv()"]').addClass('active');
+    $('.container').find('.section-add div ul li[onclick="setalarm()"]').removeClass('active');
+    $('.container').find('.section-add div ul li[onclick="setnews()"]').removeClass('active');
+}
+
+function setalarm() {
+
+    $('.container').find('.section-add').find('#adv').addClass('d-none');
+    $('.container').find('.section-add').find('#news').addClass('d-none');
+    $('.container').find('.section-add').find('#alarm').removeClass('d-none');
+    $('.container').find('.section-add div ul li[onclick="setalarm()"]').addClass('active');
+    $('.container').find('.section-add div ul li[onclick="setadv()"]').removeClass('active');
+    $('.container').find('.section-add div ul li[onclick="setnews()"]').removeClass('active');
+}
+
+function setnews() {
+
+    $('.container').find('.section-add').find('#adv').addClass('d-none');
+    $('.container').find('.section-add').find('#alarm').addClass('d-none');
+    $('.container').find('.section-add').find('#news').removeClass('d-none');
+    $('.container').find('.section-add div ul li[onclick="setnews()"]').addClass('active');
+    $('.container').find('.section-add div ul li[onclick="setalarm()"]').removeClass('active');
+    $('.container').find('.section-add div ul li[onclick="setadv()"]').removeClass('active');
+}
 
 
 

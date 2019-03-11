@@ -97,7 +97,7 @@ body {
   direction: rtl;
   font-family: "yekan";
   font-family: yekan , Roboto;
-  color: #999;
+  color: #58585a;
   font-weight: 300;
   background-color: #eee;
   transition: all 0.5s; }
@@ -296,7 +296,8 @@ body {
 .ilya-rights {
   padding: 0;
   grid-column: 2 / 3;
-  border-top: 1px solid #58585a; }
+  border-top: 1px solid #58585a;
+  margin-top: 1rem; }
   .ilya-rights p {
     font-size: 1rem;
     float: right; }
