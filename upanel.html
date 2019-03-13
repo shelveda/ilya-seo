@@ -271,98 +271,225 @@
 
 </header>
 
+<section class="section-moving-price">
+        تغییرات قیمت ها
+    </section>
+
 <section class="section-uinformation">
-مشخصات
+    <div class="title-1row ">
+        <h2 class=title-1row__header>مشخصات</h2>
+
+        <a class=title-1row__header>مشاهده همه مشخصات</a>
+        
+    </div>
+    <div class="feature-box-simple">
+        <div class="feature-box-simple__contents">
+            <div class="feature-line">
+                <span class="feature-line__title">نام و نام خانوادگی</span>    
+                <span class="feature-line__text">ایلیا ایده</span>
+            </div>
+            <div class="feature-line">
+                <span class="feature-line__title">ایمیل</span>    
+                <span class="feature-line__text">info@ilyaidea.ir</span>
+            </div>
+            <div class="feature-line">
+                <span class="feature-line__title">شماره تماس</span>    
+                <span class="feature-line__text">09123456789</span>
+            </div>
+
+        </div>
+
+        
+        <div class="feature-box-simple__btns">
+            <a class="btn--primary  btn-withicon" href="#"><i class="fal fa-pen-square"></i>
+            ویرایش</a>
+            <a class="btn--tertiary  btn-withicon" href="#"><i class="fal fa-pen-square"></i>
+            ارتقای عضویت</a>
+
+        </div>
+
+    </div>
+    
+    
 </section>
 
-<section class="section-moving-price">
-    تغییرات قیمت ها
+<section class="section-uworks">
+    <div class="title-1row ">
+        <h2 class=title-1row__header>اخرین فعالیتها</h2>
+
+        <a class=title-1row__header>مشاهده همه فعالیت ها</a>
+        
+    </div>
+    <div class="feature-box-simple">
+        <div class="feature-box-simple__contents">
+            <div class="feature-line">
+                <span class="feature-line__title">تعداد اگهی</span>    
+                <span class="feature-line__text">5</span>
+            </div>
+            <div class="feature-line">
+                <span class="feature-line__title">تعداد بازدید</span>    
+                <span class="feature-line__text">3</span>
+            </div>
+            <div class="feature-line">
+                <span class="feature-line__title">اخرین محصول </span>    
+                <span class="feature-line__text">سولفات</span>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    
 </section>
 
 <section class="section-add">
+
     <div class="title-1row">
         <h2 class=title-1row__header>درج کنید</h2>
         <div class="title-1row__empty-content"></div>
     </div>
     <div class="section-add__navbar">  
         <ul class="section-add__navbar--ul">
-            <li class="section-add__navbar--li" onclick="setadv()">آگهی </li>
-            <li class="section-add__navbar--li" onclick="setalarm()">گوش به زنگ </li>
+            <li class="section-add__navbar--li" onclick="setadv()">آگهی</li>
+            <li class="section-add__navbar--li" onclick="setalarm()">گوش به زنگ</li>
             <li class="section-add__navbar--li" onclick="setnews()">اخبار</li>
         </ul>
     </div>
 
-    <div id="adv">
-    <div class="section-add__buttoms">
-        <button>درج اگهی جدید</button>
-    </div>
-
-    <div class="section-add__container">
-        <div>آگهی 1</div>
-        <div>آگهی 2</div>
-
-    </div>
-    </div>
-
-    <div id="alarm">
-    <div class="section-add__buttoms">
-        <button>درج گوش به زنگ جدید</button>
-    </div>
-
-    <div class="section-add__container">
-        <div>گوش به زنگ 1</div>
-        <div>گوش به زنگ 2</div>
-
-    </div>
-    </div>
-
-    <div id="news">
-        <div class="section-add__buttoms">
-            <button>درج خبر جدید</button>
+    <div id="adv" class="mininews-base" >
+        <div class="mininews-base__buttons">
+            <a class="btn--tertiary  btn-withicon btn-block" href="#"><i class="fal fa-plus-square"></i>
+                آگهی جدید</a>
+            <a class="btn--secondary  btn-withicon btn-block" href="#"><i class="fal fa-pen-square"></i>
+                ویرایش و به روز رسانی</a>
+           
         </div>
+         <div class="mininews-base__container">
+                <h4>آخرین اگهی های درج شده</h4>
+             <div class="mininews">
+                <img src="img/1.jpg" alt="news 1" class="mininews__img">
+                <div class="mininews__text  minnews__text--op1">
+                    <p>مشخصات و توضیحات</p>
+                </div>
+                <div class="mininews__text  minnews__text--op2">
+                   <ul> مشخصات محصول
+                       <li>نام محصول: سولفات</li>
+                       <li>وزن موجود: 1تن</li>
+                       <li>قیمت واحد</li>
+                       <li>قیمت به ازای تن </li>
+                       <li>تاریخ تولید</li>
+                   </ul>
+                </div>
+             </div>
+            <div class="mininews">
+                    <img src="img/1.jpg" alt="news 1" class="mininews__img">
+                    <div class="mininews__text  minnews__text--op1">
+                        <p>مشخصات و توضیحات</p>
+                    </div>
+                    <div class="mininews__text  minnews__text--op2">
+                       <ul> مشخصات محصول
+                           <li>نام محصول: سولفات</li>
+                           <li>وزن موجود: 1تن</li>
+                           <li>قیمت واحد</li>
+                           <li>قیمت به ازای تن </li>
+                           <li>تاریخ تولید</li>
+                       </ul>
+                    </div>
+                 </div>
+      
+        </div>
+    </div>
 
-        <div class="section-add__container">
-            <div>خبر 1</div>
-            <div>خبر 2</div>
+    <div id="alarm"  class="mininews-base">
+        <div class="mininews-base__buttons">
+            <a class="btn--tertiary  btn-withicon btn-block" href="#"><i class="fal fa-plus-square"></i>
+                گوش به زنگ جدید</a>
+            <a class="btn--secondary  btn-withicon btn-block" href="#"><i class="fal fa-pen-square"></i>
+                ویرایش و به روز رسانی</a>
+            
+        </div>
+        <div class="mininews-base__container">
+            <h4>اخرین گوش به زنگ ها</h4>
+            <div class="mininews">
+            <img src="img/2.jpg" alt="news 1" class="mininews__img">
+            <div class="mininews__text  minnews__text--op1">
+                <p>مشخصات و توضیحات</p>
+            </div>
+            <div class="mininews__text  minnews__text--op2">
+                <ul> مشخصات محصول
+                    <li>نام محصول: سولفات</li>
+                    <li>وزن موجود: 1تن</li>
+                    <li>قیمت واحد</li>
+                    <li>قیمت به ازای تن </li>
+                    <li>تاریخ تولید</li>
+                </ul>
+            </div>
+            </div>
+        <div class="mininews">
+            <img src="img/2.jpg" alt="news 1" class="mininews__img">
+            <div class="mininews__text  minnews__text--op1">
+                <p>مشخصات و توضیحات</p>
+            </div>
+            <div class="mininews__text  minnews__text--op2">
+                <ul> مشخصات محصول
+                    <li>نام محصول: سولفات</li>
+                    <li>وزن موجود: 1تن</li>
+                    <li>قیمت واحد</li>
+                    <li>قیمت به ازای تن </li>
+                    <li>تاریخ تولید</li>
+                </ul>
+            </div>
+            </div>
+        
+        </div>
+    </div>
 
+    <div id="news" class="mininews-base" >
+        <div class="mininews-base__buttons">
+            <a class="btn--tertiary  btn-withicon btn-block" href="#"><i class="fal fa-plus-square"></i>
+                خبر جدید</a>
+            <a class="btn--secondary  btn-withicon btn-block" href="#"><i class="fal fa-pen-square"></i>
+                ویرایش و به روز رسانی</a>
+            
+        </div>
+        <div class="mininews-base__container">
+            <h4>آخرین اخبار</h4>
+            <div class="mininews">
+            <img src="img/3.jpg" alt="news 1" class="mininews__img">
+            <div class="mininews__text  minnews__text--op1">
+                <p>مشخصات و توضیحات</p>
+            </div>
+            <div class="mininews__text  minnews__text--op2">
+                <ul> مشخصات محصول
+                    <li>نام محصول: سولفات</li>
+                    <li>وزن موجود: 1تن</li>
+                    <li>قیمت واحد</li>
+                    <li>قیمت به ازای تن </li>
+                    <li>تاریخ تولید</li>
+                </ul>
+            </div>
+            </div>
+        <div class="mininews">
+            <img src="img/3.jpg" alt="news 1" class="mininews__img">
+            <div class="mininews__text  minnews__text--op1">
+                <p>مشخصات و توضیحات</p>
+            </div>
+            <div class="mininews__text  minnews__text--op2">
+                <ul> مشخصات محصول
+                    <li>نام محصول: سولفات</li>
+                    <li>وزن موجود: 1تن</li>
+                    <li>قیمت واحد</li>
+                    <li>قیمت به ازای تن </li>
+                    <li>تاریخ تولید</li>
+                </ul>
+            </div>
+            </div>
         </div>
     </div>
 
 </section>
 
-<section class="section-news">
-        <div class="title-1row">
-            <h2 class=title-1row__header>آخرین اخبار</h2>
-            <div class="title-1row__empty-content"></div>
-        </div>
-    
-        <div class="news-box">
-    
-            <a class="news-card-simple" href="#">
-                <img src="img/1.jpg" alt="news 1" class="news-card-simple__img">
-                <p class="news-card-simple__head" >خبر</p>
-                <h6 class="news-card-simple__title">خبر اول </h6>
-                
-            </a>
-        
-            <a class="news-card-simple" href="#">
-                <img src="img/2.jpg" alt="news 1" class="news-card-simple__img">
-                <p class="news-card-simple__head" >خبر</p>
-                <h6 class="news-card-simple__title">خبر دوم </h6>
-                
-            </a>
-            <a class="news-card-simple" href="#">
-                <img src="img/3.jpg" alt="news 1" class="news-card-simple__img">
-                <p class="news-card-simple__head" >خبر</p>
-                <h6 class="news-card-simple__title">خبر سوم</h6>
-                
-            </a>
-    
-        </div>
-    
-        
-        
-</section>
 
 
 </div>

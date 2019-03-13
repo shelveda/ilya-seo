@@ -22,9 +22,41 @@
 
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
-
        
     }
+   
+}
 
+
+
+.feature-box-simple {
+   
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content;
+    padding: 1rem;
+
+    &__btns{
+        margin: 1rem 0rem;
+        a{
+            margin: 0 2rem;
+        }
+    }
     
+}
+
+.feature-line {
+    font-size: 1.6rem;
+    &__text{
+        opacity: .9;
+        float: left;
+        padding-left: 3rem;
+       
+    }
+    &__title{
+        padding-left: 2rem;
+        &::after{
+            content: " :";
+        }
+    }
 }

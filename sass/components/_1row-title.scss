@@ -1,5 +1,5 @@
 .title-1row{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: $color-grey-light-2;
 
     color:$color-secondary;
@@ -16,7 +16,7 @@
         padding: 0 1rem;
         //  color:blue;
          border-bottom: 1px solid $color-tertiary;
-         font-weight: 800;
+         font-weight: 600;
     }
 
     &__empty-content{
@@ -26,6 +26,21 @@
         // background-color: #fff;
         border-bottom: 1px solid $color-grey-light-2;
     }
-    
+    h2{
+        align-self: end;
+    }
+    a{
+        font-size: 1.5rem;
+        align-self: end;
+        font-weight: normal;
+        margin: 0 1rem 0 3rem;
+        border-bottom: 1px solid $color-grey-light-2;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover{
+            color: $color-primary;
+        }
+    }
 }
 

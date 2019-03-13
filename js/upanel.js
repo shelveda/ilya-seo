@@ -124,15 +124,18 @@ $(document).ready(function(){
 
 $(document).ready(function() {
 
-    $('.container').find('.section-add').find('#adv').addClass('d-none');
+    // $('.container').find('.section-add').find('#adv').addClass('d-none');
     $('.container').find('.section-add').find('#alarm').addClass('d-none');
     $('.container').find('.section-add').find('#news').addClass('d-none');
+    $('.container').find('.section-add div ul li[onclick="setadv()"]').addClass('active');
 });
 
 function setadv() {
 
     $('.container').find('.section-add').find('#alarm').addClass('d-none');
     $('.container').find('.section-add').find('#news').addClass('d-none');
+    $('.container').find('.section-add').find('#adv').addClass('d-none');
+    
     $('.container').find('.section-add').find('#adv').removeClass('d-none');
     $('.container').find('.section-add div ul li[onclick="setadv()"]').addClass('active');
     $('.container').find('.section-add div ul li[onclick="setalarm()"]').removeClass('active');

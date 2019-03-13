@@ -181,6 +181,24 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.container {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: min-content auto auto auto min-content min-content;
+  grid-template-columns: [center-start] repeat(12, [col-start] 1fr [col-end]) [center-end];
+  grid-row-gap: 1rem;
+  justify-content: center;
+  backface-visibility: hidden; }
+  .container > * {
+    padding: 1rem;
+    font-size: 3rem; }
+  @media only screen and (max-width: 50em) {
+    .container {
+      grid-template-rows: min-content auto auto auto auto min-content min-content; } }
+  @media only screen and (max-width: 30em) {
+    .container {
+      grid-template-rows: min-content repeat(6, auto) min-content min-content; } }
+
 .section-slider {
   background-color: #f9f7f1;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);

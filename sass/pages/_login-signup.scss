@@ -2,7 +2,6 @@
     // position: fixed;
     bottom: 0;
     width: 100%;
-
     
 }
 
@@ -37,12 +36,18 @@ body{
 
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 50%;
 
     // height: 50rem;
     width: 40rem;
 
     transform: translate(-50%,-50%);
+
+    &--signup-button {
+        & a:hover{
+            color: $color-tertiary;
+        }
+    }
     a{
         text-decoration: none;
         color:$color-secondary;
@@ -59,13 +64,67 @@ body{
     }
 
     &__content {
+        &--mobile-in{
+            a{
+                 font-size: 1.2rem;
+        }
+        }
+           
+
+        &--forget{
+            float: left;
+        }
+        &--mobile-in {
+            float: right;
+        }
 
 
     }
 
     &__footer{
+        width: 100%;
+        // position: relative;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        font-family: yekan;
+        
 
 
+        margin-right: 1rem;
+
+        &--btn{
+
+            position: absolute !important;
+            font-size: 2rem;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15rem;
+            border-radius: 0.4rem !important;
+            text-emphasis: none;
+            text-align: center;
+            text-transform: none;  
+            padding-top:0rem !important ;          
+        }
+        &--cancel{
+            text-decoration: none;
+            position: absolute;
+            bottom: .5rem;
+            right: 1rem;
+            font-family: yekan;
+            font-size: 1.2rem;
+            color:$color-tertiary !important;
+            
+        }
+        label{
+
+            position: absolute;
+            bottom: .5rem;
+            left: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+       
     }
 
 
@@ -73,7 +132,7 @@ body{
         font-family: yekan,roboto;
         font-size: 1.2rem;
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 0.7rem 2rem;
         margin: 0.5rem 0;
         display: inline-block;
         border: 1px solid #ccc;
@@ -85,7 +144,7 @@ body{
 
 .form-signup {
 
-    padding: 1.5rem;
+    padding: .5rem 1.5rem;
     color:$color-secondary;
     font-size: 1.5rem;
     display: grid;
@@ -99,12 +158,13 @@ body{
 
     position: absolute;
     top: 50%;
-    left: 65%;
+    left: 50%;
 
-    height: 50rem;
-    width: 80rem;
+    // height: 50rem;
+    width: 40rem;
 
     transform: translate(-50%,-50%);
+    
 
     a{
         text-decoration: none;
@@ -115,9 +175,10 @@ body{
         text-align: center;
         margin:1rem 0 0.5rem 0;
         position: relative;
-        color:$color-primary;
+        color:$color-tertiary;
         i{
             font-size: 12rem;
+            transform: translateX(15%)
         }
     }
 
@@ -127,7 +188,7 @@ body{
     }
 
     &__footer{
-
+    font-family: yekan;
 
     }
 
@@ -136,7 +197,7 @@ body{
         font-family: yekan,roboto;
         font-size: 1.2rem;
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 0.7rem 2rem;
         margin: 0.5rem 0;
         display: inline-block;
         border: 1px solid #ccc;

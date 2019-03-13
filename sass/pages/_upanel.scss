@@ -6,28 +6,47 @@
 }
 
 
-.section-uinformation{
-    @extend %page-sections-box-color-deafult;
-    grid-column: center-start / center-end;
-}
-
 .section-moving-price{
     @extend %page-sections-box-color-deafult;
     grid-column: center-start / center-end;
+    
 
 }
+
+.section-uinformation{
+    @extend %page-sections-box-color-deafult;
+    grid-column: center-start / 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    grid-template-rows: min-content 1fr;
+
+    
+}
+
+.section-uworks {
+    @extend %page-sections-box-color-deafult;
+    grid-column: center-start / 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    grid-template-rows: min-content 1fr;
+}
+
 
 
 .section-add{
     font-size: 1.5rem;
     @extend %page-sections-box-color-deafult;
-    grid-column: center-start / center-end;
+    grid-column: 5 / center-end;
+    grid-row: 3/span 2;
+
 
     &__navbar{
-        margin: 1rem 0;
-
-        width: 50%;
+        margin: 2rem 0;
+        width: 90%;
         display:block;
+        text-align: center;
         ul{
 
             
@@ -37,39 +56,18 @@
                 display:inline-block ;
                 width: 30%;
                 text-align: center;
-                border-bottom: 1px solid #000;
+                border-bottom: 1px solid $color-secondary;
                 cursor: pointer;
                 position: relative;
 
                 &:hover {
-                    background-color: $color-primary;
+                    background-color: rgba($color-secondary,.8);
                     color:$color-grey-light-1;
                     border-bottom-color: $color-grey-light-1;
                 }
 
                 
-                &:hover::after {
-                   
-                    color:$color-primary;
-
-                    position: absolute;
-	                // top: 0;
-                    // line-height: 50px;
-                    bottom: -1.1rem;
-                    right: 2rem;
-	                font-family: 'icomoon';
-	                -webkit-font-smoothing: antialiased;
-                    content: "\e000";
-
-                    -webkit-transform: rotate(90deg);
-                    transform: rotate(90deg);
-
-                    // transform: translateY(100%);
-
-
-                    
-
-                }
+                
            
             }
         }
@@ -95,8 +93,32 @@
 
 .active{
 
-    border-bottom-color: $color-grey-light-1 !important;
+    color:$color-grey-light-1;
+    border-bottom-color: $color-primary !important;
     background-color: $color-primary  !important;
+
+    &:after {
+                   
+        color:$color-primary;
+
+        position: absolute;
+        // top: 0;
+        // line-height: 50px;
+        bottom: -1.1rem;
+        right: 2rem;
+        font-family: 'icomoon';
+        -webkit-font-smoothing: antialiased;
+        content: "\e000";
+
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+
+        // transform: translateY(100%);
+
+
+        
+
+    }
 
 }
 .d-none{
