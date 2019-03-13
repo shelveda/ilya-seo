@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae39a19-9df0-44a2-a78f-a07e84698ed9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style_upanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style_upanel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/upanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/upanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_1row-title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_1row-title.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/pages/_upanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_upanel.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/upanel.html" afterDir="false" />
     </list>
@@ -32,20 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="adv.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/adv.js">
+      <file leaf-file-name="upanel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upanel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="310" column="45" selection-start-line="310" selection-start-column="45" selection-end-line="310" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adv.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/adv.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1900">
-              <caret line="249" column="21" selection-start-line="249" selection-start-column="21" selection-end-line="249" selection-end-column="21" />
+            <state relative-caret-position="259">
+              <caret line="274" selection-start-line="274" selection-end-line="274" />
               <folding>
                 <element signature="e#1506#1513#0" expanded="true" />
               </folding>
@@ -53,29 +41,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upanel.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upanel.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="288" column="47" selection-start-line="288" selection-start-column="47" selection-end-line="288" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_upanel.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/pages/_upanel.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="95" selection-start-line="95" selection-end-line="100" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upanel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upanel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/upanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="158" column="64" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
+            <state relative-caret-position="509">
+              <caret line="179" column="3" selection-start-line="179" selection-start-column="3" selection-end-line="179" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_upanel.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/pages/_upanel.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -131,8 +110,8 @@
         <option value="$PROJECT_DIR$/sass/components/_1row-title.scss" />
         <option value="$PROJECT_DIR$/js/adv.js" />
         <option value="$PROJECT_DIR$/upanel.html" />
-        <option value="$PROJECT_DIR$/sass/pages/_upanel.scss" />
         <option value="$PROJECT_DIR$/js/upanel.js" />
+        <option value="$PROJECT_DIR$/sass/pages/_upanel.scss" />
       </list>
     </option>
   </component>
@@ -173,6 +152,11 @@
             <path>
               <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
               <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ilya-seo" type="462c0819:PsiDirectoryNode" />
+              <item name="compnents" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ilya-seo" type="b2602c69:ProjectViewProjectNode" />
@@ -240,7 +224,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124026000" />
+    <option name="totallyTimeSpent" value="124394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -263,42 +247,56 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3294893" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19062027" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19364598" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19062027" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Regex Tester" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3294893" />
+      <window_info id="Favorites" order="3" side_tool="true" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19062027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Regex Tester" order="9" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3294893" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19062027" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upanel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="288" column="47" selection-start-line="288" selection-start-column="47" selection-end-line="288" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adv.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1900">
@@ -590,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/pages/_upanel.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="95" selection-start-line="95" selection-end-line="100" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/adv.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -604,10 +588,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/upanel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="274" selection-start-line="274" selection-end-line="274" />
+          <folding>
+            <element signature="e#1506#1513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/upanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="158" column="64" selection-start-line="158" selection-start-column="64" selection-end-line="158" selection-end-column="64" />
+        <state relative-caret-position="509">
+          <caret line="179" column="3" selection-start-line="179" selection-start-column="3" selection-end-line="179" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/pages/_upanel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>

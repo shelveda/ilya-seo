@@ -162,7 +162,22 @@ function setnews() {
     $('.container').find('.section-add div ul li[onclick="setadv()"]').removeClass('active');
 }
 
+$(document).ready(function(){
+    $(".slider-change-price").slick({
+        slidesToShow: 8,
+        autoplay: true,
+        autoplaySpeed: 5,
+        speed:3500,
+        rtl: true,
+        arrows:false,
+        adaptiveHeight:true,
+        pauseOnHover:false,
+        pauseOnFocus:false,
+        useTransform:false
 
+
+    });
+});
 
 
 

@@ -189,7 +189,28 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
 
 .section-moving-price {
-  grid-column: center-start / center-end; }
+  padding: 0;
+  grid-column: center-start / center-end;
+  width: 100%; }
+  .section-moving-price .slider-change-price {
+    background-color: #58585a; }
+    .section-moving-price .slider-change-price__slide {
+      width: 10%; }
+      .section-moving-price .slider-change-price__slide h3, .section-moving-price .slider-change-price__slide h4 {
+        color: #f9f7f1; }
+      .section-moving-price .slider-change-price__slide h3 {
+        font-size: 2.5rem; }
+      .section-moving-price .slider-change-price__slide h4 {
+        font-size: 1.5rem; }
+      .section-moving-price .slider-change-price__slide i {
+        font-size: 2rem;
+        margin-left: 1.5rem; }
+    .section-moving-price .slider-change-price__line {
+      border-bottom: 3px solid; }
+    .section-moving-price .slider-change-price .up {
+      color: #28b485; }
+    .section-moving-price .slider-change-price .down {
+      color: #f5a956; }
 
 .section-uinformation {
   grid-column: center-start / 5;
