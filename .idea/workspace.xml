@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ae39a19-9df0-44a2-a78f-a07e84698ed9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sign.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sign.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/upanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/upanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/pages/_upanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_upanel.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sign.html" beforeDir="false" afterPath="$PROJECT_DIR$/sign.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/upanel.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +32,8 @@
       <file leaf-file-name="upanel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upanel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3958">
-              <caret line="375" column="10" lean-forward="true" selection-start-line="375" selection-start-column="10" selection-end-line="375" selection-end-column="10" />
+            <state relative-caret-position="129">
+              <caret line="424" column="53" selection-start-line="424" selection-start-column="53" selection-end-line="424" selection-end-column="53" />
               <folding>
                 <element signature="e#1506#1513#0" expanded="true" />
               </folding>
@@ -47,8 +44,8 @@
       <file leaf-file-name="upanel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/upanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="176" selection-start-line="176" selection-start-column="3" selection-end-line="182" selection-end-column="4" />
+            <state relative-caret-position="459">
+              <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -83,8 +80,8 @@
       <file leaf-file-name="sign.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/sign.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="52" column="96" selection-start-line="52" selection-start-column="96" selection-end-line="52" selection-end-column="96" />
+            <state relative-caret-position="309">
+              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -139,9 +136,9 @@
         <option value="$PROJECT_DIR$/sass/components/_1row-title.scss" />
         <option value="$PROJECT_DIR$/js/adv.js" />
         <option value="$PROJECT_DIR$/sass/pages/_upanel.scss" />
-        <option value="$PROJECT_DIR$/upanel.html" />
         <option value="$PROJECT_DIR$/sign.html" />
         <option value="$PROJECT_DIR$/js/sign.js" />
+        <option value="$PROJECT_DIR$/upanel.html" />
         <option value="$PROJECT_DIR$/js/upanel.js" />
       </list>
     </option>
@@ -260,7 +257,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134776000" />
+    <option name="totallyTimeSpent" value="137444000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,13 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upanel.html">
+    <entry file="file://$PROJECT_DIR$/sass/pages/_login-signup.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3958">
-          <caret line="375" column="10" lean-forward="true" selection-start-line="375" selection-start-column="10" selection-end-line="375" selection-end-column="10" />
-          <folding>
-            <element signature="e#1506#1513#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="509">
+          <caret line="217" column="1" lean-forward="true" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -623,24 +617,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/pages/_login-signup.scss">
+    <entry file="file://$PROJECT_DIR$/js/sign.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="217" column="1" lean-forward="true" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
+        <state relative-caret-position="309">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="96" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/sign.js">
+    <entry file="file://$PROJECT_DIR$/upanel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="52" column="96" selection-start-line="52" selection-start-column="96" selection-end-line="52" selection-end-column="96" />
+        <state relative-caret-position="129">
+          <caret line="424" column="53" selection-start-line="424" selection-start-column="53" selection-end-line="424" selection-end-column="53" />
+          <folding>
+            <element signature="e#1506#1513#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/upanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="176" selection-start-line="176" selection-start-column="3" selection-end-line="182" selection-end-column="4" />
+        <state relative-caret-position="459">
+          <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
         </state>
       </provider>
     </entry>
