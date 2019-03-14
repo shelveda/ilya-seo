@@ -1,9 +1,16 @@
 
-var $id;
+var $id ;
 
 function setIdforShowMenu(id) {
 
-    document.getElementById(`${id}`).querySelector('.dropdown-content').classList.toggle("display-block");
+    // $('.navbar-base').find('.navbar-1row-t1__main').find('.navbar-1row-t1')
+    //     .find('#nav-li-1').find('.dropdown-content')
+    //     .animate({height:'toggle',duration:3000},500,"linear").slideDown();
+
+
+     document.getElementById(`${id}`).querySelector('.dropdown-content')
+        .classList.toggle('display-block');
+
     document.getElementById(`${id}`).classList.toggle("active-theme");
 
     window.$id =`#${id} .dropbtn`;

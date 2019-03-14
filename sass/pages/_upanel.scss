@@ -9,6 +9,41 @@
 .section-moving-price{
     @extend %page-sections-box-color-deafult;
     grid-column: center-start / center-end;
+
+    padding: 0;
+    width: 100%;
+
+    .slider-change-price{
+        //border: 1px solid #a2aaac;
+        background-color: $color-secondary;
+
+        &__slide{
+
+            width: 10%;
+            h3,h4{
+                color: $color-grey-light-1;
+            }
+            h3{
+                font-size: 2.5rem;
+            }
+            h4{
+                font-size: 1.5rem;
+            }
+            i{
+                font-size: 2rem;
+                margin-left:1.5rem;
+            }
+        }
+        &__line{
+            border-bottom: 3px solid;
+        }
+        .up{
+            color: $color-primary;
+        }
+        .down{
+            color: $color-tertiary;
+        }
+    }
     
 
 }
@@ -164,4 +199,7 @@
 }
 .d-grid {
     display:grid !important;
+}
+.d-grid-full{
+    grid-column: center-start/center-end;
 }

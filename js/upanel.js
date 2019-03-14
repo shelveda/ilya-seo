@@ -122,21 +122,15 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function() {
 
-    // $('.container').find('.section-add').find('#adv').addClass('d-none');
-    $('.container').find('.section-add').find('#alarm').addClass('d-none');
-    $('.container').find('.section-add').find('#news').addClass('d-none');
-    $('.container').find('.section-add div ul li[onclick="setadv()"]').addClass('active');
-});
 
 function setadv() {
 
+    $('.container').find('.section-add').find('#adv').removeClass('d-none');
     $('.container').find('.section-add').find('#alarm').addClass('d-none');
     $('.container').find('.section-add').find('#news').addClass('d-none');
-    $('.container').find('.section-add').find('#adv').addClass('d-none');
-    
-    $('.container').find('.section-add').find('#adv').removeClass('d-none');
+
+
     $('.container').find('.section-add div ul li[onclick="setadv()"]').addClass('active');
     $('.container').find('.section-add div ul li[onclick="setalarm()"]').removeClass('active');
     $('.container').find('.section-add div ul li[onclick="setnews()"]').removeClass('active');
@@ -144,9 +138,10 @@ function setadv() {
 
 function setalarm() {
 
+    $('.container').find('.section-add').find('#alarm').removeClass('d-none');
     $('.container').find('.section-add').find('#adv').addClass('d-none');
     $('.container').find('.section-add').find('#news').addClass('d-none');
-    $('.container').find('.section-add').find('#alarm').removeClass('d-none');
+
     $('.container').find('.section-add div ul li[onclick="setalarm()"]').addClass('active');
     $('.container').find('.section-add div ul li[onclick="setadv()"]').removeClass('active');
     $('.container').find('.section-add div ul li[onclick="setnews()"]').removeClass('active');
@@ -154,16 +149,103 @@ function setalarm() {
 
 function setnews() {
 
+    $('.container').find('.section-add').find('#news').removeClass('d-none');
     $('.container').find('.section-add').find('#adv').addClass('d-none');
     $('.container').find('.section-add').find('#alarm').addClass('d-none');
-    $('.container').find('.section-add').find('#news').removeClass('d-none');
+
     $('.container').find('.section-add div ul li[onclick="setnews()"]').addClass('active');
     $('.container').find('.section-add div ul li[onclick="setalarm()"]').removeClass('active');
     $('.container').find('.section-add div ul li[onclick="setadv()"]').removeClass('active');
 }
 
+function allspecs() {
+
+    if($(".section-uinformation").find('.title-1row')
+        .find('a[class=title-1row__header]').text()==='بازگشت') {
+
+        var $i = $(".section-uinformation").animate({height:"100%",width:"98%"},1000).removeClass('d-grid-full');
+
+        $('.section-uworks').removeClass('d-none');
+        $('.section-add').removeClass('d-none');
+
+        $i.find('.title-1row').find('a[class=title-1row__header]').text('همه مشخصات');
+    }
+
+     else {
+        var $i = $(".section-uinformation").animate({height:"100%",width:"100%"},1000).addClass('d-grid-full');
+
+        $('.section-uworks').animate({height: '100%'}, 1000).addClass('d-none');
+        $('.section-add').animate({height: '100%'}, 1000).addClass('d-none');
 
 
+        $i.find('.title-1row').find('a[class=title-1row__header]').text('بازگشت');
+    }
+
+}
+
+function allworks() {
+
+    if($(".section-uworks").find('.title-1row')
+        .find('a[class=title-1row__header]').text()==='بازگشت') {
+
+        var $w = $( ".section-uworks" ).animate({height:"100%",width:"98%"},1000).removeClass('d-grid-full');
+
+        $('.section-uinformation').removeClass('d-none');
+        $('.section-add').removeClass('d-none');
+
+        $w.find('.title-1row').find('a[class=title-1row__header]').text('همه فعالیت ها');
+    }
+
+    else {
+        var $w = $( ".section-uworks" ).animate({height:"100%",width:"100%"},1000).addClass('d-grid-full');
+
+        $('.section-uinformation').animate({height: '100%'}, 1000).addClass('d-none');
+        $('.section-add').animate({height: '100%'}, 1000).addClass('d-none');
 
 
+        $w.find('.title-1row').find('a[class=title-1row__header]').text('بازگشت');
+    }
+}
+
+
+$(document).ready(function(){
+    $(".slider-change-price").slick({
+        slidesToShow: 8,
+        autoplay: true,
+        autoplaySpeed: 10,
+        speed:3500,
+        rtl: true,
+        arrows:false,
+        pauseOnHover:false,
+        pauseOnFocus:false,
+        useTransform:false,
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
+
+    });
+});
   

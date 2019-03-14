@@ -304,11 +304,9 @@ function changecontent() {
 
 					$flyin = $submenu.clone().insertAfter( self.$menu );
 
-                var $p = $item.find('a[class="adv-item"]:first').text();
+                // var $p = $item.find('a[class="adv-item"]:first').text();
 
-                 // alert($p);
-
-                $('.pushmenu-header').text($p);
+                // $('.pushmenu-header').text($p);
 
                 // $('.adv-submit__header--content').text($p);
 

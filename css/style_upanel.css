@@ -99,8 +99,7 @@ body {
   font-family: yekan , Roboto;
   color: #58585a;
   font-weight: 300;
-  background-color: #eee;
-  transition: all 0.5s; }
+  background-color: #eee; }
   @media only screen and (max-width: 62.5em) {
     body {
       grid-template-columns: 2rem 1fr 2rem; } }
@@ -189,7 +188,28 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
 
 .section-moving-price {
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  padding: 0;
+  width: 100%; }
+  .section-moving-price .slider-change-price {
+    background-color: #58585a; }
+    .section-moving-price .slider-change-price__slide {
+      width: 10%; }
+      .section-moving-price .slider-change-price__slide h3, .section-moving-price .slider-change-price__slide h4 {
+        color: #f9f7f1; }
+      .section-moving-price .slider-change-price__slide h3 {
+        font-size: 2.5rem; }
+      .section-moving-price .slider-change-price__slide h4 {
+        font-size: 1.5rem; }
+      .section-moving-price .slider-change-price__slide i {
+        font-size: 2rem;
+        margin-left: 1.5rem; }
+    .section-moving-price .slider-change-price__line {
+      border-bottom: 3px solid; }
+    .section-moving-price .slider-change-price .up {
+      color: #28b485; }
+    .section-moving-price .slider-change-price .down {
+      color: #f5a956; }
 
 .section-uinformation {
   grid-column: center-start / 5;
@@ -278,6 +298,9 @@ body {
 
 .d-grid {
   display: grid !important; }
+
+.d-grid-full {
+  grid-column: center-start/center-end; }
 
 .footer {
   grid-column: center-start / center-end;
