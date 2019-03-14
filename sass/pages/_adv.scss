@@ -1,7 +1,10 @@
 .container {
     grid-template-rows: min-content  min-content min-content;
 }
-
+body{
+    grid-template-rows: 1fr min-content;
+    height: 99vh;
+}
 .push-menu{
     
 }
@@ -14,10 +17,46 @@
     // padding: 3em 2em; 
     grid-row-gap: 1rem;
    
-    grid-column: 3/9;
+    grid-column: 3/11;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
 
+}
 
+.adv-submit{
+
+    &__header{
+        color:$color-secondary;
+
+        padding: 1rem;
+       h3{
+        font-size: 2rem;
+        display: inline-block;
+        } 
+        a{
+            margin-right: 6rem;
+            text-decoration: none;
+            font-size: 2rem;
+            color:$color-secondary;
+            &:hover{
+               color: $color-primary;
+            }
+        }
+    }
+
+    &__form{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+
+    
+
+}
+
+.ilya-rights{
+    column:2/3;
+    bottom:0;
+  
 }

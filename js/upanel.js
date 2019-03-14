@@ -85,6 +85,7 @@ function menuColClose(){
   $('body').removeClass("fixed"); 
 
 }
+//slick
 
 $(document).ready(function(){
 
@@ -119,24 +120,11 @@ $(document).ready(function(){
             }
         ]
     });
-    $(".slider-change-price").slick({
-        slidesToShow: 8,
-        autoplay: true,
-        autoplaySpeed: 5,
-        speed:3500,
-        rtl: true,
-        arrows:false,
-        adaptiveHeight:true,
-        pauseOnHover:false,
-        pauseOnFocus:false,
-        useTransform:false
-
-
-    });
 });
 
 $(document).ready(function() {
 
+    // $('.container').find('.section-add').find('#adv').addClass('d-none');
     $('.container').find('.section-add').find('#alarm').addClass('d-none');
     $('.container').find('.section-add').find('#news').addClass('d-none');
     $('.container').find('.section-add div ul li[onclick="setadv()"]').addClass('active');
@@ -144,10 +132,11 @@ $(document).ready(function() {
 
 function setadv() {
 
-    $('.container').find('.section-add').find('#alarm').animate({height:'hide'},1000);
-    $('.container').find('.section-add').find('#news').animate({height:'hide'},1000);
-    $('.container').find('.section-add').find('#adv').animate({height:'show'},1000);
-
+    $('.container').find('.section-add').find('#alarm').addClass('d-none');
+    $('.container').find('.section-add').find('#news').addClass('d-none');
+    $('.container').find('.section-add').find('#adv').addClass('d-none');
+    
+    $('.container').find('.section-add').find('#adv').removeClass('d-none');
     $('.container').find('.section-add div ul li[onclick="setadv()"]').addClass('active');
     $('.container').find('.section-add div ul li[onclick="setalarm()"]').removeClass('active');
     $('.container').find('.section-add div ul li[onclick="setnews()"]').removeClass('active');
@@ -155,10 +144,9 @@ function setadv() {
 
 function setalarm() {
 
-    $('.container').find('.section-add').find('#adv').animate({height:'hide'},1000);
-    $('.container').find('.section-add').find('#news').animate({height:'hide'},1000);
-    $('.container').find('.section-add').find('#alarm').animate({height:'show'},1000).removeClass('d-none');
-
+    $('.container').find('.section-add').find('#adv').addClass('d-none');
+    $('.container').find('.section-add').find('#news').addClass('d-none');
+    $('.container').find('.section-add').find('#alarm').removeClass('d-none');
     $('.container').find('.section-add div ul li[onclick="setalarm()"]').addClass('active');
     $('.container').find('.section-add div ul li[onclick="setadv()"]').removeClass('active');
     $('.container').find('.section-add div ul li[onclick="setnews()"]').removeClass('active');
@@ -166,32 +154,16 @@ function setalarm() {
 
 function setnews() {
 
-    $('.container').find('.section-add').find('#adv').animate({height:'hide'},1000);
-    $('.container').find('.section-add').find('#alarm').animate({height:'hide'},1000);
-    $('.container').find('.section-add').find('#news').animate({height:'show'},1000).removeClass('d-none');
-
+    $('.container').find('.section-add').find('#adv').addClass('d-none');
+    $('.container').find('.section-add').find('#alarm').addClass('d-none');
+    $('.container').find('.section-add').find('#news').removeClass('d-none');
     $('.container').find('.section-add div ul li[onclick="setnews()"]').addClass('active');
     $('.container').find('.section-add div ul li[onclick="setalarm()"]').removeClass('active');
     $('.container').find('.section-add div ul li[onclick="setadv()"]').removeClass('active');
 }
 
-function allspecs() {
-    $( ".section-uinformation" ).animate({
-        height: '70rem',
-        width: '123rem',
-    }, 600);
 
-    $('.section-uworks').animate({height:'hide'},1000).addClass('d-none');
-    $('.section-add').animate({height:'hide'},1000).addClass('d-none');
-}
-function allworks() {
-    $( ".section-uworks" ).animate({
-        height: '70rem',
-        width: '123rem',
-    }, 600);
 
-    $('.section-uinformation').animate({height:'hide'},1000).addClass('d-none');
-    $('.section-add').animate({height:'hide'},1000).addClass('d-none');
-}
+
 
   
