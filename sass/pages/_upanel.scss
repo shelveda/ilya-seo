@@ -7,45 +7,9 @@
 
 
 .section-moving-price{
-    padding: 0;
-
     @extend %page-sections-box-color-deafult;
     grid-column: center-start / center-end;
-
-    width: 100%;
-
-    .slider-change-price{
-        //border: 1px solid #a2aaac;
-        background-color: $color-secondary;
-
-        &__slide{
-
-            width: 10%;
-            h3,h4{
-                color: $color-grey-light-1;
-            }
-            h3{
-                font-size: 2.5rem;
-            }
-            h4{
-                font-size: 1.5rem;
-            }
-            i{
-                font-size: 2rem;
-                margin-left:1.5rem;
-            }
-        }
-        &__line{
-            border-bottom: 3px solid;
-        }
-        .up{
-            color: $color-primary;
-        }
-        .down{
-            color: $color-tertiary;
-        }
-    }
-
+    
 
 }
 
@@ -57,6 +21,21 @@
     margin-left: 1rem;
     grid-template-rows: min-content 1fr;
 
+    @media only screen and (max-width: $bp-tablet-default){
+        grid-row: 3/4;
+
+        grid-column: center-start/7;
+
+        }
+    @media only screen and (max-width: $bp-mobile){
+        grid-row: 3/4;
+
+        grid-column: center-start/center-end;
+        margin-left: 0;
+
+
+    }
+
     
 }
 
@@ -67,6 +46,21 @@
     grid-template-columns: 1fr;
     margin-left: 1rem;
     grid-template-rows: min-content 1fr;
+
+    @media only screen and (max-width: $bp-tablet-default){
+        grid-row: 3/4;
+
+        grid-column: 7/center-end;
+        margin-left: 0;
+
+        }
+    @media only screen and (max-width: $bp-mobile){
+        grid-row: 4/5;
+
+        grid-column: center-start/center-end;
+        
+    
+    }
 }
 
 
@@ -77,12 +71,31 @@
     grid-column: 5 / center-end;
     grid-row: 3/span 2;
 
+    @media only screen and (max-width: $bp-tablet-default){
+        grid-row: 4/5;
+
+        grid-column: center-start/center-end;
+    }
+
+    @media only screen and (max-width: $bp-mobile){
+        grid-row: 5/6;
+
+        grid-column: center-start/center-end;
+    
+    }
+
+
+
 
     &__navbar{
         margin: 2rem 0;
         width: 90%;
         display:block;
         text-align: center;
+
+      
+
+
         ul{
 
             
@@ -112,20 +125,6 @@
 
 }
 
-
-.section-news {
-    @extend %page-sections-box-color-deafult;
-    grid-column: center-start / center-end;
-    
-    display: grid;
-
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: repeat(auto-fit , minmax(25rem,1fr));
-
-    grid-template-columns: 1fr;
-    grid-row-gap: 1rem;
-    backface-visibility: hidden;
-}
 
 .active{
 

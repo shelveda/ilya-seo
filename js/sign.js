@@ -1,59 +1,31 @@
-$(document).ready(function() {
-    $('.container')
-        .find('.form-sign ')
-        .find('.form-sign__content')
-        .find('.form-sign__content--mobile').addClass('d-none');
 
-    $('.container')
-    .find('.form-signup').addClass('d-none');
-
-});
 function showsignup(){
 
-    $('.container').find('.form-sign').animate({height:'hide'},1000);
+    $('body')
+        .find('.form-signup').removeClass('d-none');
 
-    $('.container').find('.form-signup').animate({height:'show'},1000).removeClass('d-none');
-
-    // $('.container')
-    //     .find('.form-signup').removeClass('d-none');
-
-    // $('.container')
-    //     .find('.form-sign').addClass('d-none');
-
+    $('body')
+        .find('.form-sign').addClass('d-none');
 
 }
 function showsignin(){
 
-    $('.container').find('.form-signup').animate({height:'hide'},1000);
-    $('.container').find('.form-sign').animate({height:'show'},1000).removeClass('d-none');
+    $('body')
+        .find('.form-signup').addClass('d-none');
 
-    // $('.container')
-    //     .find('.form-signup').addClass('d-none');
-    // $('.container')
-    //     .find('.form-sign').removeClass('d-none');
+    $('body')
+        .find('.form-sign').removeClass('d-none');
 
 }
 function signupmobile() {
 
-    $('.container')
+    $('body')
          .find('.form-sign ')
          .find('.form-sign__content')
-         .find('.form-sign__content--email').animate({height:'hide'},1000);
+         .find('.form-sign__content--email').addClass('d-none');
 
-    $('.container')
+    $('body')
         .find('.form-sign ')
         .find('.form-sign__content')
-        .find('.form-sign__content--mobile').animate({height:'show'},1000).removeClass('d-none');
-}
-function signupemail() {
-
-    $('.container')
-        .find('.form-sign ')
-        .find('.form-sign__content')
-        .find('.form-sign__content--email').animate({height:'show'},1000).removeClass('d-none');
-
-    $('.container')
-        .find('.form-sign ')
-        .find('.form-sign__content')
-        .find('.form-sign__content--mobile').animate({height:'hide'},1000);
+        .find('.form-sign__content--mobile').removeClass('d-none');
 }

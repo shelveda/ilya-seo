@@ -33,6 +33,7 @@
     href="node_modules/datatables.net/extensions/Responsive/css/responsive.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
+    <link href="node_modules/select2/dist/css/select2.min.css" rel="stylesheet" />
 
 
     <!-- ilya styles -->
@@ -373,20 +374,34 @@
         </div><!-- /dl-menuwrapper -->
     </div>
 
-    <div class="adv-submit">
-        <div class="adv-submit__header">
+    <div class="adv-submit " style="display:block !important">
+        <div class="adv-submit__header" style="margin-bottom: 1rem;">
             <h3 class="adv-submit__header--content">تمامی دسته بندی ها </h3>
             <a href="#" onclick="changecontent()">تغییر دسته بندی</a>
         </div>
-        <form action="#" class="adv-submit__form">مشخصات را وارد کنید </form>
+        <form action="#" class="adv-submit__form"> 
+            <h3 class="adv-submit__form--header">مشخصات را وارد کنید</h3>
+            <div class="adv-submit__form--line">
+                <span class="adv-submit__form--line-title">
+                    شهر
+                </span>
+                <select id="selection" ></select>
+                <span class="adv-submit__form--line-title">
+                        انتخاب محدوده
+                </span>
+                <select id="selection2" onclick="functiond()" ></select>
+
+            </div>
+            
+
+        </form>
 
     </div>
     
 </div>
 
-
-
 </div>
+
 
 <div class="ilya-rights">
     <p>تمامی حقوق متعلق به ایلیا ایده می باشد.</p>
@@ -398,12 +413,50 @@
 <script type="text/javascript" src="node_modules/datatables.net/extensions/Responsive/js/dataTables.responsive.min.js"></script>
 <script src="node_modules/slick-carousel/slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
+<script src="node_modules/select2/dist/js/select2.min.js"></script>
+
+
 <script src="js/adv.js"></script>
 <script>
     $(function() {
         $( '#dl-menu' ).dlmenu();
     });
 </script>
+<script>
+    var $data_city =
+        [
+            {id:0, text: 'option1'},
+            {id: 1, text: 'option2'},
+            {id: 2, text: 'option3'},
+            {id:0, text: 'option4'},
+            {id: 1, text: 'option5'},
+            {id: 2, text: 'option6'},
+            {id:0, text: 'option7'},
+            {id: 1, text: 'option8'},
+            {id: 2, text: 'option9'},
+        ];
+
+
+    $(document).ready(function () {
+
+        $('#selection').select2({
+            width:'50%',
+            placeholder: 'همه محله ها',
+            closeOnSelect:false,
+            multiple:true,
+            allowClear:true,
+            data:$data_city,
+            dropdownAutoWidth:true,
+
+        });
+    });
+
+
+
+</script>
+
+
+
 </body>
 
 </html>
