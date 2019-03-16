@@ -12,7 +12,52 @@
 
 }
 
-.form-item__line{
+.form-item-line{
+    
+
+    &--row {
+        >span{
+            display: inline-block;
+        }
+        
+    }
+
+    &--column{
+        >span{
+            display: block;
+        }
+    }
+
+    &__title{
+
+    }
+
+    &__box{
+        background-color: royalblue;
+        height: 250px;
+        width: 100%;
+        padding: 4rem;
+        display: block;
+    }
+    &__img{
+        height: 50px;
+        width: 50px;
+        display: block;
+        background-color: royalblue;
+    }
+
+    &__input{
+        
+    }
+    .select2{
+        width: 100% !important;
+        direction: rtl;
+    }
 
 
+}
+
+
+.form-item--full{
+    grid-column:1/-1;
 }

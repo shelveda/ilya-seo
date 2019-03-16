@@ -1,19 +1,12 @@
 
-var $id ;
+var $idDrop;
 
 function setIdforShowMenu(id) {
 
-    // $('.navbar-base').find('.navbar-1row-t1__main').find('.navbar-1row-t1')
-    //     .find('#nav-li-1').find('.dropdown-content')
-    //     .animate({height:'toggle',duration:3000},500,"linear").slideDown();
-
-
-     document.getElementById(`${id}`).querySelector('.dropdown-content')
-        .classList.toggle('display-block');
-
+    document.getElementById(`${id}`).querySelector('.dropdown-content').classList.toggle("display-block");
     document.getElementById(`${id}`).classList.toggle("active-theme");
 
-    window.$id =`#${id} .dropbtn`;
+    window.$idDrop =`#${id} .dropbtn`;
 
     jqinput = `.dropdown-content:not(#${id} .dropdown-content)`;
     var dropdowns = $(jqinput)
@@ -46,7 +39,7 @@ function setIdforShowMenu(id) {
 }
 
 window.onclick = function(event) {
-  if (!event.target.matches($id)) {
+  if (!event.target.matches($idDrop)) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
 
     var dropdownsList = document.querySelectorAll('li');

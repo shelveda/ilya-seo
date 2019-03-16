@@ -21,6 +21,11 @@
     "watch-upanel:sass" : "node-sass sass/upanel.scss css/style_upanel.css -w",
     "start-upanel": "npm-run-all --parallel devserver-upanel watch-upanel:sass",
 
+    "devserver-searchadv": "live-server --open=search_adv.html",
+    "watch-searchadv:sass" : "node-sass sass/search-adv.scss css/style_search_adv.css -w",
+    "start-searchadv": "npm-run-all --parallel devserver-searchadv watch-searchadv:sass",
+    
+
 
     "com-base:sass"   : "node-sass sass/compiled/base.scss css/com-base.css",
     "com-header:sass" : "node-sass sass/compiled/header.scss css/com-header.css",

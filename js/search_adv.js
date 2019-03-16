@@ -152,25 +152,7 @@ $(document).ready(function(){
 
 // dlmenu
 
-function setnewadv() {
-
-    $('.container').find('.adv-section').find('.adv-submit').removeClass('d-none');
-    $('.container').find('.adv-section').find('.adv-menu').addClass('d-none');
-
-}
-
-function changecontent() {
-
-    $('.container').find('.adv-section').find('.adv-menu').removeClass('d-none');
-    $('.container').find('.adv-section').find('.adv-submit').addClass('d-none');
-
-}
-
 ;( function( $, window, undefined ) {
-
-	$('.container').find('.adv-section').find('.adv-submit').addClass('d-none');
-
-	'use strict';
 
 	// global
 	var Modernizr = window.Modernizr, $body = $( 'body' );

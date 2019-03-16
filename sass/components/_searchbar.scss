@@ -1,0 +1,12 @@
+
+.searchbar{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    
+    span.select2 {
+        width: 100% !important;
+    }
+
+}
+    

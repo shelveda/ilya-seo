@@ -193,7 +193,7 @@ body {
 
 .adv-section {
   grid-row-gap: 1rem;
-  grid-column: 3/11;
+  grid-column: 2/12;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr; }
@@ -1007,7 +1007,10 @@ All this is done for any sub-level being entered.
   .adv-submit__form {
     background-color: #f9f7f1;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    height: 50vh; }
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem; }
 
 .d-none {
   display: none !important; }
@@ -1017,3 +1020,29 @@ All this is done for any sub-level being entered.
 
 .d-grid {
   display: grid !important; }
+
+.form-item-line--row > span {
+  display: inline-block; }
+
+.form-item-line--column > span {
+  display: block; }
+
+.form-item-line__box {
+  background-color: royalblue;
+  height: 250px;
+  width: 100%;
+  padding: 4rem;
+  display: block; }
+
+.form-item-line__img {
+  height: 50px;
+  width: 50px;
+  display: block;
+  background-color: royalblue; }
+
+.form-item-line .select2 {
+  width: 100% !important;
+  direction: rtl; }
+
+.form-item--full {
+  grid-column: 1/-1; }
