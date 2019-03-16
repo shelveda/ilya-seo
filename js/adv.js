@@ -229,7 +229,7 @@ function changecontent() {
 			this.$trigger = this.$el.children( '.dl-trigger' );
 			this.$menu = this.$el.children( 'ul.dl-menu' );
 			this.$menuitems = this.$menu.find( 'li:not(.dl-back)' );
-			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#">back</a></li>' );
+			this.$el.find( 'ul.dl-submenu' ).prepend( '<li class="dl-back"><a href="#"></a></li>' );
 			this.$back = this.$menu.find( 'li.dl-back' );
 		},
 		_initEvents : function() {
@@ -259,9 +259,9 @@ function changecontent() {
 
                 var $p = $item.find('a[class="adv-item"]:first').text();
 
-                // alert($p);
-
-                $('.pushmenu-header').text($p);
+                if($submenu.length > 0){
+                    $('.dl-back').text($p);
+				}
 
                 $('.adv-submit__header--content').text($p);
 
@@ -301,14 +301,15 @@ function changecontent() {
 				var $this = $( this ),
 					$submenu = $this.parents( 'ul.dl-submenu:first' ),
 					$item = $submenu.parent(),
+					$parent = $item.parents('li.dl-subview:first'),
 
 					$flyin = $submenu.clone().insertAfter( self.$menu );
 
-                // var $p = $item.find('a[class="adv-item"]:first').text();
+                var $p = $parent.find('a[class="adv-item"]:first').text();
 
-                // $('.pushmenu-header').text($p);
+                // alert($p);
 
-                // $('.adv-submit__header--content').text($p);
+                $('.dl-back').text($p);
 
 
                 var onAnimationEndFn = function() {

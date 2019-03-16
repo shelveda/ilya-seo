@@ -99,8 +99,7 @@ body {
   font-family: yekan , Roboto;
   color: #58585a;
   font-weight: 300;
-  background-color: #eee;
-  transition: all 0.5s; }
+  background-color: #eee; }
   @media only screen and (max-width: 62.5em) {
     body {
       grid-template-columns: 2rem 1fr 2rem; } }
@@ -893,7 +892,7 @@ body {
     -webkit-font-smoothing: antialiased;
     content: "\e000"; }
   .dl-menuwrapper li.dl-back:after {
-    right: 1rem;
+    right: 0;
     color: #f5a956; }
   .dl-menuwrapper li > a:after {
     left: 1rem;
