@@ -287,7 +287,85 @@
         <div id="dl-menu" class="dl-menuwrapper">
             <div class="dl-trigger">همه دسته بندی ها
             </div>
-            <ul class="dl-menu"></ul>
+            <ul class="dl-menu">
+                <li>
+                    <a href="#" class="adv-item">همه دسته بندی ها</a>
+                </li>
+                <li>
+                    <a href="#" class="adv-item" >تجهیزات آزمایشگاهی</a>
+                    <ul class="dl-submenu">
+                        <li><a href="#" class="adv-item">تجهیزات آزمایشگاهی</a></li>
+                        <li>
+                            <a href="#" class="adv-item">Men</a>
+                            <ul class="dl-submenu">
+                                <li><a href="#" class="adv-item">Men</a></li>
+                                <li><a href="#" class="adv-item" onclick="setnewadv()">Shirts</a></li>
+                                <li><a href="#" class="adv-item" onclick="setnewadv()">Jackets</a></li>
+                                <li><a href="#" class="adv-item" onclick="setnewadv()">Chinos &amp; Trousers</a></li>
+                                <li><a href="#" class="adv-item" onclick="setnewadv()">Jeans</a></li>
+                                <li><a href="#" class="adv-item" onclick="setnewadv()">T-Shirts</a></li>
+                                <li><a href="#" class="adv-item" onclick="setnewadv()">Underwear</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="adv-item">Women</a>
+                            <ul class="dl-submenu">
+                                <li><a href="#" class="adv-header">Women</a></li>
+                                <li><a href="#" class="adv-item">women</a></li>
+                                <li><a href="#" class="adv-item">Jackets</a></li>
+                                <li><a href="#" class="adv-item">Knits</a></li>
+                                <li><a href="#" class="adv-item">Jeans</a></li>
+                                <li><a href="#" class="adv-item">Dresses</a></li>
+                                <li><a href="#" class="adv-item">Blouses</a></li>
+                                <li><a href="#" class="adv-item">T-Shirts</a></li>
+                                <li><a href="#" class="adv-item">Underwear</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="adv-item">Children</a>
+                            <ul class="dl-submenu">
+                                <li><a href="#" class="adv-item">Boys</a></li>
+                                <li><a href="#" class="adv-item">Girls</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="adv-item">Furniture</a>
+                    <ul class="dl-submenu">
+                        <li>
+                            <a href="#" class="adv-item">Living Room</a>
+                            <ul class="dl-submenu">
+                                <li><a href="#" class="adv-item">Sofas &amp; Loveseats</a></li>
+                                <li><a href="#" class="adv-item">Coffee &amp; Accent Tables</a></li>
+                                <li><a href="#" class="adv-item">Chairs &amp; Recliners</a></li>
+                                <li><a href="#" class="adv-item">Bookshelves</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="adv-item">Bedroom</a>
+                            <ul class="dl-submenu">
+                                <li>
+                                    <a href="#" class="adv-item">Beds</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="#" class="adv-item">Upholstered Beds</a></li>
+                                        <li><a href="#" class="adv-item">Divans</a></li>
+                                        <li><a href="#" class="adv-item">Metal Beds</a></li>
+                                        <li><a href="#" class="adv-item">Storage Beds</a></li>
+                                        <li><a href="#" class="adv-item">Wooden Beds</a></li>
+                                        <li><a href="#" class="adv-item">Children's Beds</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="adv-item">Bedroom Sets</a></li>
+                                <li><a href="#" class="adv-item">Chests &amp; Dressers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="adv-item">Home Office</a></li>
+                        <li><a href="#" class="adv-item">Dining &amp; Bar</a></li>
+                        <li><a href="#" class="adv-item">Patio</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
 
         <input class="search_adv" placeholder="جستجو در همه آگهی ها">
@@ -296,11 +374,23 @@
 
     </div>
 
+    <div class="total-price">
+        <div class="total-price__header">قیمت کل : </div>
+        <select>
+            <option>مقطوع - تومان</option>
+            <option>مجانی</option>
+            <option>توافقی</option>
+            <option>جهت معاوضه</option>
+        </select>
+        <input placeholder="از">
+        <input placeholder="تا">
+    </div>
+
 </section>
 
 <section id="main-content" class="section-advcontent">
     <div class="alladvs">
-        <div class=alladvs__header ">
+        <div class="alladvs__header ">
 
             <div class="title-1row">
                 <h2 class=title-1row__header>آگهی های موجود</h2>
@@ -308,24 +398,24 @@
             </div>
             
             <div class="alladvs--changeview ">
-                <a href="#">
-                    <i class="fas fa-th"></i>
+                <a href="#" onclick="boxview()">
+                    <i class="fas fa-th "></i>
                 </a>
-                <a href="#">
+                <a href="#" onclick="listview()">
                     <i class="fas fa-list"></i>
                 </a>
             </div>
         </div>
+        <div class="mininews-base__buttons">
+            <a class="btn--tertiary  btn-withicon btn-block" href="#"><i class="fal fa-plus-square"></i>
+                آگهی جدید</a>
+            <a class="btn--secondary  btn-withicon btn-block" href="#"><i class="fal fa-pen-square"></i>
+                ویرایش و به روز رسانی</a>
 
+        </div>
         <div class="alladvs__advs alladvs__advs--list">
                 <div id="adv" class="mininews-base " >
-                        <div class="mininews-base__buttons">
-                            <a class="btn--tertiary  btn-withicon btn-block" href="#"><i class="fal fa-plus-square"></i>
-                                آگهی جدید</a>
-                            <a class="btn--secondary  btn-withicon btn-block" href="#"><i class="fal fa-pen-square"></i>
-                                ویرایش و به روز رسانی</a>
-                           
-                        </div>
+
                          <div class="mininews-base__container bp-min-mobile-default">
                                 <h4>آخرین اگهی های درج شده</h4>
                              <div class="mininews">
@@ -365,7 +455,7 @@
         </div>
 
         
-        <div class="alladvs__advs alladvs__advs--box">
+        <div class="alladvs__advs alladvs__advs--box d-none">
             <a class="news-card-simple" href="#">
                 <img src="img/1.jpg" alt="news 1" class="news-card-simple__img">
                 <p class="news-card-simple__head" >خبر</p>
@@ -388,12 +478,7 @@
 
 
     </div>
-    
-    
-    
-
 </section>
-
 
 </div>
 
@@ -414,6 +499,89 @@
 <script src="js/search_adv.js"></script>
 
 <script>
+    // var jasondata =[
+    //
+    //     {title:"همه دسته بندی ها",
+    //     id:1},
+    //     { title:"تجهیزات آزمایشگاهی",
+    //         id:1,
+    //         nest:[
+    //             {
+    //                 id:2,
+    //                 title:"Option1/1",
+    //             },
+    //             {
+    //                 id:3,
+    //                 title:"Option1/2",
+    //             },
+    //             {
+    //                 id:4,
+    //                 title:"Option1/3",
+    //                 nest:[
+    //                     {
+    //                         id:5,
+    //                         title:"Option1/31",
+    //                     },
+    //                     {
+    //                         id:6,
+    //                         title:"Option1/32",
+    //                     }
+    //                 ]
+    //             },
+    //         ]
+    //     },
+    //     { title:"مواد شیمیایی",
+    //         id:7,
+    //         nest:[
+    //             {
+    //                 id:8,
+    //                 title:"Option2/1",
+    //                 nest:[
+    //                     {
+    //                         id:9,
+    //                         title:"Option2/11",
+    //                     },
+    //                     {
+    //                         id:10,
+    //                         title:"Option2/12",
+    //                     }
+    //                 ]
+    //             },
+    //             {
+    //                 id:11,
+    //                 title:"Option2/2",
+    //             },
+    //             {
+    //                 id:12,
+    //                 title:"Option2/3",
+    //             }
+    //         ]
+    //     }
+    // ];
+    // function createList2(parent, array) {
+    //
+    //     array.forEach(function (o) {
+    //
+    //         var li = document.createElement("li"),ul;
+    //         var a = document.createElement("a");
+    //         a.className="dl-menu__link";
+    //         a.textContent= o.title;
+    //         a.href="#";
+    //         li.appendChild(a);
+    //         parent.appendChild(li);
+    //
+    //         if (o.nest) {
+    //             ul = document.createElement("ul");
+    //             ul.className="dl-submenu";
+    //             li.appendChild(ul);
+    //             createList2(ul, o.nest);
+    //         }
+    //     });
+    //
+    // }
+    //
+    // createList2(document.querySelector(".dl-menu"), jasondata);
+
     $(function() {
         $( '#dl-menu' ).dlmenu();
     });
@@ -450,8 +618,6 @@
     });
 
 </script>
-
-
 
 </body>
 

@@ -301,14 +301,15 @@ function changecontent() {
 				var $this = $( this ),
 					$submenu = $this.parents( 'ul.dl-submenu:first' ),
 					$item = $submenu.parent(),
+                    $parent = $item.parents('li.dl-subview:first'),
 
 					$flyin = $submenu.clone().insertAfter( self.$menu );
 
-                var $p = $item.find('a[class="adv-item"]:first').text();
+                var $p = $parent.find('a[class="adv-item"]:first').text();
 
                  // alert($p);
 
-                $('.pushmenu-header').text($p);
+                $('.dl-back').text($p);
 
                 // $('.adv-submit__header--content').text($p);
 
